@@ -56,7 +56,7 @@
 
 ## Kovan Tokens
 
-The following are **Kovan** addresses for the Balancer versions of common tokens
+The following are **Kovan** addresses for the Balancer versions of common tokens. There is a faucet [here](https://balancer-faucet.on.fleek.co), and Kovan ETH (0.1 per Captcha) can be obtained [here](https://faucets.chain.link).
 
 | **Token** | **Address**                                                                                                                      |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -68,7 +68,7 @@ The following are **Kovan** addresses for the Balancer versions of common tokens
 | WBTC      | [0x1C8E3Bcb3378a443CC591f154c5CE0EBb4dA9648](https://kovan.etherscan.io/address/0x1C8E3Bcb3378a443CC591f154c5CE0EBb4dA9648)      |
 | PERP      | [0x8F4beBF498cc624a0797Fe64114A6Ff169EEe078](https://kovan.etherscan.io/address/0x8F4beBF498cc624a0797Fe64114A6Ff169EEe078)      |
 
-There is a faucet for these tokens [here](https://balancer-faucet.on.fleek.co). Kovan ETH can be obtained [here](https://faucets.chain.link).
+
 {% endtab %}
 
 {% tab title="Rinkeby" %}
