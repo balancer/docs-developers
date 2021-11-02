@@ -53,6 +53,22 @@
 | MetaStablePoolFactory             | [0x590E544e7Ca956Bb878F8C873E82e65550d67D2F](https://kovan.etherscan.io/address/0x590E544e7Ca956Bb878F8C873E82e65550d67D2F) |
 | InvestmentPoolFactory             | [0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2](https://kovan.etherscan.io/address/0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2) |
 | Authorizer                        | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://kovan.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
+
+## Kovan Tokens
+
+The following are **Kovan** addresses for the Balancer versions of common tokens
+
+| **Token** | **Address**                                                                                                                      |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| WETH      | [0x02822e968856186a20fEc2C824D4B174D0b70502](https://kovan.etherscan.io/address/0x02822e968856186a20fEc2C824D4B174D0b70502)      |
+| DAI       | [0x04DF6e4121c27713ED22341E7c7Df330F56f289B](https://kovan.etherscan.io/address/0x04DF6e4121c27713ED22341E7c7Df330F56f289B)      |
+| MKR       | [0xAf9ac3235be96eD496db7969f60D354fe5e426B0](https://kovan.etherscan.io/address/0xAf9ac3235be96eD496db7969f60D354fe5e426B0)      |
+| USDC      | [0xc2569dd7d0fd715B054fBf16E75B001E5c0C1115](https://kovan.etherscan.io/address/0xc2569dd7d0fd715B054fBf16E75B001E5c0C1115)      |
+| BAL       | [0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7](https://kovan.etherscan.io/address/0x41286Bb1D3E870f3F750eB7E1C25d7E48c8A1Ac7)      |
+| WBTC      | [0x1C8E3Bcb3378a443CC591f154c5CE0EBb4dA9648](https://kovan.etherscan.io/address/0x1C8E3Bcb3378a443CC591f154c5CE0EBb4dA9648)      |
+| PERP      | [0x8F4beBF498cc624a0797Fe64114A6Ff169EEe078](https://kovan.etherscan.io/address/0x8F4beBF498cc624a0797Fe64114A6Ff169EEe078)      |
+
+There is a faucet for these tokens [here](https://balancer-faucet.on.fleek.co). Kovan ETH can be obtained [here](https://faucets.chain.link).
 {% endtab %}
 
 {% tab title="Rinkeby" %}
@@ -77,3 +93,4 @@
 | Authorizer                 | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://goerli.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
 {% endtab %}
 {% endtabs %}
+

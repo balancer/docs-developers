@@ -10,6 +10,8 @@ Let's say we want to trade TokenA for TokenC, but we only have pools with \[Toke
 
 Let's say we still want to trade TokenA for TokenC, but now there's a \[TokenA, TokenC] pool. We could use a Single Swap there, but there might be a better price routing by swapping A -> B and B -> C.
 
+For additional information, check out the [Batch Swaps page in Resources](../../resources/swaps/batch-swaps.md).
+
 ## Code Walkthrough
 
 Select your desired programming language in the tabs below for the relevant tutorial.
