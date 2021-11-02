@@ -16,6 +16,8 @@
   * [Pool Joins](resources/joins-and-exits/pool-joins.md)
   * [Pool Exits](resources/joins-and-exits/pool-exits.md)
 * [Internal User Balances](resources/internal-user-balances.md)
+* [Swaps](resources/swaps/README.md)
+  * [Single Swap](resources/swaps/single-swap.md)
 
 ## Helpers
 
