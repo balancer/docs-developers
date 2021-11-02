@@ -39,6 +39,7 @@
       * [MetaStablePools](references/contracts/apis/pools/metastablepools.md)
   * [Deployment Addresses](references/contracts/contract-addresses.md)
   * [Events](references/contracts/events.md)
+  * [UML Diagrams](references/contracts/uml-diagrams.md)
 * [Error Codes](references/error-codes.md)
 * [Subgraphs](references/subgraphs.md)
 * [Github](https://github.com/balancer-labs/)
