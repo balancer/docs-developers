@@ -19,6 +19,7 @@
 * [Swaps](resources/swaps/README.md)
   * [Batch Swaps](resources/swaps/batch-swaps.md)
   * [Single Swap](resources/swaps/single-swap.md)
+  * [Flash Swaps](resources/swaps/flash-swaps.md)
 
 ## Helpers
 
