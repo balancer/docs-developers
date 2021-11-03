@@ -165,6 +165,10 @@ Returns a Pool's registered tokens, the total balance for each, and the most rec
 For a more in-depth explanation check out [Joins and Exits](../../../resources/joins-and-exits/) in the Resources.
 {% endhint %}
 
+{% hint style="warning" %}
+Note that any functions that take a token array always expect input "parallel" to the pool tokens. If you are joining a 7-token pool with one token, you must pass an array of 7 amounts, with the rest set to 0.
+{% endhint %}
+
 ### `joinPool`
 
 ```
@@ -185,7 +189,7 @@ exitPool(
     ExitPoolRequest request)
 ```
 
-`JoinPoolRequest` and `ExitPoolRequest` takes a userData argument, which specifies exactly how the pool should be joined/exited (e.g., the token addresses and balances transferred to/from the Vault, and expected number of pool tokens to be burned). Implemented by `PoolBalances`.
+`JoinPoolRequest` and `ExitPoolRequest` takes a `userData` argument, which specifies exactly how the pool should be joined/exited (e.g., the token addresses and balances transferred to/from the Vault, and expected number of pool tokens to be burned). Implemented by `PoolBalances`.
 
 Both joins and exits emit the `PoolBalanceChanged` event.
 

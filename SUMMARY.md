@@ -24,7 +24,7 @@
 ## Helpers
 
 * [Using Native ETH](helpers/using-native-eth.md)
-* [Encoding](helpers/encoding.md)
+* [Encoding userData](helpers/encoding.md)
 
 ## References
 
