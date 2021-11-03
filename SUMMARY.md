@@ -38,6 +38,7 @@
       * [InvestmentPools](references/contracts/apis/pools/investmentpools.md)
       * [StablePools](references/contracts/apis/pools/stablepools.md)
       * [MetaStablePools](references/contracts/apis/pools/metastablepools.md)
+    * [Asset Managers](references/contracts/apis/asset-managers.md)
   * [Deployment Addresses](references/contracts/contract-addresses.md)
   * [Events](references/contracts/events.md)
   * [UML Diagrams](references/contracts/uml-diagrams.md)
