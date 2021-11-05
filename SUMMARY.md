@@ -20,7 +20,9 @@
   * [Batch Swaps](resources/swaps/batch-swaps.md)
   * [Single Swap](resources/swaps/single-swap.md)
   * [Flash Swaps](resources/swaps/flash-swaps.md)
-* [Pool Creation](resources/pool-creation.md)
+* [Pools](resources/pools/README.md)
+  * [Creation](resources/pools/creation.md)
+  * [Verification](resources/pools/verification.md)
 
 ## Helpers
 

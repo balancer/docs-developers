@@ -1,4 +1,4 @@
-# Pool Creation
+# Creation
 
 ## Overview
 
@@ -30,15 +30,15 @@ If the pool owner is set to the delegate address (`0xBA1BA1ba1BA1bA1bA1Ba1BA1ba1
 
 Aside from setting swap fees, pool owners have other right on some pools that may play a role when deciding on an owner.&#x20;
 
-* [Stable Pools](../references/contracts/apis/pools/stablepools.md#permissioned-functions)
+* [Stable Pools](../../references/contracts/apis/pools/stablepools.md#permissioned-functions)
   * Changing `ampParameter`
-* [MetaStable Pools](../references/contracts/apis/pools/metastablepools.md#permissioned-functions)
+* [MetaStable Pools](../../references/contracts/apis/pools/metastablepools.md#permissioned-functions)
   * Changing `ampParameter`
   * Changing `cacheDuration`
-* [Liquidity Bootstrapping Pools](../references/contracts/apis/pools/liquiditybootstrappingpool.md#permissioned-functions)
+* [Liquidity Bootstrapping Pools](../../references/contracts/apis/pools/liquiditybootstrappingpool.md#permissioned-functions)
   * Changing `swapEnable`
   * Changing weights
-* [Investment Pools](../references/contracts/apis/pools/investmentpools.md#permissioned-functions)
+* [Investment Pools](../../references/contracts/apis/pools/investmentpools.md#permissioned-functions)
   * Changing `swapEnable`
   * Changing weights
   * Collecting management fees
