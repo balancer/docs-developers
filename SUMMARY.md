@@ -12,6 +12,10 @@
 
 ## Resources
 
+* [Pool Interfacing](resources/pool-interfacing/README.md)
+  * [Pool Math](resources/pool-interfacing/pool-math/README.md)
+    * [Weighted Math](resources/pool-interfacing/pool-math/weighted-math.md)
+    * [Stable Math](resources/pool-interfacing/pool-math/stable-math.md)
 * [Joins and Exits](resources/joins-and-exits/README.md)
   * [Pool Joins](resources/joins-and-exits/pool-joins.md)
   * [Pool Exits](resources/joins-and-exits/pool-exits.md)
@@ -20,9 +24,6 @@
   * [Batch Swaps](resources/swaps/batch-swaps.md)
   * [Single Swap](resources/swaps/single-swap.md)
   * [Flash Swaps](resources/swaps/flash-swaps.md)
-* [Pool Math](resources/pool-math/README.md)
-  * [Weighted Math](resources/pool-math/weighted-math.md)
-  * [Stable Math](resources/pool-math/stable-math.md)
 * [Deploy Pools from Factory](resources/deploy-pools-from-factory/README.md)
   * [Creation](resources/deploy-pools-from-factory/creation.md)
   * [Verification](resources/deploy-pools-from-factory/verification.md)
