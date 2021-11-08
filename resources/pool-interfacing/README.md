@@ -18,7 +18,7 @@ You can get a poolId from:
 
 ### Pool Balances
 
-Since all tokens are held in the Vault, you must query the Vault for pool balances. For example:
+Since all tokens are held in the Vault, **you must query the Vault when querying on-chain pool balances**. For example, calling
 
 ```
 vault.getPoolTokens(0x5c6ee304399dbdb9c8ef030ab642b10820db8f56000200000000000000000014_
@@ -34,3 +34,12 @@ balances:  [5720903090084350251216632,
                 7939247003721636150710]
 ```
 
+### Swap Fee
+
+Swap fees are stored at the pool level. To get a pool's swap fee, call:
+
+```
+pool.getSwapFeePercentage(poolId)
+```
+
+Values are returned with 18 decimals. Calling this on `0x5c6ee304399dbdb9c8ef030ab642b10820db8f56` returns 500000000000000, which corresponds to a 0.05% swap fee.&#x20;
