@@ -23,6 +23,9 @@
 * [Pools](resources/pools/README.md)
   * [Creation](resources/pools/creation.md)
   * [Verification](resources/pools/verification.md)
+  * [Math](resources/pools/math/README.md)
+    * [Weighted Math](resources/pools/math/weighted-math.md)
+    * [Stable Math](resources/pools/math/stable-math.md)
 
 ## Helpers
 
