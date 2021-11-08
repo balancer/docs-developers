@@ -4,6 +4,21 @@
 
 Stable Math is designed to allow for swaps between any assets that have the same price, or are "pegged" to the same asset. The most common examples are stablecoins that track US Dollars (DAI, USDT, USDC), and assets that track the price of Bitcoin (WBTC, renBTC, sBTC). Prices are determined by the pool balances, the _amplification parameter_, and amounts of the tokens that are being swapped.
 
+## Implementations
+
+### TypeScript
+
+Developers can use the TypeScript math implementations used by the Smart Order router
+
+* [stableMath.ts](https://github.com/balancer-labs/balancer-sor/blob/john/v2-package-linear/src/pools/stablePool/stableMath.ts)
+* [metaStableMath.ts](https://github.com/balancer-labs/balancer-sor/blob/john/v2-package-linear/src/pools/metaStablePool/metaStableMath.ts)
+
+### Python
+
+There are also Python implementations in progress
+
+* [stableMath.py](https://github.com/officialnico/balancerv2cad/blob/main/src/balancerv2cad/StableMath.py)
+
 ## Invariant
 
 Since the Stable Math equation is quite complex, determining the invariant, $$D$$, is typically done iteratively. For an example of how to do this, please refer to [this function](https://github.com/georgeroman/balancer-v2-pools/blob/main/src/pools/stable/math.ts#L16).

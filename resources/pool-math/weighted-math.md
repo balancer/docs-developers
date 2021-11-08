@@ -8,6 +8,20 @@ Balancer's Weighted Math equation is a generalization of the $$x*y=k$$ constant 
 
 For more formulas and derivations of the below formulas, please refer to the [Balancer Whitepaper](https://balancer.fi/whitepaper.pdf).
 
+## Implementations
+
+### TypeScript
+
+Developers can use the TypeScript math implementations used by the Smart Order router
+
+* [weightedMath.ts](https://github.com/balancer-labs/balancer-sor/blob/john/v2-package-linear/src/pools/weightedPool/weightedMath.ts)
+
+### Python
+
+There are also Python implementations in progress
+
+* [weightedMath.py](https://github.com/officialnico/balancerv2cad/blob/main/src/balancerv2cad/WeightedMath.py)
+
 ## Invariant
 
 The value function $$V$$is defined as:
