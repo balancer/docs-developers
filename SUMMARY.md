@@ -13,9 +13,10 @@
 ## Resources
 
 * [Pool Interfacing](resources/pool-interfacing/README.md)
-  * [Pool Math](resources/pool-interfacing/pool-math/README.md)
-    * [Weighted Math](resources/pool-interfacing/pool-math/weighted-math.md)
-    * [Stable Math](resources/pool-interfacing/pool-math/stable-math.md)
+  * [Weighted Pool](resources/pool-interfacing/weighted-pool.md)
+* [Pool Math](resources/pool-math/README.md)
+  * [Weighted Math](resources/pool-math/weighted-math.md)
+  * [Stable Math](resources/pool-math/stable-math.md)
 * [Joins and Exits](resources/joins-and-exits/README.md)
   * [Pool Joins](resources/joins-and-exits/pool-joins.md)
   * [Pool Exits](resources/joins-and-exits/pool-exits.md)

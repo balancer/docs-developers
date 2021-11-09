@@ -16,6 +16,10 @@ You can get a `poolId` from:
 
 ## Getting Common Pool Data
 
+{% hint style="warning" %}
+Below are the data fields common to all pools; however, each pool will have data specific to its pool type.
+{% endhint %}
+
 ### Pool Balances
 
 Since all tokens are held in the Vault, **you must query the Vault when querying on-chain pool balances**. For example, calling
@@ -42,7 +46,17 @@ Swap fees are stored at the pool level. To get a pool's swap fee, call:
 pool.getSwapFeePercentage()
 ```
 
-Values are returned with 18 decimals. Calling this on `0x5c6ee304399dbdb9c8ef030ab642b10820db8f56` returns `500000000000000`, which corresponds to a 0.05% swap fee.&#x20;
+Values are returned with 18 decimals. At the time of writing, calling this on `0x5c6ee304399dbdb9c8ef030ab642b10820db8f56` returns `500000000000000`, which corresponds to a 0.05% swap fee.&#x20;
+
+#### Some Pools have Dynamic Swap Fees!
+
+If you intend to cache pool data to minimize on-chain calls, be aware that some pools have Dynamic Swap Fees and can change at any moment! The convention for setting static fees is to set the pool owner to the zero address (`0x0000000000000000000000000000000000000000`).
+
+You can query pool owner with:
+
+```
+pool.getOwner()
+```
 
 ### Emergency Pause State
 
