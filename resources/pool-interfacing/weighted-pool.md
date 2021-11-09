@@ -31,4 +31,4 @@ returns something resembling
 [800000000000000000, 200000000000000000]
 ```
 
-which are the weights represented with 18 decimals. A pool with 80%/20% weights corresponds to \[0.8, 0.2] after scaling by the decimals.
+which are the weights represented with 18 decimals. A pool with 80%/20% weights corresponds to \[0.8, 0.2] after scaling for decimals.
