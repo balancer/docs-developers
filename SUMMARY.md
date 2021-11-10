@@ -16,6 +16,7 @@
   * [Weighted Pool](resources/pool-interfacing/weighted-pool.md)
   * [Liquidity Bootstrapping Pool](resources/pool-interfacing/liquidity-bootstrapping-pool.md)
   * [Stable Pool](resources/pool-interfacing/stable-pool.md)
+  * [MetaStable Pool](resources/pool-interfacing/metastable-pool.md)
 * [Pool Math](resources/pool-math/README.md)
   * [Weighted Math](resources/pool-math/weighted-math.md)
   * [Stable Math](resources/pool-math/stable-math.md)
