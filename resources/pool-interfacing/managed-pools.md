@@ -1,20 +1,20 @@
-# Liquidity Bootstrapping Pool
+# Managed Pools
 
 ## Overview
 
-For advantages and use cases of Liquidity Bootstrapping Pools (LBPs), please refer to [the standard documentation](https://docs.balancer.fi/products/balancer-pools/liquidity-bootstrapping-pools-lbps).
+For advantages and use cases of Managed Pools, please refer to [the standard documentation](https://docs.balancer.fi/products/balancer-pools/managed-pools).
 
-For more interfaces, such as updating pool weights, see the [Liquidity Bootstrapping Pool API](../../references/contracts/apis/pools/liquiditybootstrappingpool.md#api).
+For more interfaces, such as updating pool weights, see the [Managed Pools API](../../references/contracts/apis/pools/investmentpools.md).
 
 ## Interfacing
 
-Some elements to consider when interfacing with Liquidity Bootstrapping Pools:
+Some elements to consider when interfacing with Managed Pools:
 
 * Using [Weighted Math](../pool-math/weighted-math.md)
 * Pool weights can be dynamic
 * Pool swaps may be disabled by the pool owner. Typically this is to prevent swaps before the weight shifting occurs, but this can technically happen at any time.
 * Pool weights range from 1% to 99%
-* Pools have between 2 and 4 tokens
+* Pools can have up to 50 tokens
 
 ## Getting Pool Data
 
