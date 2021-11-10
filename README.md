@@ -1,5 +1,9 @@
 # Welcome
 
-## Work in Progress!
+## #BuiltOnBalancer
 
-If you found your way to this page, please know that this is a work in progress. You're welcome to look around but things may change around here. Please leave any feedback in the #dev channel of Balancer's Discord.
+These docs are intended for anyone who is interfacing with or building on top of Balancer. Whether you're a trade aggregator, yield aggregator, trader, liquidity provider, founder, web dev, arbitrageur, AMM designer, mathematician, or curious individual, this is the place for you.
+
+## Can't find something?
+
+If you're having trouble finding the answer to your question, ask for help in the `#dev` channel of the [Balancer Discord](https://discord.balancer.fi). Notice something missing? [You can contribute ](https://github.com/balancer-labs/docs-developers)to these docs!
