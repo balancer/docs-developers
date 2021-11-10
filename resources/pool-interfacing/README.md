@@ -62,6 +62,8 @@ pool.getOwner()
 
 {% hint style="info" %}
 Pools are not expected to be paused, so this explanation is listed here out of an abundance of caution. If you're executing trades programmatically, you can avoid transaction failures by first verifying if a pool is paused or not.
+
+**NOTE:** The emergency pause is different from the `swapEnabled` feature on Liquidity Bootstrapping and Managed Pools!
 {% endhint %}
 
 When pool factories are first launched, they often have an emergency pause period. The pause period is generally **90 days** from the deployment of the **pool factory**, not the pool itself. In the unlikely case that there is an issue with the pools, trades and pool joins can be paused. **Withdrawals are not paused**, so **users can always exit a pool**.
