@@ -6,7 +6,7 @@
 Before creating a new pool, make sure there isn't already a similar pool; there's no advantage to fragmenting liquidity!
 {% endhint %}
 
-Anyone can create a pool on Balancer. A pool creation UI is in progress, but users can deploy them today programmatically. It's highly recommended that you deploy a pool on a testnet before doing so on a production network.
+Anyone can create a pool on Balancer. A pool creation UI is in progress, but users can deploy them today programmatically. It's **highly recommended** that you deploy a pool on a **testnet** before doing so on a production network.
 
 ## What kind of pool should I deploy?
 
@@ -45,7 +45,7 @@ Aside from setting swap fees, pool owners have other right on some pools that ma
 
 ## Deploying a pool with balpy
 
-The Balancer Python library [balpy](https://pypi.org/project/balpy/) supports deploying pools. Using the [samples in the balpy GitHub repository](https://github.com/balancer-labs/balpy/tree/main/samples/poolCreation), you can deploy pools from config files. There are sample config files for:
+The Balancer Python library [balpy](https://pypi.org/project/balpy/) supports deploying pools. Using the [samples in the balpy GitHub repository](https://github.com/balancer-labs/balpy/tree/main/samples/poolCreation), you can deploy pools from config files. There are sample config files for many pools including:
 
 * Weighted Pools
 * Oracle Pools (WeightedPool2Tokens)
@@ -54,8 +54,118 @@ The Balancer Python library [balpy](https://pypi.org/project/balpy/) supports de
 * MetaStable Pools
 * Investment Pools
 
+More pools configs will be added as new factories are deployed.&#x20;
+
 Once you have set up the necessary [environment variables](https://github.com/balancer-labs/balpy#environment-variables) and created your [virtual environment](https://github.com/balancer-labs/balpy#install), you can run the sample script with the command below. The script will ensure that you have sufficient token balances and **will execute token allowance approvals** if you do not have sufficient allowances.&#x20;
 
 ```
 python3 poolCreationSample.py <yourModifiedPoolFile.json>
 ```
+
+## Deploying a pool with TypeScript
+
+{% hint style="info" %}
+This tutorial will illustrate deploying an **Ethereum** mainnet **WeightedPool** using **hardhat** and **ethers. **It also assumes that you have your artifacts built.&#x20;
+
+Modify accordingly if you wish to deploy a different PoolType, use a different network, or use JS/Buidler/Truffle/etc.
+{% endhint %}
+
+### Defining Addresses
+
+```
+// Contracts
+const VAULT = '0xBA12222222228d8Ba445958a75a0704d566BF2C8';
+const WEIGHTED_POOL_FACTORY = '0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9';
+const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';    
+
+// Tokens -- MUST be sorted numerically
+const MKR = '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2';
+const WETH = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
+const USDT = '0xdac17f958d2ee523a2206206994597c13d831ec7';
+const tokens = [MKR, WETH, USDT];
+```
+
+{% hint style="danger" %}
+Your `tokens` array **must be sorted numerically**. All other corresponding arrays (ex. `weights`, defined below) should reflect this ordering
+{% endhint %}
+
+### Pool Arguments
+
+We now define the name, symbol, swap fee, and token weights. In this example, we want the weights to be 70/15/15 corresponding to MKR/WETH/USDT. Weights must add up to 1 represented with 18 decimals. Swap fee must be between 0.0001% and 10%, where 100% is 1 represented with 18 decimals.&#x20;
+
+```
+const NAME = 'Three-token Test Pool';
+const SYMBOL = '70MKR-15WETH-15USDT';
+const swapFeePercentage = 0.005e18; // 0.5%
+const weights = [0.7e18, 0.15e18, 0.15e18];
+```
+
+### Creating the Pool in the Factory
+
+In this block, we call the `create` function on the `WeightedPoolFactory` to deploy a new `WeightedPool`. We then get the `poolId` from the newly deployed pool.
+
+```
+const factory = await ethers.getContractAt('WeightedPoolFactory',
+                                           WEIGHTED_POOL_FACTORY);
+
+// If you're creating a different type of pool, look up the create 
+// function for your corresponding pool in that pool factory's ABI
+const tx = await factory.create(NAME, SYMBOL, tokens, weights,
+                                swapFeePercentage, ZERO_ADDRESS);
+const receipt = await tx.wait();
+
+// We need to get the new pool address out of the PoolCreated event
+const events = receipt.events.filter((e) => e.event === 'PoolCreated');
+const poolAddress = events[0].args.pool;
+
+// We're going to need the PoolId later, so ask the contract for it
+const pool = await ethers.getContractAt('WeightedPool', poolAddress);
+const poolId = await pool.getPoolId();
+```
+
+### Adding Tokens to Your New Pool
+
+Before we send tokens to the Vault, we must approve appropriate allowances so that it can move our tokens. We can send infinite approvals (`2e256 - 1`) or enough to satisfy the amounts we wish to move.
+
+```
+const vault = await ethers.getContractAt('Vault', VAULT);
+
+// Tokens must be in the same order
+// Values must be decimal-normalized! (USDT has 6 decimals)
+const initialBalances = [16.667e18, 3.5714e18, 7500e6];
+
+// Need to approve the Vault to transfer the tokens!
+// Can do through Etherscan, or programmatically
+for (var i in tokens) {
+  const tokenContract = await ethers.getContractAt('ERC20', tokens[i]);
+  await tokenContract.approve(VAULT, initialBalances[i]);
+}
+```
+
+Now we must join the pool using a `JoinKind` of type `INIT` ([more info on the different types of `JoinKind`](../joins-and-exits/pool-joins.md)). This requires a list of `initialBalances`, which must be in the **same order as the sorted token addresses**. We must [encode the userData](../../helpers/encoding.md) for our join. We then call `joinPool` on the `Vault`, since that is where all tokens are held.
+
+```
+// Construct userData
+const JOIN_KIND_INIT = 0;
+const initUserData =
+    ethers.utils.defaultAbiCoder.encode(['uint256', 'uint256[]'], 
+                                        [JOIN_KIND_INIT, initialBalances]);
+
+const joinPoolRequest = {
+  assets: tokens,
+  maxAmountsIn: initialBalances,
+  userData: initUserData,
+  fromInternalBalance: false
+} 
+
+// define caller as the address you're calling from
+caller = '0x...YOUR_ADDRESS_HERE...';
+
+// joins are done on the Vault
+const tx = await vault.joinPool(poolId, caller, caller, joinPoolRequest);
+
+// You can wait for it like this, or just print the tx hash and monitor
+const receipt = await tx.wait();
+```
+
+At this point you should have a funded `WeightedPool`, visible on the Balancer UI. In this mainnet example, you would be able to reach this page at: https://app.balancer.fi/#/pool/`<yourPoolId>`

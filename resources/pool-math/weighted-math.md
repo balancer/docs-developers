@@ -67,6 +67,10 @@ $$
 A_o = B_o \cdot \left(1-\left(\frac{B_i}{B_i + A_i}\right)^{\frac{W_i}{W_o}}\right)
 $$
 
+{% hint style="info" %}
+If you're computing this value yourself, remember that the pool collects swap fees as a percentage of the **input token**. In the equation above,$$A_i$$ is the amount that the pool actually swaps into the output token, not the amount sent by a trader, $$A_{sent}$$. To calculate through, we must compute:$$A_i = A_{sent} * (1-swapFee)$$
+{% endhint %}
+
 ### inGivenOut
 
 It is also very useful for traders to know how much they need to send of the input token $$A_i$$ to get a desired amount of output token $$A_o$$:&#x20;
