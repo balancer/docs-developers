@@ -4,6 +4,8 @@
 
 For advantages and use cases of Weighted Pools, please refer to [the standard documentation](https://docs.balancer.fi/products/balancer-pools/weighted-pools).
 
+For more interfaces, see the [WeightedPool API](../../references/contracts/apis/pools/weightedpool.md#api) and [WeightedPool2Tokens ("Oracle Pool") API](../../references/contracts/apis/pools/weightedpool2tokens.md#api).
+
 ## Interfacing
 
 Some elements to consider when interfacing with Weighted Pools:
