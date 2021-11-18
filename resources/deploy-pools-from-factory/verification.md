@@ -11,7 +11,7 @@ This page will explain how to verify a pool on Etherscan (or another chain's ver
 
 ## 1. Getting Constructor Arguments
 
-There are two techniques for getting the constructor arguments; you can generate them with **balpy**, or you can grab them from **Tenderly**.&#x20;
+There are two techniques for getting the constructor arguments; you can generate them with **balpy**, or you can grab them from [**Tenderly**](verification.md#grabbing-from-tenderly).&#x20;
 
 ### Generating with balpy
 
