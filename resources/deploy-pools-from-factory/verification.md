@@ -101,9 +101,7 @@ Example string:
 
 ## 2. Sending Data to Etherscan
 
-blah blah&#x20;
 
-oh shit
 
 
 
