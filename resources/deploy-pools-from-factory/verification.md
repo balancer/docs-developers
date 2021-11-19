@@ -1,22 +1,24 @@
 # Verification
 
-Coming soon! For now use the [old instructions](https://docs.balancer.fi/developers/guides/pool-verification). Instead of using Tenderly, you can generate the data with [balpy's Pool Verification script.](https://github.com/balancer-labs/balpy/tree/main/samples/poolVerification)
-
 ## Overview
 
-This page will explain how to verify a pool on Etherscan (or another chain's version, like Polygonscan). The process has two main parts:
+{% hint style="info" %}
+This page will go over how to verify a pool on Etherscan. The process works for other networks' block explorer websites like Polygonscan, but for the sake of simplicity, the article will refer to these sites only as "Etherscan". Be aware that **other block explorers will require their own API Key**.
+{% endhint %}
+
+The pool verification process has two main parts:
 
 1. Getting a pool's constructor arguments
-2. Sending data (including the above arguments) to Etherscan
+2. Sending data to Etherscan
 
 ## 1. Getting Constructor Arguments
 
 There are two techniques for getting the constructor arguments; you can generate them with **balpy**, or you can grab them from [**Tenderly**](verification.md#grabbing-from-tenderly).&#x20;
 
 * **balpy** is generally faster but requires changing a few parameters and running a Python script from a terminal
-* **Tenderly** is a bit slower but may be a bit friendlier if you're not comfortable in a command line environment
+* **Tenderly** is a bit slower but may be a bit friendlier if you're not as comfortable in a command line environment
 
-### Generating with balpy
+### Generating With balpy
 
 The [poolVerification.py](https://github.com/balancer-labs/balpy/blob/main/samples/poolVerification/poolVerification.py) script generates the encoded constructor arguments as well as the rest of the command you'll need to execute in Step 2 below. To use this script for your pool, **you'll need to set arguments in the script**: `network`, `poolId`, and `creationHash`.&#x20;
 
@@ -47,10 +49,10 @@ creationHash = "0x18c7e1c9235c6e93878e55a87ed249f9d0ceb9d12ee584794e92f80f764568
 {% hint style="warning" %}
 There have been a few isolated cases where the arguments balpy generated did not successfully verify the pool. If you get a failure when sending to Etherscan, try again, or try getting arguments from Tenderly.
 
-If you've successfully generated the constructor arguments with balpy, you can continue to [Step 2](verification.md#undefined); you do not need to do anything on Tenderly.
+**If you've successfully generated the constructor arguments with balpy, you can continue to **[**Step 2**](verification.md#undefined)**; you do not need to do anything on Tenderly.**
 {% endhint %}
 
-### Grabbing from Tenderly
+### Pulling Data From Tenderly
 
 To start off in Tenderly, you'll need the **`poolId` for your pool**. If you don't know where to find a `poolId`, check out [this note about `poolId`s](../pool-interfacing/#poolids). Once you have your `poolId`, you'll need to extract the pool `address`, which is the first 42 characters of the id.&#x20;
 
@@ -89,11 +91,11 @@ Search for the following string:
 
 ![](<../../.gitbook/assets/Screen Shot 2021-11-18 at 2.51.16 PM.png>)
 
-Copy from the beginning of that string to the end of the \[INPUT], excluding the trailing `"`.
+Copy from the beginning of that string to the end of the **\[INPUT]**, excluding the trailing `"`.
 
 ![](<../../.gitbook/assets/Screen Shot 2021-11-18 at 2.51.48 PM.png>)
 
-Paste that string somewhere safe -- we're now ready to move onto the next step!
+Paste that string in a text editor for now -- we're ready to move onto the next step!
 
 Example string:
 
@@ -101,7 +103,76 @@ Example string:
 
 ## 2. Sending Data to Etherscan
 
+#### Requirements:
 
+* A local copy of the [Balancer V2 Monorepo](https://github.com/balancer-labs/balancer-v2-monorepo/)
+* An RPC (Infura, Alchemy, local RPC, etc.)
+* [Etherscan API Key](https://etherscan.io/myapikey) (free Etherscan account required)
+* A private key**\***
 
+{% hint style="danger" %}
+**\***This private key **should not** hold any tokens; it is used solely as an identifier. Generate a throwaway account. **Never** put a real key in a file - even for a throwaway account - especially if it might get committed to a public repository!
+{% endhint %}
 
+In your local copy of the Balancer V2 Monorepo, go to the `pkg/deployments` directory, and open the `hardhat.config.ts` file:
+
+```
+cd pkg/deployments
+<your_favorite_editor> hardhat.config.ts
+```
+
+At the bottom of the file, you'll see:
+
+```
+export default {
+  mocha: {
+    timeout: 40000,
+  },
+};
+```
+
+Edit the file for your given network, RPC** **url, and private key. **DO NOT PUT YOUR KEY IN THE FILE! Use an environment variable instead!**
+
+```
+mocha: {
+  timeout: 40000,
+},
+networks: {
+  mainnet: {
+    url: https://mainnet.infura.io/v3/${process.env.INFURA_KEY},
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+    },
+  },
+},
+```
+
+{% hint style="info" %}
+If you generated your command with balpy, you should be ready to execute that now ([Skip to executing](verification.md#executing-command)). If you pulled data from Tenderly, we just need to construct the rest of the command.
+{% endhint %}
+
+The rest of the command that we need to fill in is:
+
+```
+yarn hardhat verify-contract
+  --id <task-id>
+  --name <contract-name>
+  --address <pool-address>
+  --network <network>
+  --key <etherscan-api-key>
+  --args <abi-encoded-constructor-arguments>  
+```
+
+#### `task-id` and `contract-name`
+
+These depend on the type of pool you're verifying.&#x20;
+
+| Task ID (`--id` argument)             | Contract name(s) (`--name` argument) |
+| ------------------------------------- | ------------------------------------ |
+| 20210418-weighted-pool                | WeightedPool, WeightedPool2Tokens    |
+| 20210624-stable-pool                  | StablePool                           |
+| 20210721-liquidity-bootstrapping-pool | LiquidityBootstrappingPool           |
+| 20210727-meta-stable-pool             | MetaStablePool                       |
+| 20210907-investment-pool              | InvestmentPool                       |
+
+### Executing Command
 
