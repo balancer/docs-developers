@@ -174,5 +174,56 @@ These depend on the type of pool you're verifying.&#x20;
 | 20210727-meta-stable-pool             | MetaStablePool                       |
 | 20210907-investment-pool              | InvestmentPool                       |
 
+#### `pool-address`
+
+This is the **address of the pool** whose contract you are verifying. It is **not** _your_ address.
+
+#### `network`
+
+This is the network on which you are verifying your pool. If you are attempting to verify a pool on Ethereum, use "`mainnet`" as shown in the sample `hardhat.config.ts` file.
+
+#### `etherscan-api-key`
+
+This is your Etherscan API key, obviously.
+
+#### `abi-encoded-constructor-arguments`
+
+This is the long string of bytecode you saved earlier from Tenderly.
+
+#### Putting It All Together...
+
+For the example pool in the Tenderly example, the command would look like:
+
+```
+yarn hardhat verify-contract
+  --id 20210418-weighted-pool
+  --name WeightedPool2Tokens
+  --address 0x5c6ee304399dbdb9c8ef030ab642b10820db8f56
+  --network mainnet
+  --key NOTSHARINGMYETHERSCANAPIKEYSORRY
+  --args 00000000000000000000000000000000000000000000000000000000000000
+  20000000000000000000000000ba12222222228d8ba445958a75a0704d566bf2c8000
+  000000000000000000000000000000000000000000000000000000000018000000000
+  000000000000000000000000000000000000000000000000000001c00000000000000
+  00000000000ba100000625a3754423978a60c9317c58a424e3d000000000000000000
+  000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc200000000000000000000000
+  00000000000000000000000000b1a2bc2ec5000000000000000000000000000000000
+  0000000000000000000002c68af0bb140000000000000000000000000000000000000
+  0000000000000000005543df729c00000000000000000000000000000000000000000
+  0000000000000000000072aefe0000000000000000000000000000000000000000000
+  000000000000000278d00000000000000000000000000000000000000000000000000
+  0000000000000001000000000000000000000000ba1ba1ba1ba1ba1ba1ba1ba1ba1ba
+  1ba1ba1ba1b0000000000000000000000000000000000000000000000000000000000
+  00001742616c616e6365722038302042414c203230205745544800000000000000000
+  0000000000000000000000000000000000000000000000000000000000000000e422d
+  383042414c2d323057455448000000000000000000000000000000000000  
+```
+
 ### Executing Command
+
+If you left the directory that the `hardhat.config.ts` file was in...
+
+`cd <path/to/monorepo>/pkg/deployments `
+
+
 
