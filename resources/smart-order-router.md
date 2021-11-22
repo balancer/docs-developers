@@ -2,15 +2,15 @@
 
 ## Summary
 
-The objective of this section is to explain the inner workings of SOR v2. [SOR v1 is explained in detail here](https://docs.balancer.finance/smart-contracts/sor).&#x20;
+{% hint style="info" %}
+This section goes over SOR v2. For information on SOR v1, please refer to the [old documentation](https://docs.balancer.fi/v/v1/smart-contracts/sor/).
+{% endhint %}
 
-SOR v2 makes it possible to optimally choose trading routes across different and arbitrary types of pools. This is a major feature that enables Balancer to be the most flexible AMM protocol that exists. Traders however are completely shielded from all the variety of pool types and simply get to benefit from all the aggregated liquidity in the vault.&#x20;
+SOR v2 finds optimal trading routes across different and arbitrary types of pools. This generality enables Balancer to be the most flexible AMM protocol that exists. By abstracting the complexity of various pool types from traders, users can issue swaps within the aggregated liquidity in the Vault and not need to worry about the different pool math involved.
 
-The reason why SOR v1 could not be used for Balancer v2 is that SOR v1 linearizes the `spotPriceAfterSwap` functions for pools. This linearization does not work well with stable pools or other arbitrary pools.
+The only prerequisite for SOR v2 to work with a pool is that it has first and second differentiable (either numerically or analytically)`spotPriceAfterSwap` functions.
 
-The only prerequisite for SOR v2 to work with a pool is that it has first and second (either numerically or analytically) differentiable `spotPriceAfterSwap` functions.
-
-The final objective of SOR is to find a trade that maximizes the return for the user. One requirement for this to be true is that after the swap is done, each of the paths/routes used ends up having the same spot price. This means that there is not arbitrage possible after the trade (at least with the pools used) and therefore no money left on the table.
+The final objective of SOR is to find a trade that maximizes the return for the user. One requirement for this to be true is that after the swap is done, each of the paths/routes used ends up having the same spot price. This means that there is no arbitrage possible after the trade (at least with the pools used) and therefore no money left on the table.
 
 ## Glossary
 
