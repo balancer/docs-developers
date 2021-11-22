@@ -32,6 +32,7 @@
 * [Deploy Pools from Factory](resources/deploy-pools-from-factory/README.md)
   * [Creation](resources/deploy-pools-from-factory/creation.md)
   * [Verification](resources/deploy-pools-from-factory/verification.md)
+* [Smart Order Router](resources/smart-order-router.md)
 
 ## Helpers
 
