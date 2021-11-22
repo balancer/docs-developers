@@ -80,7 +80,7 @@ $$
 
 To help the visualization, this is what we are looking to achieve:
 
-![](broken-reference)
+![](../.gitbook/assets/spotpriceaftertrade.png)
 
 To calculate a candidate for `targetSP` we need to use the derivatives of $$SPaS_1$$ and $$SPaS_2$$ at $$A_1$$ and $$A_2$$ respectively.
 
