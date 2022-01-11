@@ -111,11 +111,11 @@ The first swap is “Given Out,” and the amount is the desired amount of token
 
 After the first swap, the amount of B will be known, and the zero amount in the second swap instructs the multi-hop logic to substitute the calculated amount from the last swap. Since this is “Given In,” the result will be some input amount of token A. (The caller would then validate the overall swap by comparing this value to the maximum amountIn of A.)
 
-| Parameter     | Swap 1    | Swap 2   |
-| ------------- | --------- | -------- |
-| Amount        | 20        | 0        |
-| Swap Kind     | Given Out | Given In |
-| Tokens In/Out | B / C     | B / A    |
+| Parameter     | Swap 1    | Swap 2    |
+| ------------- | --------- | --------  |
+| Amount        | 20        | 0         |
+| Swap Kind     | Given Out | Given Out |
+| Tokens In/Out | B / C     | A / B     |
 
 So in both cases, setting the amount of a swap within a batch to zero causes the multi-hop logic to substitute the calculated amount from the previous swap. If the previous swap was “Given In,” the calculated amount will be the “output” (tokenOut). If the previous swap was “Given Out,” the calculated amount will be the “input” (tokenIn).
 
