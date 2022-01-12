@@ -36,7 +36,7 @@ struct SingleSwap {
 ```
 
 * `poolId`: The id of the pool to trade with.
-* `kind`: The type of swap we want to perform - either "Out given in" or "In given out" where we know the amount of tokens we're sending to the pool and want to know how many we'll receive or vice versa.
+* `kind`: The type of swap we want to perform - either "Out Given In" or "In Given Out." We either know the amount of tokens we're sending to the pool and want to know how many we'll receive, or vice versa.
 * `assetIn`: The address of the token which we are sending to the pool.
 * `assetOut`: The address of the token which we will receive in return.
 * `amount`: The meaning of `amount` depends on the value of `kind`.
