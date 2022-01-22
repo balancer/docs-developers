@@ -30,15 +30,16 @@
 {% endtab %}
 
 {% tab title="Arbitrum" %}
-| Contract                   | Address                                                                                                              |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Vault                      | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://arbiscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8) |
-| WeightedPoolFactory        | [0x7dFdEF5f355096603419239CE743BfaF1120312B](https://arbiscan.io/address/0x7dFdEF5f355096603419239CE743BfaF1120312B) |
-| WeightedPool2TokensFactory | [0xCF0a32Bbef8F064969F21f7e02328FB577382018](https://arbiscan.io/address/0xCF0a32Bbef8F064969F21f7e02328FB577382018) |
-| StablePoolFactory          | [0x2433477A10FC5d31B9513C638F19eE85CaED53Fd](https://arbiscan.io/address/0x2433477A10FC5d31B9513C638F19eE85CaED53Fd) |
-| MetaStablePoolFactory      | [0xEBFD5681977E38Af65A7487DC70B8221D089cCAD](https://arbiscan.io/address/0xEBFD5681977E38Af65A7487DC70B8221D089cCAD) |
-| InvestmentPoolFactory      | [0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c](https://arbiscan.io/address/0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c) |
-| Authorizer                 | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://arbiscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
+| Contract                                       | Address                                                                                                              |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://arbiscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8) |
+| WeightedPoolFactory                            | [0x7dFdEF5f355096603419239CE743BfaF1120312B](https://arbiscan.io/address/0x7dFdEF5f355096603419239CE743BfaF1120312B) |
+| WeightedPool2TokensFactory                     | [0xCF0a32Bbef8F064969F21f7e02328FB577382018](https://arbiscan.io/address/0xCF0a32Bbef8F064969F21f7e02328FB577382018) |
+| StablePoolFactory                              | [0x2433477A10FC5d31B9513C638F19eE85CaED53Fd](https://arbiscan.io/address/0x2433477A10FC5d31B9513C638F19eE85CaED53Fd) |
+| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x1802953277FD955f9a254B80Aa0582f193cF1d77](https://arbiscan.io/address/0x1802953277FD955f9a254B80Aa0582f193cF1d77) |
+| MetaStablePoolFactory                          | [0xEBFD5681977E38Af65A7487DC70B8221D089cCAD](https://arbiscan.io/address/0xEBFD5681977E38Af65A7487DC70B8221D089cCAD) |
+| InvestmentPoolFactory                          | [0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c](https://arbiscan.io/address/0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c) |
+| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://arbiscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
 {% endtab %}
 
 {% tab title="Kovan" %}
