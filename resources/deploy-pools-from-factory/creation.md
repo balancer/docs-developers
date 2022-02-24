@@ -65,7 +65,7 @@ python3 poolCreationSample.py <yourModifiedPoolFile.json>
 ## Deploying a pool with TypeScript
 
 {% hint style="info" %}
-This tutorial will illustrate deploying an **Ethereum** mainnet **WeightedPool** using **hardhat** and **ethers. **It also assumes that you have your artifacts built.&#x20;
+This tutorial will illustrate deploying an **Ethereum** mainnet **WeightedPool** using **hardhat** and **ethers.** It also assumes that you have your artifacts built.&#x20;
 
 Modify accordingly if you wish to deploy a different PoolType, use a different network, or use JS/Buidler/Truffle/etc.
 {% endhint %}

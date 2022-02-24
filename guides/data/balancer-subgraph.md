@@ -61,7 +61,7 @@ formatted_query_string = query_string.format(first=num_pools_to_query, skip=0)
 response = client.execute(gql(formatted_query_string))
 ```
 
-Here, we create a **query\_string **that is written in GraphQL. We request pools with a variety of attributes for each one, specifying the maximum number of pools we want in _this_ request. The **first**/**skip** notation allows us to query pools in batches. We then get a response from the client, formatted as a Python _dict_.&#x20;
+Here, we create a **query\_string** that is written in GraphQL. We request pools with a variety of attributes for each one, specifying the maximum number of pools we want in _this_ request. The **first**/**skip** notation allows us to query pools in batches. We then get a response from the client, formatted as a Python _dict_.&#x20;
 
 #### Request Tokens for each Pool
 
@@ -89,7 +89,7 @@ for pool in response["pools"]:
 print(json.dumps(response["pools"], indent=4))
 ```
 
-Using the list of pools from the previous call, we can now request **poolTokens **data for each pool. The **where** specifier in the query header filters for the specific pool that we're interested in. We can now add the **poolTokens** response into our pool _dict_ to keep all our data in the same structure.&#x20;
+Using the list of pools from the previous call, we can now request **poolTokens** data for each pool. The **where** specifier in the query header filters for the specific pool that we're interested in. We can now add the **poolTokens** response into our pool _dict_ to keep all our data in the same structure.&#x20;
 
 Finally, we print out the data formatted nicely as a json. See below for some sample output data:
 

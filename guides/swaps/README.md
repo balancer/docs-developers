@@ -16,7 +16,7 @@ There is a specific case of Batch Swap called a Flash Swap that enables trades w
 
 ### Single Swaps
 
-You'll want to use **Single Swaps** when you're making a trade between two tokens in one pool. While it's possible to do this with a one-step Batch Swap, using a **Single Swap **will save \~6,000 gas.
+You'll want to use **Single Swaps** when you're making a trade between two tokens in one pool. While it's possible to do this with a one-step Batch Swap, using a **Single Swap** will save \~6,000 gas.
 
 ## What kind of swap should I be using?
 

@@ -52,7 +52,7 @@ enum ExitKind {
 }
 ```
 
-The** first three** types of`ExitKind` apply to the following pools:
+The **first three** types of`ExitKind` apply to the following pools:
 
 * WeightedPool
 * WeightedPool2Tokens

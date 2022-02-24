@@ -2,7 +2,7 @@
 
 ## Why should I use a single swap?
 
-You'll want to use **Single Swaps** when you're making a trade between two tokens in one pool. While it's possible to do this with a one-step Batch Swap, using a **Single Swap **will save \~6,000 gas.
+You'll want to use **Single Swaps** when you're making a trade between two tokens in one pool. While it's possible to do this with a one-step Batch Swap, using a **Single Swap** will save \~6,000 gas.
 
 For additional information, check out the [Single Swap page in Resources](../../resources/swaps/single-swap.md).
 
@@ -85,7 +85,7 @@ const deadline = BigNumber(999999999999999999);
 
 Here, we're specifying that the sender/recipient for the tokens going into/out of the trade are both the account that we initialized the script with. Note that with this granularity, it is possible to make a swap that sends the tokens to a different address.&#x20;
 
-We specify that {**to**/**from**}**InternalBalance **are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
+We specify that {**to**/**from**}**InternalBalance** are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
 
 The deadline for a transaction is the time (in [Unix timestamp](https://www.unixtimestamp.com)) after which it will no longer attempt to make a trade. If a trade expires, it will still take some gas to process the failed transaction, but it will be cheaper than a transaction failing for a different reason.
 
@@ -126,7 +126,7 @@ When setting your token limits, you must know that there are two types of swaps:
 | GIVEN\_IN  | Exact amount of TokenIn you will send     | Same as TokenIn amount                           | Minimum amount of TokenOut you'll accept |
 | GIVEN\_OUT | Exact amount of TokenOut you will receive | Maximum amount of TokenIn you're willing to give | Same as TokenOut amount                  |
 
-In the above example code, we set our **token\_BAL **limit to 0, which means we are willing to accept 100% slippage on our trade. That is generally a very bad idea, but this is an example on the Kovan testnet, so tokens are valueless here.
+In the above example code, we set our **token\_BAL** limit to 0, which means we are willing to accept 100% slippage on our trade. That is generally a very bad idea, but this is an example on the Kovan testnet, so tokens are valueless here.
 
 #### Swap definition
 
@@ -144,7 +144,7 @@ const swap = {
 const swap_kind = 0;
 ```
 
-Next, we define our **swap**. We must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving** **_the pool 1 WETH for an estimated output of BAL. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
+Next, we define our **swap**. We must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving ****_ the pool 1 WETH for an estimated output of BAL. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
 
 #### Building our structs
 
@@ -166,7 +166,7 @@ const fund_struct = {
 };
 ```
 
-When we call the Vault contract, we need to pack our data into structs, specifically the ones here referred to as **swap\_struct **and_ _**fund\_struct**.&#x20;
+When we call the Vault contract, we need to pack our data into structs, specifically the ones here referred to as **swap\_struct** and __ **fund\_struct**.&#x20;
 
 **swap\_struct**s are of type _SingleSwap_, which is defined here:
 
@@ -218,7 +218,7 @@ const single_swap_function = contract_vault.methods.swap(
 );
 ```
 
-Here, we're packing our properly formatted structs and other values into the **swap **function.&#x20;
+Here, we're packing our properly formatted structs and other values into the **swap** function.&#x20;
 
 #### Setting the remaining relevant parameters in an async function
 
@@ -243,7 +243,7 @@ async function buildAndSend() {
     };
 ```
 
-Here, we attempt to estimate a gas price. In the event it fails, 100k gas is a safe estimate for the gas limit on a **swap**. The remaining lines set the **chainId**, **gas**, **gasPrice**, **nonce, data, **and** to** address.&#x20;
+Here, we attempt to estimate a gas price. In the event it fails, 100k gas is a safe estimate for the gas limit on a **swap**. The remaining lines set the **chainId**, **gas**, **gasPrice**, **nonce, data,** and **to** address.&#x20;
 
 #### Sending and viewing the transaction
 
@@ -342,7 +342,7 @@ deadline = 999999999999999999
 
 Here, we're specifying that the sender/recipient for the tokens going into/out of the trade are both the account that we initialized the script with. Note that with this granularity, it is possible to make a swap that sends the tokens to a different address.&#x20;
 
-We specify that {**to**/**from**}**InternalBalance **are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
+We specify that {**to**/**from**}**InternalBalance** are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
 
 The deadline for a transaction is the time (in [Unix timestamp](https://www.unixtimestamp.com)) after which it will no longer attempt to make a trade. If a trade expires, it will still take some gas to process the failed transaction, but it will be cheaper than a transaction failing for a different reason.
 
@@ -382,7 +382,7 @@ When setting your token limits, you must know that there are two types of swaps:
 | GIVEN\_IN  | Exact amount of TokenIn you will send     | Same as TokenIn amount                           | Minimum amount of TokenOut you'll accept |
 | GIVEN\_OUT | Exact amount of TokenOut you will receive | Maximum amount of TokenIn you're willing to give | Same as TokenOut amount                  |
 
-In the above example code, we set our **token\_BAL **limit to 0, which means we are willing to accept 100% slippage on our trade. That is generally a very bad idea, but this is an example on the Kovan testnet, so tokens are valueless here.
+In the above example code, we set our **token\_BAL** limit to 0, which means we are willing to accept 100% slippage on our trade. That is generally a very bad idea, but this is an example on the Kovan testnet, so tokens are valueless here.
 
 #### Swap definition
 
@@ -399,7 +399,7 @@ swap = {
 swap_kind = 0 #0 = GIVEN_IN, 1 = GIVEN_OUT
 ```
 
-Next, we define our **swap**. We must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving** **_the pool 1 WETH for an estimated output of BAL. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
+Next, we define our **swap**. We must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving ****_ the pool 1 WETH for an estimated output of BAL. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
 
 #### Building our structs
 
@@ -424,7 +424,7 @@ fund_struct = (
 
 ```
 
-When we call the Vault contract, we need to pack our data into structs, specifically the ones here referred to as **swap\_struct **and_ _**fund\_struct**.&#x20;
+When we call the Vault contract, we need to pack our data into structs, specifically the ones here referred to as **swap\_struct** and __ **fund\_struct**.&#x20;
 
 **swap\_struct**s are of type _SingleSwap_, which is defined here:
 
@@ -476,7 +476,7 @@ single_swap_function = contract_vault.functions.swap(
 )
 ```
 
-Here, we're packing our properly formatted structs and other values into the **swap **function.&#x20;
+Here, we're packing our properly formatted structs and other values into the **swap** function.&#x20;
 
 #### Setting the remaining relevant parameters
 

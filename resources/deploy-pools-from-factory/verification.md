@@ -22,7 +22,7 @@ There are two techniques for getting the constructor arguments; you can generate
 
 The [poolVerification.py](https://github.com/balancer-labs/balpy/blob/main/samples/poolVerification/poolVerification.py) script generates the encoded constructor arguments as well as the rest of the command you'll need to execute in Step 2 below. To use this script for your pool, **you'll need to set arguments in the script**: `network`, `poolId`, and `creationHash`.&#x20;
 
-* Set the **`network`** to the network your pool is deployed on. This could be `mainnet` for Ethereum mainnet, `kovan`, `rinkeby`, `goerli`, or `polygon`. At the time of writing, arbiscan_ _does not yet support contract verification.&#x20;
+* Set the **`network`** to the network your pool is deployed on. This could be `mainnet` for Ethereum mainnet, `kovan`, `rinkeby`, `goerli`, or `polygon`. At the time of writing, arbiscan __ does not yet support contract verification.&#x20;
 * Each pool has a unique **`poolId`**. If you don't know where to find a `poolId`, check out [this note about `poolId`s](../pool-interfacing/#poolids).&#x20;
 * The pool's **`creationHash`** is **optional** for most networks, but currently **mandatory for `polygon`**. (The polygonscan API does not currently support the necessary `txlistinternal` query to fetch this hash.)
 
@@ -49,7 +49,7 @@ creationHash = "0x18c7e1c9235c6e93878e55a87ed249f9d0ceb9d12ee584794e92f80f764568
 {% hint style="warning" %}
 There have been a few isolated cases where the arguments balpy generated did not successfully verify the pool. If you get a failure when sending to Etherscan, try again, or try getting arguments from Tenderly.
 
-**If you've successfully generated the constructor arguments with balpy, you can continue to **[**Step 2**](verification.md#undefined)**; you do not need to do anything on Tenderly.**
+**If you've successfully generated the constructor arguments with balpy, you can continue to** [**Step 2**](verification.md#undefined)**; you do not need to do anything on Tenderly.**
 {% endhint %}
 
 ### Pulling Data From Tenderly
@@ -131,7 +131,7 @@ export default {
 };
 ```
 
-Edit the file for your given network, RPC** **url, and private key. **DO NOT PUT YOUR KEY IN THE FILE! Use an environment variable instead!**
+Edit the file for your given network, RPC **** url, and private key. **DO NOT PUT YOUR KEY IN THE FILE! Use an environment variable instead!**
 
 ```
 mocha: {

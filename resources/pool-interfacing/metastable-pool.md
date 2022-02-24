@@ -111,6 +111,6 @@ and the results will resemble one of the following:
   expires   uint256 :  0
 ```
 
-In these samples, you can see that the token **with a Price Rate **has a `duration` of 10800 seconds (3 hours) and an expiration timestamp. The `rate` is cached exactly as it comes from the `RateProvider`. It's possible that a token price may need to be decimal adjusted for the price rate to make sense.
+In these samples, you can see that the token **with a Price Rate** has a `duration` of 10800 seconds (3 hours) and an expiration timestamp. The `rate` is cached exactly as it comes from the `RateProvider`. It's possible that a token price may need to be decimal adjusted for the price rate to make sense.
 
 For the token **without a Price Rate**, the `rate` is not actually interpreted as 0, but rather as `1000000000000000000` = $$1e18$$.

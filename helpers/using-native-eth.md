@@ -34,7 +34,7 @@ When joining or exiting a pool, you have to construct a `JoinPoolRequest` or `Ex
 address[] assets
 ```
 
-As you'll find in the documentation for [Joins and Exits](../resources/joins-and-exits/), this array must be sorted numerically; there is a caveat here though. If you wish to join with or exit to Native ETH, you need to **order the array** **as if you're dealing with WETH**.** **Note that it is not possible to combine ETH and WETH in the same join/exit; any excess ETH will be sent back to the caller (not the sender, which is important for relayers).
+As you'll find in the documentation for [Joins and Exits](../resources/joins-and-exits/), this array must be sorted numerically; there is a caveat here though. If you wish to join with or exit to Native ETH, you need to **order the array** **as if you're dealing with WETH**. **** Note that it is not possible to combine ETH and WETH in the same join/exit; any excess ETH will be sent back to the caller (not the sender, which is important for relayers).
 
 #### Correctly Ordered Example with WETH
 

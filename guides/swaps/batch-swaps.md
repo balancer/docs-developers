@@ -91,7 +91,7 @@ const deadline = BigNumber(999999999999999999);
 
 Here, we're specifying that the sender/recipient for the tokens going into/out of the trade are both the account that we initialized the script with. Note that with this granularity, it is possible to make a swap that sends the tokens to a different address.&#x20;
 
-We specify that {**to**/**from**}**InternalBalance **are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
+We specify that {**to**/**from**}**InternalBalance** are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
 
 The deadline for a transaction is the time (in [Unix timestamp](https://www.unixtimestamp.com)) after which it will no longer attempt to make a trade. If a trade expires, it will still take some gas to process the failed transaction, but it will be cheaper than a transaction failing for a different reason.
 
@@ -159,9 +159,9 @@ const swap_steps = [
 const swap_kind = 0;
 ```
 
-Next, we define our **swap\_steps**. Each step in this list is its own swap with a pool. The first step here is clearly a swap of **100 USDC** for **WETH **in **pool\_WETH\_USDC**. The second step is less obvious. You may notice that the **amount **in the second swap is **0**. Here, the **0** value is used to say "take the output of the previous swap and use it as my input." The reason for this is that the expected output of the trade could change slightly between the times that the trade is requested and when it is actually executed.&#x20;
+Next, we define our **swap\_steps**. Each step in this list is its own swap with a pool. The first step here is clearly a swap of **100 USDC** for **WETH** in **pool\_WETH\_USDC**. The second step is less obvious. You may notice that the **amount** in the second swap is **0**. Here, the **0** value is used to say "take the output of the previous swap and use it as my input." The reason for this is that the expected output of the trade could change slightly between the times that the trade is requested and when it is actually executed.&#x20;
 
-We also must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving** **_the pool 100 USDC for an estimated output. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
+We also must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving ****_ the pool 100 USDC for an estimated output. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
 
 #### Token ordering
 
@@ -174,7 +174,7 @@ for (var i = 0; i < token_addresses.length; i++) {
 }
 ```
 
-Token ordering is very important in the Balancer Vault; each pool stores its tokens sorted numerically. Because of this, we will need to sort our own token lists when interacting with pools. When calling the contract itself, we must refer to the tokens **by their index** in this sorted list. The **token\_indicies **loop creates a dictionary that gives us each token's index in a sorted list to make the bookkeeping easier.
+Token ordering is very important in the Balancer Vault; each pool stores its tokens sorted numerically. Because of this, we will need to sort our own token lists when interacting with pools. When calling the contract itself, we must refer to the tokens **by their index** in this sorted list. The **token\_indicies** loop creates a dictionary that gives us each token's index in a sorted list to make the bookkeeping easier.
 
 #### Building our structs
 
@@ -199,7 +199,7 @@ const fund_struct = {
 };
 ```
 
-When we call the Vault contract, we need to pack our data into structs, specifically the ones here referred to as **swap\_steps\_struct **and_ _**fund\_struct**s.&#x20;
+When we call the Vault contract, we need to pack our data into structs, specifically the ones here referred to as **swap\_steps\_struct** and __ **fund\_struct**s.&#x20;
 
 **swap\_steps\_struct** are of type _BatchSwapStep_, which is defined here:
 
@@ -257,7 +257,7 @@ const batch_swap_function = contract_vault.methods.batchSwap(
 );
 ```
 
-Here, we're packing our properly formatted structs and other values into the **batchSwap **function.&#x20;
+Here, we're packing our properly formatted structs and other values into the **batchSwap** function.&#x20;
 
 #### Setting the remaining relevant parameters in an async method
 
@@ -282,7 +282,7 @@ async function buildAndSend() {
     };
 ```
 
-Here, we attempt to estimate a gas price. In the event it fails, 200k gas is a safe estimate for the gas limit on a two-swap **batchSwap**. The remaining lines set the **chainId**, **gas**, **gasPrice**, **nonce, data, **and** to** address.&#x20;
+Here, we attempt to estimate a gas price. In the event it fails, 200k gas is a safe estimate for the gas limit on a two-swap **batchSwap**. The remaining lines set the **chainId**, **gas**, **gasPrice**, **nonce, data,** and **to** address.&#x20;
 
 #### Sending and viewing the transaction
 
@@ -381,7 +381,7 @@ deadline = 999999999999999999
 
 Here, we're specifying that the sender/recipient for the tokens going into/out of the trade are both the account that we initialized the script with. Note that with this granularity, it is possible to make a swap that sends the tokens to a different address.&#x20;
 
-We specify that {**to**/**from**}**InternalBalance **are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
+We specify that {**to**/**from**}**InternalBalance** are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
 
 The deadline for a transaction is the time (in [Unix timestamp](https://www.unixtimestamp.com)) after which it will no longer attempt to make a trade. If a trade expires, it will still take some gas to process the failed transaction, but it will be cheaper than a transaction failing for a different reason.
 
@@ -446,9 +446,9 @@ swap_steps = [
 swap_kind = 0 #0 = GIVEN_IN, 1 = GIVEN_OUT
 ```
 
-Next, we define our **swap\_steps**. Each step in this list is its own swap with a pool. The first step here is clearly a swap of **100 USDC** for **WETH **in **pool\_WETH\_USDC**. The second step is less obvious. You may notice that the **amount **in the second swap is **0**. Here, the **0** value is used to say "take the output of the previous swap and use it as my input." The reason for this is that the expected output of the trade could change slightly between the times that the trade is requested and when it is actually executed.&#x20;
+Next, we define our **swap\_steps**. Each step in this list is its own swap with a pool. The first step here is clearly a swap of **100 USDC** for **WETH** in **pool\_WETH\_USDC**. The second step is less obvious. You may notice that the **amount** in the second swap is **0**. Here, the **0** value is used to say "take the output of the previous swap and use it as my input." The reason for this is that the expected output of the trade could change slightly between the times that the trade is requested and when it is actually executed.&#x20;
 
-We also must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving** **_the pool 100 USDC for an estimated output. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
+We also must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving ****_ the pool 100 USDC for an estimated output. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
 
 #### Token ordering
 
@@ -458,7 +458,7 @@ token_addresses.sort()
 token_indices = {token_addresses[idx]:idx for idx in range(len(token_addresses))}
 ```
 
-Token ordering is very important in the Balancer Vault; each pool stores its tokens sorted numerically. Because of this, we will need to sort our own token lists when interacting with pools. When calling the contract itself, we must refer to the tokens **by their index** in this sorted list. The **token\_indicies **line creates a dictionary that gives us each token's index in a sorted list to make the bookkeeping easier.
+Token ordering is very important in the Balancer Vault; each pool stores its tokens sorted numerically. Because of this, we will need to sort our own token lists when interacting with pools. When calling the contract itself, we must refer to the tokens **by their index** in this sorted list. The **token\_indicies** line creates a dictionary that gives us each token's index in a sorted list to make the bookkeeping easier.
 
 #### Building our structs
 
@@ -483,7 +483,7 @@ fund_struct = (
 )
 ```
 
-When we call the Vault contract, we need to pack our data into structs, specifically the ones here referred to as **swap\_step\_structs **and_ _**fund\_struct**s.&#x20;
+When we call the Vault contract, we need to pack our data into structs, specifically the ones here referred to as **swap\_step\_structs** and __ **fund\_struct**s.&#x20;
 
 **swap\_step\_structs** are of type _BatchSwapStep_, which is defined here:
 
@@ -537,7 +537,7 @@ batch_swap_function = contract_vault.functions.batchSwap(
 )
 ```
 
-Here, we're packing our properly formatted structs and other values into the **batchSwap **function.&#x20;
+Here, we're packing our properly formatted structs and other values into the **batchSwap** function.&#x20;
 
 #### Setting the remaining relevant parameters
 
