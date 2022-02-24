@@ -11,7 +11,7 @@ These docs are intended for anyone who is interfacing with or building on top of
 * [Pool Interfacing](resources/pool-interfacing/)
 * [Deploying a Pool](resources/deploy-pools-from-factory/)
 * [Subgraph](references/subgraphs.md)
-* [Encoding `userData`](helpers/encoding.md)``
+* [Encoding `userData`](helpers/encoding.md)
 
 ## Can't find something?
 
