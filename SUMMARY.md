@@ -9,6 +9,11 @@
   * [Single Swaps](guides/swaps/single-swaps.md)
 * [Data](guides/data/README.md)
   * [Balancer Subgraph](guides/data/balancer-subgraph.md)
+* [Tour of Balancer Vault](guides/tour-of-balancer-vault/README.md)
+  * [Episode 1: The batchSwap](guides/tour-of-balancer-vault/episode-1-the-batchswap.md)
+  * [Episode 2: Joins](guides/tour-of-balancer-vault/episode-2-joins/README.md)
+    * [Detour: The INIT Join](guides/tour-of-balancer-vault/episode-2-joins/detour-the-init-join.md)
+  * [Episode 3: Deploying a Pool](guides/tour-of-balancer-vault/episode-3-deploying-a-pool.md)
 
 ## Resources
 
