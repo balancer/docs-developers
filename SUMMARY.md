@@ -35,7 +35,10 @@
   * [Single Swap](resources/swaps/single-swap.md)
   * [Flash Swaps](resources/swaps/flash-swaps.md)
 * [Deploy Pools from Factory](resources/deploy-pools-from-factory/README.md)
-  * [Creation](resources/deploy-pools-from-factory/creation.md)
+  * [Creation](resources/deploy-pools-from-factory/creation/README.md)
+    * [WeightedPool](resources/deploy-pools-from-factory/creation/weightedpool.md)
+    * [StablePool](resources/deploy-pools-from-factory/creation/stablepool.md)
+    * [MetaStable Pool](resources/deploy-pools-from-factory/creation/metastable-pool.md)
   * [Verification](resources/deploy-pools-from-factory/verification.md)
 * [Smart Order Router](resources/smart-order-router.md)
 

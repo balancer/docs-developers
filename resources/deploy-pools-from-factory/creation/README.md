@@ -6,21 +6,35 @@
 Before creating a new pool, make sure there isn't already a similar pool; there's no advantage to fragmenting liquidity!
 {% endhint %}
 
-Anyone can create a pool on Balancer. A pool creation UI is in progress, but users can deploy them today programmatically. It's **highly recommended** that you deploy a pool on a **testnet** before doing so on a production network.
+Anyone can create a pool on Balancer. WeightedPools can be deployed using the [Pool Creator Interface](https://app.balancer.fi/#/pool/create) ([Polygon link](https://polygon.balancer.fi/#/pool/create)) ([Arbitrum link](https://arbitrum.balancer.fi/#/pool/create)), but users can deploy any pools programmatically. It's **highly recommended** that you deploy a pool on a **testnet** before doing so on a production network.
 
 ## What kind of pool should I deploy?
 
 That totally depends on your use-case. You should read through the [descriptions of different Balancer PoolTypes](https://docs.balancer.fi/products/balancer-pools) to decide what you want to deploy.
 
+## Common Arguments
+
+`name` - The name of the pool corresponding Balancer Pool Token (BPT)
+
+`symbol` - The short symbol for the BPT
+
+`tokens` - A numerically sorted array of all tokens in the pool
+
+`swapFeePercentage` - How much of a swap fee the pool collects ([more below](./#fees))
+
+`owner` - The "owner" of the pool: account that has some limited control over pool parameters ([more below](./#owner-rights))
+
 ## Fees and Owners
 
 Two factors your should consider before deploying your pool are how fees and owners should be set. Pools can have static fees or dynamic fees, read [more about them in the main docs](https://docs.balancer.fi/concepts/fees#static-and-dynamic-fees).
 
-### Static Fees
+### Fees
+
+#### Static Fees
 
 If you want static fees, you should set the fee you want the pool to have forever, and set the `owner` to the zero address `0x0000000000000000000000000000000000000000`.
 
-### Dynamic Fees
+#### Dynamic Fees
 
 If you want dynamic fees, you should set the fee to an initial value, and set the `owner` either as the address that you want to control the pool fee, or to the delegate address. An address that is set as the owner has permission to set the fee to anything between 0.0001% and 10% whenever they want.
 
@@ -30,15 +44,15 @@ If the pool owner is set to the delegate address (`0xBA1BA1ba1BA1bA1bA1Ba1BA1ba1
 
 Aside from setting swap fees, pool owners have other right on some pools that may play a role when deciding on an owner.&#x20;
 
-* [Stable Pools](../../references/contracts/apis/pools/stablepools.md#permissioned-functions)
+* [Stable Pools](../../../references/contracts/apis/pools/stablepools.md#permissioned-functions)
   * Changing `ampParameter`
-* [MetaStable Pools](../../references/contracts/apis/pools/metastablepools.md#permissioned-functions)
+* [MetaStable Pools](../../../references/contracts/apis/pools/metastablepools.md#permissioned-functions)
   * Changing `ampParameter`
   * Changing `cacheDuration`
-* [Liquidity Bootstrapping Pools](../../references/contracts/apis/pools/liquiditybootstrappingpool.md#permissioned-functions)
+* [Liquidity Bootstrapping Pools](../../../references/contracts/apis/pools/liquiditybootstrappingpool.md#permissioned-functions)
   * Changing `swapEnable`
   * Changing weights
-* [Investment Pools](../../references/contracts/apis/pools/investmentpools.md#permissioned-functions)
+* [Investment Pools](../../../references/contracts/apis/pools/investmentpools.md#permissioned-functions)
   * Changing `swapEnable`
   * Changing weights
   * Collecting management fees
@@ -142,7 +156,7 @@ for (var i in tokens) {
 }
 ```
 
-Now we must join the pool using a `JoinKind` of type `INIT` ([more info on the different types of `JoinKind`](../joins-and-exits/pool-joins.md)). This requires a list of `initialBalances`, which must be in the **same order as the sorted token addresses**. We must [encode the userData](../../helpers/encoding.md) for our join. We then call `joinPool` on the `Vault`, since that is where all tokens are held.
+Now we must join the pool using a `JoinKind` of type `INIT` ([more info on the different types of `JoinKind`](../../joins-and-exits/pool-joins.md)). This requires a list of `initialBalances`, which must be in the **same order as the sorted token addresses**. We must [encode the userData](../../../helpers/encoding.md) for our join. We then call `joinPool` on the `Vault`, since that is where all tokens are held.
 
 ```
 // Construct userData
