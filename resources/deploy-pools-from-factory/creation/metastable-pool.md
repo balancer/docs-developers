@@ -2,7 +2,7 @@
 
 ## Common Arguments
 
-In addition to the arguments listed before, you should also consider the [common arguments](./#common-arguments) and [those of the StablePool](stablepool.md) when creating a MetaStable Pool.&#x20;
+In addition to the arguments listed below, you should also consider the [common arguments](./#common-arguments) and [those of the StablePool](stablepool.md) when creating a MetaStable Pool.&#x20;
 
 ## Pool Creation Arguments
 

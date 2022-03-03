@@ -39,6 +39,7 @@
     * [WeightedPool](resources/deploy-pools-from-factory/creation/weightedpool.md)
     * [StablePool](resources/deploy-pools-from-factory/creation/stablepool.md)
     * [MetaStable Pool](resources/deploy-pools-from-factory/creation/metastable-pool.md)
+    * [Liquidity Bootstrapping Pool](resources/deploy-pools-from-factory/creation/liquidity-bootstrapping-pool.md)
   * [Verification](resources/deploy-pools-from-factory/verification.md)
 * [Smart Order Router](resources/smart-order-router.md)
 
