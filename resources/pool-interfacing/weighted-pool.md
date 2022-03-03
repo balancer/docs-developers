@@ -4,7 +4,7 @@
 
 For advantages and use cases of Weighted Pools, please refer to [the standard documentation](https://docs.balancer.fi/products/balancer-pools/weighted-pools).
 
-For more interfaces, see the [WeightedPool API](../../references/contracts/apis/pools/weightedpool.md#api) and [WeightedPool2Tokens ("Oracle Pool") API](../../references/contracts/apis/pools/weightedpool2tokens.md#api).
+For more interfaces, see the [WeightedPool API](../../references/contracts/apis/pools/weightedpool.md#api) and [WeightedPool2Tokens API](../../references/contracts/apis/pools/weightedpool2tokens.md#api).
 
 ## Interfacing
 
@@ -34,3 +34,7 @@ returns something resembling
 ```
 
 which are the weights represented with 18 decimals. A pool with 80%/20% weights corresponds to \[0.8, 0.2] after scaling for decimals.
+
+### Oracle Data
+
+To query oracle data from a pool of type `WeightedPool2Tokens`, refer to the [Oracle Pools ](oracle-pools.md#overview)interfacing page.&#x20;

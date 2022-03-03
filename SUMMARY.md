@@ -23,6 +23,7 @@
   * [MetaStable Pool](resources/pool-interfacing/metastable-pool.md)
   * [Liquidity Bootstrapping Pool](resources/pool-interfacing/liquidity-bootstrapping-pool.md)
   * [Managed Pools](resources/pool-interfacing/managed-pools.md)
+  * [Oracle Pools](resources/pool-interfacing/oracle-pools.md)
 * [Pool Math](resources/pool-math/README.md)
   * [Weighted Math](resources/pool-math/weighted-math.md)
   * [Stable Math](resources/pool-math/stable-math.md)
