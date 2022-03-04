@@ -266,9 +266,14 @@ queryBatchSwap(
 returns (int256[] assetDeltas)
 ```
 
-The `queryBatchSwap` method executes the exact same code as `batchSwap` - but reverts at the end. This is for GUIs or scripts to calculate a "dry run" of a sequence of swaps.
+The `queryBatchSwap` method executes the exact same code as `batchSwap` - but reverts at the end. This is for GUIs or scripts to calculate a "dry run" of a sequence of swaps. Implemented in `Swaps`.
 
-Implemented in `Swaps.`
+{% hint style="warning" %}
+`queryBatchSwap` is **not** defined as a `view` function even though that is a common use case. To use it as such, you need to use `eth_call` instead of `eth_sendTransaction`.
+
+For example in `ethers.js`, the command would look something like:\
+`const quote = await vault.callStatic.queryBatchSwap(0, [swap0, swap1], assets, funds);`
+{% endhint %}
 
 ## Flash Loans
 
