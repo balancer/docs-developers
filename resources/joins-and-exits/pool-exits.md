@@ -1,5 +1,9 @@
 # Pool Exits
 
+{% hint style="info" %}
+Calls to `exitPool()` are made on the Vault contract! You cannot send this command directly to a pool.
+{% endhint %}
+
 ## API
 
 ```cpp

@@ -1,5 +1,9 @@
 # Pool Joins
 
+{% hint style="info" %}
+Calls to `joinPool()` are made on the Vault contract! You cannot send this command directly to a pool.
+{% endhint %}
+
 ## API
 
 ```cpp
@@ -106,4 +110,4 @@ Applies to:
   * userData ABI
     * `['uint256', 'uint256']`
   * userData
-    * `[ALL_TOKENS_IN_FOR_EXACT_BPT_OUT, bptAmountOut]    `
+    * `[ALL_TOKENS_IN_FOR_EXACT_BPT_OUT, bptAmountOut]`   &#x20;
