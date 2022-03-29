@@ -38,9 +38,12 @@
 * [Deploy Pools from Factory](resources/deploy-pools-from-factory/README.md)
   * [Creation](resources/deploy-pools-from-factory/creation/README.md)
     * [WeightedPool](resources/deploy-pools-from-factory/creation/weightedpool.md)
+    * [StablePhantom Pool](resources/deploy-pools-from-factory/creation/stablephantom-pool.md)
+    * [Liquidity Bootstrapping Pool](resources/deploy-pools-from-factory/creation/liquidity-bootstrapping-pool.md)
+    * [AaveLinearPool](resources/deploy-pools-from-factory/creation/aavelinearpool.md)
+    * [AaveBoosted MetaPool](resources/deploy-pools-from-factory/creation/aaveboosted-metapool.md)
     * [StablePool](resources/deploy-pools-from-factory/creation/stablepool.md)
     * [MetaStable Pool](resources/deploy-pools-from-factory/creation/metastable-pool.md)
-    * [Liquidity Bootstrapping Pool](resources/deploy-pools-from-factory/creation/liquidity-bootstrapping-pool.md)
   * [Verification](resources/deploy-pools-from-factory/verification.md)
 * [Smart Order Router](resources/smart-order-router.md)
 

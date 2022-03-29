@@ -1,5 +1,12 @@
 # StablePool
 
+{% hint style="warning" %}
+This is a page for the original implementation of the StablePool. While it is valid to use one of these pools, it is advantageous to use the more flexible StablePhantomPool in many cases.
+
+* Support for swapping tokens that are not necessarily pegged 1:1 with the use of `rateProviders`
+* Support for nesting BPT with the use of Phantom BPT; pool join/exit operations are done with swaps
+{% endhint %}
+
 ## Common Arguments
 
 In addition to the arguments listed below, you should also consider the [common arguments](./#common-arguments) when creating a pool.&#x20;

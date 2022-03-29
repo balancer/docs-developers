@@ -1,14 +1,8 @@
-# MetaStable Pool
-
-{% hint style="warning" %}
-This is a page for the original implementation of the MetaStable Pool. While it is valid to use one of these pools, it is advantageous to use the more flexible StablePhantomPool in many cases.
-
-* Support for nesting BPT with the use of Phantom BPT; pool join/exit operations are done with swaps
-{% endhint %}
+# StablePhantom Pool
 
 ## Common Arguments
 
-In addition to the arguments listed below, you should also consider the [common arguments](./#common-arguments) and [those of the StablePool](stablepool.md) when creating a MetaStable Pool.&#x20;
+In addition to the arguments listed below, you should also consider the [common arguments](./#common-arguments) and [those of the StablePool](stablepool.md) when creating a StablePhantom Pool.&#x20;
 
 ## Pool Creation Arguments
 
