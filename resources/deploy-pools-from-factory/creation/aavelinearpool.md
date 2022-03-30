@@ -12,7 +12,7 @@ AaveLinearPools facilitate trades between token/waToken. They can only be deploy
 * Deploy AaveLinearPool
 
 {% hint style="info" %}
-Want to arbitrage your AaveLinearPool in order to keep it within the desired balance range? [Here's an example contract](https://etherscan.io/address/0x1ed9c8bd3dccb85f704a5287444b552f9d5e1a26#code) that takes a Flashloan from Uniswap and rebalances the Token/aToken between Aave and the AaveLinearPool.
+Want to arbitrage an AaveLinearPool in order to keep it within the desired balance range? [Here's an example contract](https://etherscan.io/address/0x1ed9c8bd3dccb85f704a5287444b552f9d5e1a26#code) that takes a Flashloan from Uniswap and rebalances the Token/aToken between Aave and the AaveLinearPool.
 {% endhint %}
 
 ## Aave aToken Wrapper
