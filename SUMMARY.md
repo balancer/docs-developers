@@ -17,6 +17,16 @@
 
 ## Resources
 
+* [Deploy Pools from Factory](resources/deploy-pools-from-factory/README.md)
+  * [Creation](resources/deploy-pools-from-factory/creation/README.md)
+    * [WeightedPool](resources/deploy-pools-from-factory/creation/weightedpool.md)
+    * [StablePhantom Pool](resources/deploy-pools-from-factory/creation/stablephantom-pool.md)
+    * [Liquidity Bootstrapping Pool](resources/deploy-pools-from-factory/creation/liquidity-bootstrapping-pool.md)
+    * [AaveLinearPool](resources/deploy-pools-from-factory/creation/aavelinearpool.md)
+    * [AaveBoosted MetaPool](resources/deploy-pools-from-factory/creation/aaveboosted-metapool.md)
+    * [StablePool](resources/deploy-pools-from-factory/creation/stablepool.md)
+    * [MetaStable Pool](resources/deploy-pools-from-factory/creation/metastable-pool.md)
+  * [Verification](resources/deploy-pools-from-factory/verification.md)
 * [Pool Interfacing](resources/pool-interfacing/README.md)
   * [Weighted Pool](resources/pool-interfacing/weighted-pool.md)
   * [Stable Pool](resources/pool-interfacing/stable-pool.md)
@@ -30,22 +40,13 @@
 * [Joins and Exits](resources/joins-and-exits/README.md)
   * [Pool Joins](resources/joins-and-exits/pool-joins.md)
   * [Pool Exits](resources/joins-and-exits/pool-exits.md)
-* [Internal User Balances](resources/internal-user-balances.md)
 * [Swaps](resources/swaps/README.md)
   * [Batch Swaps](resources/swaps/batch-swaps.md)
   * [Single Swap](resources/swaps/single-swap.md)
   * [Flash Swaps](resources/swaps/flash-swaps.md)
-* [Deploy Pools from Factory](resources/deploy-pools-from-factory/README.md)
-  * [Creation](resources/deploy-pools-from-factory/creation/README.md)
-    * [WeightedPool](resources/deploy-pools-from-factory/creation/weightedpool.md)
-    * [StablePhantom Pool](resources/deploy-pools-from-factory/creation/stablephantom-pool.md)
-    * [Liquidity Bootstrapping Pool](resources/deploy-pools-from-factory/creation/liquidity-bootstrapping-pool.md)
-    * [AaveLinearPool](resources/deploy-pools-from-factory/creation/aavelinearpool.md)
-    * [AaveBoosted MetaPool](resources/deploy-pools-from-factory/creation/aaveboosted-metapool.md)
-    * [StablePool](resources/deploy-pools-from-factory/creation/stablepool.md)
-    * [MetaStable Pool](resources/deploy-pools-from-factory/creation/metastable-pool.md)
-  * [Verification](resources/deploy-pools-from-factory/verification.md)
+* [Internal User Balances](resources/internal-user-balances.md)
 * [Smart Order Router](resources/smart-order-router.md)
+* [Flash Loans](resources/flash-loans.md)
 
 ## Helpers
 
