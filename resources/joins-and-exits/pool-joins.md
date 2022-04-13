@@ -28,7 +28,7 @@ JoinPoolRequest(
 * `sender` - Address sending tokens to the pool
 * `recipient` - Address receiving BPT (usually the same as sender)
 * `request` - JoinPoolRequest tuple made up of the following:
-  * `assets` - List of your tokens, ordered (see below)
+  * `assets` - Sorted list of all tokens in pool (see below)
   * `maxAmountsIn` - Maximum token send amounts (see below)
   * `userData` - Custom bytes field (see below)
   * `fromInternalBalance` - `True` if sending from internal token balances. `False` if sending ERC20.
