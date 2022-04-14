@@ -6,9 +6,11 @@ In addition to the arguments listed below, you should also consider the [common 
 
 {% hint style="warning" %}
 When performing an INIT join on a StablePhantom Pool, **you must include the BPT of the pool itself** as one of the `tokens` you provide. The amount you should pass for this token is the max UINT112 `(2**112 - 1)`. This is an artifact of the pool holding its own pre-minted, or "Phantom," BPT.&#x20;
+
+
+
+After performing the `INIT` join, any other join on the pool will fail; with Phantom BPT, all _effective_ joins and exits are done via swapping to/from BPT within the pool.
 {% endhint %}
-
-
 
 ## Pool Creation Arguments
 
