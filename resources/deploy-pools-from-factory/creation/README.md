@@ -8,9 +8,25 @@ Before creating a new pool, make sure there isn't already a similar pool; there'
 
 Anyone can create a pool on Balancer. WeightedPools can be deployed using the [Pool Creator Interface](https://app.balancer.fi/#/pool/create) ([Polygon link](https://polygon.balancer.fi/#/pool/create)) ([Arbitrum link](https://arbitrum.balancer.fi/#/pool/create)), but users can deploy any pools programmatically. It's **highly recommended** that you deploy a pool on a **testnet** before doing so on a production network.
 
+You can deploy most if not all pools with balpy's `poolCreation` script -- [more info](./#deploying-a-pool-with-balpy).
+
 ## What kind of pool should I deploy?
 
 That totally depends on your use-case. You should read through the [descriptions of different Balancer PoolTypes](https://docs.balancer.fi/products/balancer-pools) to decide what you want to deploy.
+
+## Deployment Process Summary
+
+### Step 1: Deploy the Pool From Factory
+
+Each `poolType` has a factory from which users can deploy new pools. To deploy a pool, you must call that factory's `create()` function with the arguments that correspond to that specific pool. The below section goes over common arguments, and the subpages in this section go further into detail for the pool-specific arguments.
+
+### Step 2: Add liquidity with the `INIT` join
+
+The `INIT` join can be done only once when the pool have a BPT `totalSupply` of 0. Almost all pools require you to use a `JoinKind` of type `INIT` before you can use the pool.
+
+{% hint style="info" %}
+Linear Pools are an exception to this rule; you can swap into the pool right away to receive BPT out.&#x20;
+{% endhint %}
 
 ## Common Arguments
 
@@ -67,6 +83,8 @@ The Balancer Python library [balpy](https://pypi.org/project/balpy/) supports de
 * Liquidity Bootstrapping Pools
 * MetaStable Pools
 * Investment Pools
+* AaveLinear Pools
+* StablePhantom Pools
 
 More pools configs will be added as new factories are deployed.&#x20;
 
