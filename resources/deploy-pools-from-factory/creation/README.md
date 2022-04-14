@@ -28,6 +28,10 @@ The `INIT` join can be done only once when the pool have a BPT `totalSupply` of 
 Linear Pools are an exception to this rule; you can swap into the pool right away to receive BPT out.&#x20;
 {% endhint %}
 
+{% hint style="warning" %}
+While StablePhantom Pools do use `INIT` joins, they require that in addition to the "normal" tokens, you must also pass the pools own BPT in a quantity of `2**112-1`.
+{% endhint %}
+
 ## Common Arguments
 
 `name` - The name of the pool corresponding Balancer Pool Token (BPT)
