@@ -4,6 +4,10 @@
 
 In addition to the arguments listed below, you should also consider the [common arguments](./#common-arguments) and [those of the StablePool](stablepool.md) when creating a StablePhantom Pool.&#x20;
 
+{% hint style="warning" %}
+When performing an INIT join on a StablePhantom Pool, **you must include the BPT of the pool itself** as one of the `tokens` you provide. The amount you should pass for this token is the max UINT112 `(2**112 - 1)`.
+{% endhint %}
+
 ## Pool Creation Arguments
 
 ### `rateProvider`s
