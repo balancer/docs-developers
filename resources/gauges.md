@@ -60,3 +60,50 @@ pendingToken = gauge.claimable_rewards(userAddress, tokenAddress).call();
 {% hint style="warning" %}
 On Polygon and Arbitrum, the Gauges treat BAL the same as any other "reward" token, therefore instead of calling `claimable_tokens` __ on those networks, you will use `claimable_rewards` __ and pass in that network's BAL address.
 {% endhint %}
+
+## What Tokens Exist for a Certain Gauge?
+
+### Sample Query
+
+```
+{
+liquidityGauges(where:{
+    poolId: "0x32296969ef14eb0c6d29669c550d4a0449130230000200000000000000000080"
+  })
+  {
+    id
+    tokens {
+      id
+      symbol
+      decimals
+      totalDeposited
+    }
+  }
+}
+```
+
+### Sample Response
+
+```
+{
+  "data": {
+    "liquidityGauges": [
+      {
+        "id": "0xcd4722b7c24c29e0413bdcd9e51404b4539d14ae",
+        "tokens": [
+          {
+            "id": "0x5a98fcbea516cf06857215779fd812ca3bef1b32-0xcd4722b7c24c29e0413bdcd9e51404b4539d14ae",
+            "symbol": "LDO",
+            "decimals": 18,
+            "totalDeposited": "150000"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+{% hint style="warning" %}
+Be aware that if there are no tokens other than BAL for a given Gauge, the tokens array will come back empty.
+{% endhint %}
