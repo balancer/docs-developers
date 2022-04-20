@@ -1,6 +1,6 @@
 # Gauges
 
-## How do I query pending tokens for a given pool?
+## How to Query Pending Tokens for a Given Pool?
 
 The process differs slightly depending on if we're on Ethereum mainnet or an alternate network (ie Polygon, Arbitrum). No matter the network though, we need to first start at the relevant subgraph:
 
