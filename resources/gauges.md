@@ -1,0 +1,62 @@
+# Gauges
+
+## How do I query pending tokens for a given pool?
+
+The process differs slightly depending on if we're on Ethereum mainnet or an alternate network (ie Polygon, Arbitrum). No matter the network though, we need to first start at the relevant subgraph:
+
+* [Ethereum Gauges Subgraph](https://thegraph.com/hosted-service/subgraph/balancer-labs/balancer-gauges)&#x20;
+* [Polygon Gauges Subgraph](https://thegraph.com/hosted-service/subgraph/balancer-labs/balancer-gauges-polygon)
+* [Arbitrum Gauges Subgraph](https://thegraph.com/hosted-service/subgraph/balancer-labs/balancer-gauges-arbitrum)
+
+### Example
+
+Let's start with the [bb-a-USD pool](https://app.balancer.fi/#/pool/0x7b50775383d3d6f0215a8f290f2c9e2eebbeceb20000000000000000000000fe) on Ethereum
+
+`0x7b50775383d3d6f0215a8f290f2c9e2eebbeceb20000000000000000000000fe`
+
+#### Query the Gauges Subgraph:
+
+```
+{
+liquidityGauges(where:{
+    poolId: "0x7b50775383d3d6f0215a8f290f2c9e2eebbeceb20000000000000000000000fe"
+  })
+  {
+    id
+  }
+}
+```
+
+#### Result:
+
+```
+{
+  "data": {
+    "liquidityGauges": [
+      {
+        "id": "0x68d019f64a7aa97e2d4e7363aee42251d08124fb"
+      }
+    ]
+  }
+}
+```
+
+Now that we have our Gauge contract address, we can query what the pending tokens are with the following pseudocode:
+
+```
+gaugeAddress="0x68d019f64a7aa97e2d4e7363aee42251d08124fb";
+userAddress=<yourAddress>;
+gaugeAbi=<loadTheGaugeAbi>;
+gauge=contract(gaugeAddress, gaugeAbi)
+
+// How to get pending BAL **ONLY ON MAINNET**
+pendingBAL = gauge.claimable_tokens(userAddress).call();
+
+// How to get pending tokens
+tokenAddress=<someTokenAddress>;
+pendingToken = gauge.claimable_rewards(userAddress, tokenAddress).call();
+```
+
+{% hint style="warning" %}
+On Polygon and Arbitrum, the Gauges treat BAL the same as any other "reward" token, therefore instead of calling `claimable_tokens` __ on those networks, you will use `claimable_rewards` __ and pass in that network's BAL address.
+{% endhint %}
