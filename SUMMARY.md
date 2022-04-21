@@ -47,7 +47,9 @@
 * [Internal User Balances](resources/internal-user-balances.md)
 * [Smart Order Router](resources/smart-order-router.md)
 * [Flash Loans](resources/flash-loans.md)
-* [Gauges](resources/gauges.md)
+* [veBAL and Gauges](resources/vebal-and-gauges/README.md)
+  * [veBAL](resources/vebal-and-gauges/vebal.md)
+  * [Gauges](resources/vebal-and-gauges/gauges.md)
 
 ## Helpers
 
