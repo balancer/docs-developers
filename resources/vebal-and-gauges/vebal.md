@@ -1,6 +1,6 @@
 # veBAL
 
-## How to Query Pending Tokens for a veBAL Holders?
+## How to Query Pending Tokens for a veBAL Holders
 
 You can query pending tokens for a given veBAL holder by using `eth_call` to simulate a claim transaction. Below is some simple pseudocode that outlines the process:
 
@@ -16,7 +16,7 @@ feeDistributorContract = contract(feeDistributorAddress, feeDistributorAbi);
 claimableTokens = feeDistributorContract.claimTokens(userAddress,tokens).call();
 ```
 
-## How to Claim Pending Tokens for a veBAL Holders?
+## How to Claim Pending Tokens for a veBAL Holders
 
 The process is identical to [querying as above](vebal.md#how-to-query-pending-tokens-for-a-vebal-holders), except instead of `eth_call`, you will use `eth_sendTransaction`.
 
