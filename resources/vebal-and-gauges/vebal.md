@@ -1,5 +1,9 @@
 # veBAL
 
+{% hint style="info" %}
+The `FeeDistributor` address is [`0x26743984e3357efc59f2fd6c1afdc310335a61c9`](https://etherscan.io/address/0x26743984e3357efc59f2fd6c1afdc310335a61c9)
+{% endhint %}
+
 ## How to Query Pending Tokens for a veBAL Holders
 
 You can query pending tokens for a given veBAL holder by using `eth_call` to simulate a claim transaction. Below is some simple pseudocode that outlines the process:
