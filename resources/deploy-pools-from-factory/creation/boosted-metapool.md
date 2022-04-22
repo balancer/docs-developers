@@ -1,4 +1,8 @@
-# AaveBoosted MetaPool
+# Boosted MetaPool
+
+{% hint style="warning" %}
+This architecture can be applied to **any** type of Boosted Pool. For the sake of a concrete example, this page will explain how the process as it applies to AaveBoosted MetaPools.
+{% endhint %}
 
 ## Definition
 
@@ -13,13 +17,23 @@ For example, if we have a new US Dollar stablecoin called `USDX`, we could creat
 | `USDT`      | `aUSDT` |
 | `USDX`      | `aUSDX` |
 
+![](<../../../.gitbook/assets/Screen Shot 2022-04-22 at 9.50.34 AM.png>)
+
+## Advantages
+
+### Why create an AaveBoosted MetaPool?
+
+* Stablecoins liquidity available for traders and Aave Boosting available for Liquidity Providers
+* Facilitate USDX swaps with DAI, USDC, USDT, and their respective aTokens without fracturing liquidity
+* As more MetaPools come online, bb-a-USD can become a common bridge for new stablecoins. If we have two MetaPools `[bb-a-USDX, bb-a-USD]` and `[bb-a-USDY, bb-a-USD]`, we can hop from `USDX` ->`bb-a-USDX` -> `bb-a-USD` -> `bb-a-USDY` -> `USDY`.
+
 ## Steps
 
 To build this pool, you will need to:
 
-1. [Acquire some amount of `bb-a-USD`](aaveboosted-metapool.md#acquire-some-amount-of-bb-a-usd)``
-2. [Deploy a `bb-a-USDX` AaveLinearPool](aaveboosted-metapool.md#deploy-a-bb-a-usdx-aavelinearpool)
-3. [Deploy a StablePhantomPool with both `bb-a-USD` and `bb-a-USDX`](aaveboosted-metapool.md#deploy-a-stablephantompool-with-both-bb-a-usd-and-bb-a-usdx)``
+1. [Acquire some amount of `bb-a-USD`](boosted-metapool.md#acquire-some-amount-of-bb-a-usd)``
+2. [Deploy a `bb-a-USDX` AaveLinearPool](boosted-metapool.md#deploy-a-bb-a-usdx-aavelinearpool)
+3. [Deploy a StablePhantomPool with both `bb-a-USD` and `bb-a-USDX`](boosted-metapool.md#deploy-a-stablephantompool-with-both-bb-a-usd-and-bb-a-usdx)``
 
 ## Acquire some amount of `bb-a-USD`
 

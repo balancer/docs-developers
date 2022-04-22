@@ -23,7 +23,7 @@
     * [StablePhantom Pool](resources/deploy-pools-from-factory/creation/stablephantom-pool.md)
     * [Liquidity Bootstrapping Pool](resources/deploy-pools-from-factory/creation/liquidity-bootstrapping-pool.md)
     * [AaveLinearPool](resources/deploy-pools-from-factory/creation/aavelinearpool.md)
-    * [AaveBoosted MetaPool](resources/deploy-pools-from-factory/creation/aaveboosted-metapool.md)
+    * [Boosted MetaPool](resources/deploy-pools-from-factory/creation/boosted-metapool.md)
     * [StablePool](resources/deploy-pools-from-factory/creation/stablepool.md)
     * [MetaStable Pool](resources/deploy-pools-from-factory/creation/metastable-pool.md)
   * [Verification](resources/deploy-pools-from-factory/verification.md)
