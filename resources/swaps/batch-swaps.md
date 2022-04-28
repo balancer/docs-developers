@@ -61,7 +61,7 @@ struct FundManagement {
 * `recipient`: The address to which tokens will be sent to after the trade.
 * `toInternalBalance`: Whether the tokens should be sent to the `recipient` or stored within their internal balance within the Vault.
 
-For more information on internal balances see [Core Concepts](broken-reference).
+For more information on internal balances see [Core Concepts](broken-reference/).
 
 ### BatchSwap function
 
@@ -79,11 +79,37 @@ batchSwap(SwapKind kind,
 * `limits`: An array of of the maximum net amounts of each asset which can be taken to perform the swap. Should the total trade require more than `limits[i]` tokens to be taken from `sender` for any `i`then the transaction shall fail.
 * `deadline`: The UNIX timestamp at which our trade must be completed by - if the transaction is confirmed after this time then the transaction will fail.
 
+## `queryBatchSwap`
+
+`queryBatchSwap` is an extremely useful function in the `Vault` contract. With `queryBatchSwap`, you can get the exact amounts for a given swap with the on-chain state. You can use these amounts to calculate input/output limits based on a slippage tolerance.&#x20;
+
+{% hint style="warning" %}
+You should **NOT** use `queryBatchSwap` to calculate limits from a smart contract that is executing a swap. **This will leave you vulnerable to sandwich attacks.**
+
+You should only use `queryBatchSwap` **before** sending a `batchSwap` transaction, when calculating your `batchSwap` arguments off-chain.
+{% endhint %}
+
+Calling `queryBatchSwap` is very similar to calling [`batchSwap`](batch-swaps.md#batchswap-function) itself, just without the `limit` and `deadline` arguments.&#x20;
+
+```
+queryBatchSwap(SwapKind kind,
+          BatchSwapStep[] swaps,
+          IAsset[] assets,
+          FundManagement funds) 
+          returns (int256[] assetDeltas)
+```
+
+{% hint style="info" %}
+To use `queryBatchSwap`, you must use `eth_call`.&#x20;
+
+You may notice that `queryBatchSwap` shows up on Etherscan as a `write` function, but this is simply due to the fact that the function fully executes a `batchSwap` before reverting.
+{% endhint %}
+
 ## Multi-hop Examples
 
 In these examples, we’re trading token A for token C, through the intermediate token B (we could illustrate this as A->B->C). Tokens A, B, and C could be in different pools, or in the same pool.
 
-"Given In" means the caller knows the exact amount of the incoming token, and is asking the pool to calculate the tokenOut amount. The opposite is true of "Given Out."&#x20;
+"Given In" means the caller knows the exact amount of the incoming token, and is asking the pool to calculate the tokenOut amount. The opposite is true of "Given Out."
 
 ### Example 1 ("Given In")
 
@@ -93,11 +119,11 @@ Since we know we have 10 A to start, the swap kind is `GIVEN_IN`, and the amount
 
 Since we don’t know the amount of B when constructing the multi-hop, we initialize the amount in the second swap to 0, which instructs the multi-hop logic to use the calculated output amount from the first swap as input to the second.
 
-| Parameter     | Swap 1   | Swap 2   |
-| ------------- | -------- | -------- |
-| Amount        | 10       | 0        |
-| Token In      | A        | B        |
-| Token Out     | B        | C        |
+| Parameter | Swap 1 | Swap 2 |
+| --------- | ------ | ------ |
+| Amount    | 10     | 0      |
+| Token In  | A      | B      |
+| Token Out | B      | C      |
 
 Say we get 5 B from the first swap. The amount of the second swap is then set to 5 in the Vault logic, and the second swap produces some output amount of C. (The caller would then validate the overall swap by comparing this value to the minimum amountOut of C.)
 
@@ -109,11 +135,11 @@ Since we know we want to get 20 C out, the swap kind is `GIVEN_OUT`, and the amo
 
 After the first swap, the amount of B will be known, and the zero amount in the second swap instructs the multi-hop logic to substitute the calculated amount from the first swap. Since this is a “Given In” Batch Swap, the result will be the required input amount of token A. (The caller would then validate the overall swap by comparing this value to the maximum amountIn of A.)
 
-| Parameter     | Swap 1    | Swap 2    |
-| ------------- | --------- | --------  |
-| Amount        | 20        | 0         |
-| Token Out     | C         | B         |
-| Token In      | B         | A         |
+| Parameter | Swap 1 | Swap 2 |
+| --------- | ------ | ------ |
+| Amount    | 20     | 0      |
+| Token Out | C      | B      |
+| Token In  | B      | A      |
 
 So in both cases, setting the amount of a swap within a batch to zero causes the multi-hop logic to substitute the calculated amount from the previous swap. If the batch swap kind is “Given In,” the calculated amount will be the “output” of the previous step. If the batch swap kind is “Given Out,” the calculated amount will be the “input” from the previous step.
 
@@ -127,18 +153,18 @@ As described in the examples above, batch swaps are most commonly used for multi
 
 In this case, the input amount of each swap must be provided explicitly. In this `GIVEN_IN` batch swap, the user will supply 99 A, 42 C, and 5 E, and will be returned computed amounts of B, D, and F.
 
-| Parameter     | Swap 1    | Swap 2    | Swap 3    |
-| ------------- | --------- | --------  | --------  |
-| Amount        | 99        | 42        | 5         |
-| Token In      | A         | C         | E         |
-| Token Out     | B         | D         | F         |
+| Parameter | Swap 1 | Swap 2 | Swap 3 |
+| --------- | ------ | ------ | ------ |
+| Amount    | 99     | 42     | 5      |
+| Token In  | A      | C      | E      |
+| Token Out | B      | D      | F      |
 
 ### Example 4 (Combined Swaps - "Given Out")
 
 And of course, it is also possible to combine multi-hop trades and single-hop swaps in parallel. This example performs two trades in `GIVEN_OUT` fashion: A->B->C->D and E->F. The final outputs will be 100 D and 50 F, if the user can supply the computed amounts of A and E.
 
-| Parameter     | Swap 1    | Swap 2    | Swap 3    | Swap 4    |
-| ------------- | --------- | --------  | --------  | --------  |
-| Amount        | 100       | 0         | 0         | 50        |
-| Token Out     | D         | C         | B         | F         |
-| Token In      | C         | B         | A         | E         |
+| Parameter | Swap 1 | Swap 2 | Swap 3 | Swap 4 |
+| --------- | ------ | ------ | ------ | ------ |
+| Amount    | 100    | 0      | 0      | 50     |
+| Token Out | D      | C      | B      | F      |
+| Token In  | C      | B      | A      | E      |
