@@ -14,6 +14,7 @@
 | MetaStablePoolFactory                          | [0x67d27634E44793fE63c467035E31ea8635117cd4](https://etherscan.io/address/0x67d27634E44793fE63c467035E31ea8635117cd4) |
 | InvestmentPoolFactory                          | [0x48767F9F868a4A7b86A90736632F6E44C2df7fa9](https://etherscan.io/address/0x48767F9F868a4A7b86A90736632F6E44C2df7fa9) |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
+| BalancerHelpers                                | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://etherscan.io/address/0x5aDDCCa35b7A0D07C74063c48700C8590E87864E) |
 {% endtab %}
 
 {% tab title="Polygon" %}
@@ -26,6 +27,7 @@
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x41B953164995c11C81DA73D212ED8Af25741b7Ac](https://polygonscan.com/address/0x41B953164995c11C81DA73D212ED8Af25741b7Ac) |
 | MetaStablePoolFactory                          | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://polygonscan.com/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca) |
 | InvestmentPoolFactory                          | [0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193](https://polygonscan.com/address/0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193) |
+| BalancerHelpers                                | [0x239e55F427D44C3cc793f49bFB507ebe76638a2b](https://polygonscan.com/address/0x239e55F427D44C3cc793f49bFB507ebe76638a2b) |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://polygonscan.com/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
 {% endtab %}
 
@@ -39,6 +41,7 @@
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x1802953277FD955f9a254B80Aa0582f193cF1d77](https://arbiscan.io/address/0x1802953277FD955f9a254B80Aa0582f193cF1d77) |
 | MetaStablePoolFactory                          | [0xEBFD5681977E38Af65A7487DC70B8221D089cCAD](https://arbiscan.io/address/0xEBFD5681977E38Af65A7487DC70B8221D089cCAD) |
 | InvestmentPoolFactory                          | [0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c](https://arbiscan.io/address/0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c) |
+| BalancerHelpers                                | [0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab](https://arbiscan.io/address/0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab) |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://arbiscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
 {% endtab %}
 
@@ -52,6 +55,7 @@
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x1B57f637Ce3408f1f834b0b70f9A595b062DAea7](https://kovan.etherscan.io/address/0x1B57f637Ce3408f1f834b0b70f9A595b062DAea7) |
 | MetaStablePoolFactory                          | [0x590E544e7Ca956Bb878F8C873E82e65550d67D2F](https://kovan.etherscan.io/address/0x590E544e7Ca956Bb878F8C873E82e65550d67D2F) |
 | InvestmentPoolFactory                          | [0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2](https://kovan.etherscan.io/address/0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2) |
+| BalancerHelpers                                | [0x94905e703fEAd7f0fD0eEe355D267eE909784e6d](https://kovan.etherscan.io/address/0x94905e703fEAd7f0fD0eEe355D267eE909784e6d) |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://kovan.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
 
 ## Kovan Tokens
@@ -81,6 +85,7 @@ The following are **Kovan** addresses for the Balancer versions of common tokens
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x41B953164995c11C81DA73D212ED8Af25741b7Ac](https://rinkeby.etherscan.io/address/0x41B953164995c11C81DA73D212ED8Af25741b7Ac) |
 | MetaStablePoolFactory                          | [0x751dfDAcE1AD995fF13c927f6f761C6604532c79](https://rinkeby.etherscan.io/address/0x751dfDAcE1AD995fF13c927f6f761C6604532c79) |
 | InvestmentPoolFactory                          | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://rinkeby.etherscan.io/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca) |
+| BalancerHelpers                                | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://rinkeby.etherscan.io/address/0x5aDDCCa35b7A0D07C74063c48700C8590E87864E) |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://rinkeby.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
 {% endtab %}
 
@@ -88,6 +93,7 @@ The following are **Kovan** addresses for the Balancer versions of common tokens
 | Contract                   | Address                                                                                                                      |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | Vault                      | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://goerli.etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8) |
+| BalancerHelpers            | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://goerli.etherscan.io/address/0x5aDDCCa35b7A0D07C74063c48700C8590E87864E) |
 | WeightedPoolFactory        | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://goerli.etherscan.io/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9) |
 | WeightedPool2TokensFactory | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://goerli.etherscan.io/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0) |
 | Authorizer                 | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://goerli.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
