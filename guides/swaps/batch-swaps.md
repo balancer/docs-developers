@@ -159,7 +159,7 @@ const swap_steps = [
 const swap_kind = 0;
 ```
 
-Next, we define our **swap\_steps**. Each step in this list is its own swap with a pool. The first step here is clearly a swap of **100 USDC** for **WETH** in **pool\_WETH\_USDC**. The second step is less obvious. You may notice that the **amount** in the second swap is **0**. Here, the **0** value is used to say "take the output of the previous swap and use it as my input." The reason for this is that the expected output of the trade could change slightly between the times that the trade is requested and when it is actually executed.&#x20;
+Next, we define our **swap\_steps**. Each step in this list is its own swap with a pool. The first step here is clearly a swap of **100 USDC** for **WETH** in **pool\_WETH\_USDC** (amounts will be scaled for decimals later). The second step is less obvious. You may notice that the **amount** in the second swap is **0**. Here, the **0** value is used to say "take the output of the previous swap and use it as my input." The reason for this is that the expected output of the trade could change slightly between the times that the trade is requested and when it is actually executed.&#x20;
 
 We also must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving ****_ the pool 100 USDC for an estimated output. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
 
@@ -446,7 +446,7 @@ swap_steps = [
 swap_kind = 0 #0 = GIVEN_IN, 1 = GIVEN_OUT
 ```
 
-Next, we define our **swap\_steps**. Each step in this list is its own swap with a pool. The first step here is clearly a swap of **100 USDC** for **WETH** in **pool\_WETH\_USDC**. The second step is less obvious. You may notice that the **amount** in the second swap is **0**. Here, the **0** value is used to say "take the output of the previous swap and use it as my input." The reason for this is that the expected output of the trade could change slightly between the times that the trade is requested and when it is actually executed.&#x20;
+Next, we define our **swap\_steps**. Each step in this list is its own swap with a pool. The first step here is clearly a swap of **100 USDC** for **WETH** in **pool\_WETH\_USDC** (amounts will be scaled for decimals later). The second step is less obvious. You may notice that the **amount** in the second swap is **0**. Here, the **0** value is used to say "take the output of the previous swap and use it as my input." The reason for this is that the expected output of the trade could change slightly between the times that the trade is requested and when it is actually executed.&#x20;
 
 We also must specify that this swap is created with a known amount **GIVEN\_IN**; we are _giving ****_ the pool 100 USDC for an estimated output. It is also possible to create a trade with a fixed amount **GIVEN\_OUT**.
 
