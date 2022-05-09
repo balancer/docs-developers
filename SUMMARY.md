@@ -70,7 +70,7 @@
       * [StablePools](references/contracts/apis/pools/stablepools.md)
       * [MetaStablePools](references/contracts/apis/pools/metastablepools.md)
     * [Asset Managers](references/contracts/apis/asset-managers.md)
-  * [Deployment Addresses](references/contracts/contract-addresses.md)
+  * [Deployment Addresses](references/contracts/deployment-addresses.md)
   * [Events](references/contracts/events.md)
   * [UML Diagrams](references/contracts/uml-diagrams.md)
 * [Error Codes](references/error-codes.md)
