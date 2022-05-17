@@ -39,7 +39,11 @@ When providing your assets, you must ensure that the tokens are sorted numerical
 
 ### `minAmountsOut`
 
-In the exitPool call, you have to provide minAmountsOut, the lower limits for the tokens to receive. In short, what are the minimum amounts you would find acceptable, given the amount of BPT you are providing? A good practice would be to compute these minimum amounts based on the user's share of total BPT compared to the total token amounts in the pool, and then account for some possible slippage. Let's say that you want to allow a 1% slippage. After computing how many tokens you expect for a given amount of BPT, you'd apply a factor of 0.99 to all the amounts. These thresholds are important because it's possible for token amounts to change in the pool between the time you send your transaction and the when your transaction executes.
+In the exitPool call, you have to provide `minAmountsOut`, the lower limits for the tokens to receive. In short, what are the minimum amounts you would find acceptable, given the amount of BPT you are providing?&#x20;
+
+A good practice would be to user [`queryExit` in `BalancerHelpers`](../query-how-much-x-for-y.md#queryexit) to find the current amounts of tokens you would get for your BPT, and then account for some possible slippage.&#x20;
+
+Let's say that you want to allow a 1% slippage. After computing how many tokens you expect for a given amount of BPT, you'd apply a factor of 0.99 to all the amounts. These thresholds are important because it's possible for token amounts to change in the pool between the time you send your transaction and the when your transaction executes.
 
 ### `userData`
 
