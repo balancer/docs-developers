@@ -9,6 +9,13 @@ queryJoin(
     address recipient, 
     JoinPoolRequest request)
 returns (uint256 bptOut, uint256[] amountsIn)
+
+JoinPoolRequest(
+    address[] assets,
+    uint256[] maxAmountsIn,
+    bytes userData,
+    bool fromInternalBalance
+)
 ```
 
 ### `queryExit`
@@ -20,6 +27,11 @@ queryExit(
     address recipient, 
     ExitPoolRequest request)
 returns (uint256 bptIn, uint256[] amountsOut)
-```
 
-For more information on `JoinPoolRequest` and `ExitPoolRequest`, please refer to the respective pages that dive into [joins](../../../resources/joins-and-exits/pool-joins.md#api) and [exits](../../../resources/joins-and-exits/pool-exits.md#api).&#x20;
+ExitPoolRequest(
+    address[] assets,
+    uint256[] minAmountsOut,
+    bytes userData,
+    bool toInternalBalance 
+)
+```
