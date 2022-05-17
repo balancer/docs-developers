@@ -76,8 +76,9 @@ batchSwap(SwapKind kind,
 
 * `kind`: The type of batch swap we want to perform - either "Out Given In" or "In Given Out." We either know the amount of tokens we're sending to the pool and want to know how many we'll receive, or vice versa.
 * `assets`: An array of tokens which are used in the batch swap. This is referenced from within `swaps`
-* `limits`: An array of of the maximum net amounts of each asset which can be taken to perform the swap. Should the total trade require more than `limits[i]` tokens to be taken from `sender` for any `i`then the transaction shall fail.
-* `deadline`: The UNIX timestamp at which our trade must be completed by - if the transaction is confirmed after this time then the transaction will fail.
+* `limits`: An array of maximum amounts of each `asset` to be transferred. For tokens going **in** to the Vault, the `limit` shall be a positive number. For tokens going **out** of the Vault, the `limit` shall be a negative number. If the `amount` to be transferred for a given asset is greater than its `limit`, the trade will fail with error `BAL#507: SWAP_LIMIT`.&#x20;
+  * **How do you determine what your `limits` should be?** If you want to compute `limits`, it is recommended to use `queryBatchSwap` and then [add a slippage tolerance](batch-swaps.md#adding-a-slippage-tolerance).
+* `deadline`: The UNIX timestamp at which our trade must be completed by - if the transaction is confirmed after this time, the transaction will fail.
 
 ## `queryBatchSwap`
 
@@ -104,6 +105,18 @@ To use `queryBatchSwap`, you must use `eth_call`.&#x20;
 
 You may notice that `queryBatchSwap` shows up on Etherscan as a `write` function, but this is simply due to the fact that the function fully executes a `batchSwap` before reverting.
 {% endhint %}
+
+### Adding a Slippage Tolerance
+
+Once you have received your `assetDeltas` from calling [`queryBatchSwap`](batch-swaps.md#querybatchswap), you can calculate `limits` for a `batchSwap` by applying your slippage tolerance.&#x20;
+
+#### `GIVEN_IN`
+
+If we are performing a `GIVEN_IN` `batchSwap` and wanted to apply a 1% slippage tolerance, we would multiple our negative `assetDeltas` by 0.99. We do not need to modify our positive amounts because we know the exact amount we are putting in.
+
+#### `GIVEN_OUT`
+
+If we are performing a `GIVEN_OUT` `batchSwap` and wanted to apply a 1% slippage tolerance, we would multiple our positive `assetDeltas` by 1.01. We do not need to modify our negative amounts because we know the exact amount we are getting out.
 
 ## Multi-hop Examples
 
