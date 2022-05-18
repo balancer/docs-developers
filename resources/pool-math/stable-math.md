@@ -17,7 +17,7 @@ Developers can use the TypeScript math implementations used by the Smart Order r
 
 There are also Python implementations in progress
 
-* [stableMath.py](https://github.com/officialnico/balancerv2cad/blob/main/src/balancerv2cad/StableMath.py)
+* ~~~~[~~stableMath.py~~](https://github.com/officialnico/balancerv2cad/blob/main/src/balancerv2cad/StableMath.py) There are known bugs in this implementation. This warning will be removed when they are fixed.
 
 ## Invariant
 
