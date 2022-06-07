@@ -57,7 +57,7 @@ enum Variable { PAIR_PRICE, BPT_PRICE, INVARIANT }
 getLatest(Variable variable) returns (uint256)
 ```
 
-Returns latest pair price, BPT price, or invariant depending on what `variable` enum you pass.
+Returns latest pair price, BPT price, or invariant depending on what `variable` enum you pass. Samples are recorded by the pool as calculated with the pre-operation balances. For example, the spot price _**before**_ a swap is the value stored as the most recent `PAIR_PRICE`.
 
 ### `getTimeWeightedAverage`
 
