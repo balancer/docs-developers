@@ -28,7 +28,7 @@ Where:
 
 * `kind`: GIVEN\_IN (= 0) means that the trades are formatted such that the amount represents the amount being sent to the pool
 * `assets`: the list of tokens used in the trade
-* `limits`: the number of tokens the trader is willing to send to the Vault (both are set to zero since a Flash Swap doesn't require the trader to send any tokens to the Vault)
+* `limits`: the number of tokens the trader is willing to send to the Vault For a Flash Swap, these are set to zero (or less) since a Flash Swap doesn't require the trader to send any tokens to the Vault)
 
 ```
 "swaps": [
