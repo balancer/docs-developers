@@ -17,7 +17,7 @@ Note that Balancer has not yet migrated to the new Subgraph Studio mainnet. Any 
 
 ### GraphQL Schema
 
-The schema of GraphQL elements available is defined in [`/schema.graphql `](https://github.com/balancer-labs/balancer-subgraph-v2/blob/master/schema.graphql)
+The schema of GraphQL elements available is defined in [`/schema.graphql` ](https://github.com/balancer-labs/balancer-subgraph-v2/blob/master/schema.graphql)
 
 The data included in this subgraph data layer is the data that is most applicable to the front-end. It aims at the very least to keep track of all the resources in the  `Vault` contract, and keep track of basic pool data.
 
@@ -61,6 +61,23 @@ Fetch a Liquidity Provider's shares
     poolId {
       tokensList,
       totalShares
+    }
+  }
+}
+```
+
+Fetch historical metrics for a given pool
+
+```graphql
+{
+  poolSnapshots(first:1000, orderBy: timestamp, orderDirection: asc, where: {pool: "0x5c6ee304399dbdb9c8ef030ab642b10820db8f56000200000000000000000014"}) {
+    amounts
+    totalShares
+    swapVolume
+    swapFees
+    liquidity
+    pool {
+      id
     }
   }
 }

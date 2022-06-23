@@ -9,6 +9,7 @@
   * [Single Swaps](guides/swaps/single-swaps.md)
 * [Data](guides/data/README.md)
   * [Balancer Subgraph](guides/data/balancer-subgraph.md)
+  * [Inferring Historical Liquidity Mining APRs (Legacy)](guides/data/inferring-historical-liquidity-mining-aprs-legacy.md)
 * [Guided Tour of Balancer Vault](guides/guided-tour-of-balancer-vault/README.md)
   * [Episode 1: The batchSwap](guides/guided-tour-of-balancer-vault/episode-1-the-batchswap.md)
   * [Episode 2: Joins](guides/guided-tour-of-balancer-vault/episode-2-joins/README.md)
@@ -52,6 +53,9 @@
 * [veBAL and Gauges](resources/vebal-and-gauges/README.md)
   * [veBAL](resources/vebal-and-gauges/vebal.md)
   * [Gauges](resources/vebal-and-gauges/gauges.md)
+  * [Estimating Gauge Incentive APRs](resources/vebal-and-gauges/estimating-gauge-incentive-aprs/README.md)
+    * [Data Fetching](resources/vebal-and-gauges/estimating-gauge-incentive-aprs/data-fetching.md)
+    * [APR Calculation](resources/vebal-and-gauges/estimating-gauge-incentive-aprs/apr-calculation.md)
 
 ## Helpers
 
