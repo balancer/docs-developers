@@ -9,7 +9,7 @@ uint256 joinKind = 0;
 uint256[] memory initBalances = new uint256[](2);
 initBalances[0] = 1e18;
 initBalances[1] = 2e18;
-bytes memory userDataEncoded = abi.encode(oinKind, initBalances);
+bytes memory userDataEncoded = abi.encode(joinKind, initBalances);
 ```
 {% endtab %}
 
