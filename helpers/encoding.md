@@ -1,4 +1,4 @@
-# Encoding
+# Encoding userData
 
 There are some arguments that need to be encoded when interacting with Balancer V2 Smart Contracts. For convenience, this page provides an example of how to encode arguments.
 
@@ -6,7 +6,9 @@ There are some arguments that need to be encoded when interacting with Balancer 
 {% tab title="Solidity" %}
 ```cpp
 uint256 JoinKindInit = 0;
-uint256 initBalances[] = [1e18, 2e18];
+uint256[] memory initBalances = new uint256[](2);
+initBalances[0] = 1e18;
+initBalances[1] = 2e18;
 bytes userDataEncoded = abi.encode(JoinKindInit, initBalances);
 ```
 {% endtab %}
