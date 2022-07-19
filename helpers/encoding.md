@@ -5,7 +5,7 @@ There are some arguments that need to be encoded when interacting with Balancer 
 {% tabs %}
 {% tab title="Solidity" %}
 ```cpp
-uint256 JoinKindInit = 0;
+uint256 JoinKind = 0;
 uint256[] memory initBalances = new uint256[](2);
 initBalances[0] = 1e18;
 initBalances[1] = 2e18;
@@ -17,7 +17,7 @@ bytes memory userDataEncoded = abi.encode(JoinKindInit, initBalances);
 ```javascript
 import { defaultAbiCoder } from '@ethersproject/abi';
 
-const JoinKindInit = 0;
+const JoinKind = 0;
 const initBalances = [1e18, 2e18];
 const abi = ['uint256', 'uint256[]'];
 const data = [JoinKindInit, initBalances];
@@ -29,7 +29,7 @@ const userDataEncoded = defaultAbiCoder.encode(abi,data);
 ```python
 import eth_abi
 
-JoinKindInit = 0
+JoinKind = 0
 initBalances = [1e18, 2e18]
 abi = ['uint256', 'uint256[]']
 data = [JoinKindInit, initBalances]
