@@ -355,7 +355,7 @@ path_abi_vault = '../abis/Vault.json'
 with open(path_abi_vault) as f:
   abi_vault = json.load(f)
 contract_vault = web3.eth.contract(
-	address=web3.toChecksumAddress(address_vault), 
+	address=Web3.toChecksumAddress(address_vault), 
 	abi=abi_vault
 )
 ```
@@ -476,9 +476,9 @@ for step in swap_steps:
 	swaps_step_structs.append(swaps_step_struct)
 
 fund_struct = (
-	web3.toChecksumAddress(fund_settings["sender"]),
+	Web3.toChecksumAddress(fund_settings["sender"]),
 	fund_settings["fromInternalBalance"],
-	web3.toChecksumAddress(fund_settings["recipient"]),
+	Web3.toChecksumAddress(fund_settings["recipient"]),
 	fund_settings["toInternalBalance"]
 )
 ```
@@ -519,7 +519,7 @@ The only real "gotcha" here is to make sure your **address**es are in checksum f
 
 ```python
 token_limits = [int(Decimal(token_data[token]["limit"]) * 10 ** Decimal(token_data[token]["decimals"])) for token in token_addresses]
-checksum_tokens = [web3.toChecksumAddress(token) for token in token_addresses]
+checksum_tokens = [Web3.toChecksumAddress(token) for token in token_addresses]
 ```
 
 Here, we're scaling our **token\_limits** to account for the token-specific decimals, and converting all our token addresses to checksum format instead of lowercase.

@@ -316,7 +316,7 @@ path_abi_vault = '../abis/Vault.json'
 with open(path_abi_vault) as f:
   abi_vault = json.load(f)
 contract_vault = web3.eth.contract(
-	address=web3.toChecksumAddress(address_vault), 
+	address=Web3.toChecksumAddress(address_vault), 
 	abi=abi_vault
 )
 ```
@@ -409,16 +409,16 @@ user_data_encoded = eth_abi.encode_abi(['uint256'], [0])
 swap_struct = (
 	swap["poolId"],
 	swap_kind,
-	web3.toChecksumAddress(swap["assetIn"]),
-	web3.toChecksumAddress(swap["assetOut"]),
+	Web3.toChecksumAddress(swap["assetIn"]),
+	Web3.toChecksumAddress(swap["assetOut"]),
 	int(Decimal(swap["amount"]) * 10 ** Decimal((token_data[swap["assetIn"]]["decimals"]))),
 	user_data_encoded
 )
 
 fund_struct = (
-	web3.toChecksumAddress(fund_settings["sender"]),
+	Web3.toChecksumAddress(fund_settings["sender"]),
 	fund_settings["fromInternalBalance"],
-	web3.toChecksumAddress(fund_settings["recipient"]),
+	Web3.toChecksumAddress(fund_settings["recipient"]),
 	fund_settings["toInternalBalance"]
 )
 
