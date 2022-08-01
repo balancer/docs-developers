@@ -24,7 +24,7 @@ The data included in this subgraph data layer is the data that is most applicabl
 ### Querying
 
 {% hint style="info" %}
-For an in-depth explanation of how to query the Subgraph, check out the [Balancer Subgraph](../guides/data/balancer-subgraph.md) article in Guides.
+For an in-depth explanation of how to query the Subgraph, check out the [Balancer Subgraph](../guides/data/balancer-subgraph/) article in Guides.
 {% endhint %}
 
 #### Examples
