@@ -38,7 +38,7 @@
 * [Pool Math](resources/pool-math/README.md)
   * [Weighted Math](resources/pool-math/weighted-math.md)
   * [Stable Math](resources/pool-math/stable-math.md)
-* [Query: How Much X for Y?](resources/query-how-much-x-for-y.md)
+* [query{BatchSwap,Join,Exit}](resources/query-batchswap-join-exit.md)
 * [Joins and Exits](resources/joins-and-exits/README.md)
   * [Pool Joins](resources/joins-and-exits/pool-joins.md)
   * [Pool Exits](resources/joins-and-exits/pool-exits.md)

@@ -34,7 +34,7 @@ const Tx = require('ethereumjs-tx').Transaction;
 const open = require('open');
 ```
 
-This sample relies on [web3.js](https://web3js.readthedocs.io) to interact with on-chain Smart Contracts and a few other libraries. These dependencies can be found in the [package.json](https://github.com/gerrrg/balancer-tutorials/blob/master/js/swaps/package.json) file in the JavaScript sample repository.&#x20;
+This sample relies on [web3.js](https://web3js.readthedocs.io/) to interact with on-chain Smart Contracts and a few other libraries. These dependencies can be found in the [package.json](https://github.com/gerrrg/balancer-tutorials/blob/master/js/swaps/package.json) file in the JavaScript sample repository.&#x20;
 
 #### Connecting to RPC and setting up your account
 
@@ -93,7 +93,7 @@ Here, we're specifying that the sender/recipient for the tokens going into/out o
 
 We specify that {**to**/**from**}**InternalBalance** are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
 
-The deadline for a transaction is the time (in [Unix timestamp](https://www.unixtimestamp.com)) after which it will no longer attempt to make a trade. If a trade expires, it will still take some gas to process the failed transaction, but it will be cheaper than a transaction failing for a different reason.
+The deadline for a transaction is the time (in [Unix timestamp](https://www.unixtimestamp.com/)) after which it will no longer attempt to make a trade. If a trade expires, it will still take some gas to process the failed transaction, but it will be cheaper than a transaction failing for a different reason.
 
 #### Defining our pools and tokens
 
@@ -383,7 +383,7 @@ Here, we're specifying that the sender/recipient for the tokens going into/out o
 
 We specify that {**to**/**from**}**InternalBalance** are both False. This will be the default use case for most users; however, you may have a use case that would benefit from Internal Balances.&#x20;
 
-The deadline for a transaction is the time (in [Unix timestamp](https://www.unixtimestamp.com)) after which it will no longer attempt to make a trade. If a trade expires, it will still take some gas to process the failed transaction, but it will be cheaper than a transaction failing for a different reason.
+The deadline for a transaction is the time (in [Unix timestamp](https://www.unixtimestamp.com/)) after which it will no longer attempt to make a trade. If a trade expires, it will still take some gas to process the failed transaction, but it will be cheaper than a transaction failing for a different reason.
 
 #### Defining our pools and tokens
 
