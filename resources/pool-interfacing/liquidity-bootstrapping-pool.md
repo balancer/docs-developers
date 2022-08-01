@@ -4,7 +4,7 @@
 
 For advantages and use cases of Liquidity Bootstrapping Pools (LBPs), please refer to [the standard documentation](https://docs.balancer.fi/products/balancer-pools/liquidity-bootstrapping-pools-lbps).
 
-For more interfaces, such as updating pool weights, see the [Liquidity Bootstrapping Pool API](../../references/contracts/apis/pools/liquiditybootstrappingpool.md#api).
+For more interfaces, such as updating pool weights, see the [Liquidity Bootstrapping Pool API](../../references/valuing-balancer-lp-tokens/pools/liquiditybootstrappingpool.md#api).
 
 ## Interfacing
 

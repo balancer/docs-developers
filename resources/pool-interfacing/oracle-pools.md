@@ -10,8 +10,8 @@ Different `poolTypes` can implement Oracle Functionality. Since `WeightedPool2To
 
 The types of pools that have oracles include but are not limited to:
 
-* WeightedPool2Tokens ([Full API](../../references/contracts/apis/pools/weightedpool2tokens.md))
-* MetaStablePool ([Full API](../../references/contracts/apis/pools/metastablepools.md))
+* WeightedPool2Tokens ([Full API](../../references/valuing-balancer-lp-tokens/pools/weightedpool2tokens.md))
+* MetaStablePool ([Full API](../../references/valuing-balancer-lp-tokens/pools/metastablepools.md))
 
 ## Getting Oracle Data
 
@@ -47,4 +47,4 @@ For a simpler query (which is more prone to error/manipulation), you can also qu
 
 ### Additional Queries
 
-The above are just samples of what you can query. For a more complete list, please refer to the Full APIs for the [WeightedPool2Tokens](../../references/contracts/apis/pools/weightedpool2tokens.md) and [MetaStablePool](../../references/contracts/apis/pools/metastablepools.md).&#x20;
+The above are just samples of what you can query. For a more complete list, please refer to the Full APIs for the [WeightedPool2Tokens](../../references/valuing-balancer-lp-tokens/pools/weightedpool2tokens.md) and [MetaStablePool](../../references/valuing-balancer-lp-tokens/pools/metastablepools.md).&#x20;

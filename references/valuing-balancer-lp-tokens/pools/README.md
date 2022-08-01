@@ -2,7 +2,7 @@
 
 ## Many Pool Operations Done Via The Vault!
 
-See the [Vault API](../the-vault.md) for the following functions.
+See the [Vault API](../../contracts/apis/the-vault.md) for the following functions.
 
 ```
 registerPool(PoolSpecialization specialization) returns (bytes32 poolID)

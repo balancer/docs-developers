@@ -4,7 +4,7 @@
 
 For advantages and use cases of Managed Pools, please refer to [the standard documentation](https://docs.balancer.fi/products/balancer-pools/managed-pools).
 
-For more interfaces, such as updating pool weights, see the [Managed Pools API](../../references/contracts/apis/pools/investmentpools.md).
+For more interfaces, such as updating pool weights, see the [Managed Pools API](../../references/valuing-balancer-lp-tokens/pools/investmentpools.md).
 
 ## Interfacing
 
