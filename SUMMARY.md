@@ -56,6 +56,7 @@
   * [Estimating Gauge Incentive APRs](resources/vebal-and-gauges/estimating-gauge-incentive-aprs/README.md)
     * [Data Fetching](resources/vebal-and-gauges/estimating-gauge-incentive-aprs/data-fetching.md)
     * [APR Calculation](resources/vebal-and-gauges/estimating-gauge-incentive-aprs/apr-calculation.md)
+* [Valuing Balancer LP Tokens](resources/valuing-balancer-lp-tokens.md)
 
 ## Helpers
 
