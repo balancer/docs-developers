@@ -1,4 +1,4 @@
-# InvestmentPools
+# ManagedPools (prev. "InvestmentPools")
 
 ## More functions are inherited
 

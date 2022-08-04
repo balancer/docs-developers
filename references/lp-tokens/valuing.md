@@ -1,4 +1,4 @@
-# Valuing Balancer LP Tokens
+# Valuing
 
 ## Overview
 
@@ -28,6 +28,11 @@ bptPriceUsd = poolValueUsd/bpt.totalSupply();
 #### And if you want to calculate a pool value for a given address...
 
 `myBptValueUsd = bpt.balanceOf(myAddress) * bptPriceUsd;`
+
+{% hint style="warning" %}
+The above assumes you have your BPT in your wallet. If you have staked your BPT in a gauge, you'll need to calculate your BPT holdings as:\
+`myBpt = bpt.balanceOf(yourAddress) + bptGaugeDeposit.balanceOf(yourAddress);`
+{% endhint %}
 
 ## Estimating Price Robustly On-chain
 

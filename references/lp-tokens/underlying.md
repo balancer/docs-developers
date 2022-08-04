@@ -19,3 +19,8 @@ for(i=0, i<balances.length, i++){
 }
 return(tokens,yourUnderlyingBalances); 
 ```
+
+{% hint style="warning" %}
+The above assumes you have your BPT in your wallet. If you have staked your BPT in a gauge, you'll need to calculate your BPT holdings as:\
+`myBpt = bpt.balanceOf(yourAddress) + bptGaugeDeposit.balanceOf(yourAddress);`
+{% endhint %}
