@@ -15,7 +15,7 @@ The Vault can tell you exactly how many tokens are in the pool. You can query th
 yourPoolShare = bpt.balanceOf(yourAddress)/bpt.totalSupply();
 uint256 yourUnderlyingBalances = new uint256[](balances.length);
 for(i=0, i<balances.length, i++){
-    yourUnderlyingBalances[i] = balances[i]/yourPoolShare;
+    yourUnderlyingBalances[i] = balances[i]*yourPoolShare;
 }
 return(tokens,yourUnderlyingBalances); 
 ```

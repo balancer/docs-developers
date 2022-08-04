@@ -4,7 +4,7 @@
 
 For advantages and use cases of Stable Pools, please refer to [the standard documentation](https://docs.balancer.fi/products/balancer-pools/stable-pools).
 
-For more interfaces, such as updating the `amplificationParameter`, see the [StablePool API](../../references/contracts/apis/pools/stablepools.md#api).
+For more interfaces, such as updating the `amplificationParameter`, see the [StablePool API](../../references/valuing-balancer-lp-tokens/pools/stablepools.md#api).
 
 ## Interfacing
 

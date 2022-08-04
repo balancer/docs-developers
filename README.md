@@ -7,7 +7,7 @@ These docs are intended for anyone who is interfacing with or building on top of
 ## Quick Links
 
 * [Contract APIs](references/contracts/apis/)
-* [Contract Deployment Addresses](references/contracts/deployment-addresses.md)
+* [Contract Deployment Addresses](references/valuing-balancer-lp-tokens/deployment-addresses.md)
 * [Pool Interfacing](resources/pool-interfacing/)
 * [Deploying a Pool](resources/deploy-pools-from-factory/)
 * [Subgraph](references/subgraphs.md)
