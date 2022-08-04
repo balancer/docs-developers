@@ -4,7 +4,7 @@
 
 For advantages and use cases of Weighted Pools, please refer to [the standard documentation](https://docs.balancer.fi/products/balancer-pools/weighted-pools).
 
-For more interfaces, see the [WeightedPool API](../../references/valuing-balancer-lp-tokens/pools/weightedpool.md#api) and [WeightedPool2Tokens API](../../references/valuing-balancer-lp-tokens/pools/weightedpool2tokens.md#api).
+For more interfaces, see the [WeightedPool API](../../references/contracts/apis/pools/weightedpool.md#api) and [WeightedPool2Tokens API](../../references/contracts/apis/pools/weightedpool2tokens.md#api).
 
 ## Interfacing
 

@@ -43,7 +43,7 @@ returns (int256[] assetDeltas)
 
 ### `queryJoin`
 
-To calculate amounts of BPT out and tokens in, you will use `queryJoin` in [`BalancerHelpers`](../references/valuing-balancer-lp-tokens/balancerhelpers.md#queryjoin). This functionality is important for calculating `maxAmountsIn` and/or `minBptOut` on joins
+To calculate amounts of BPT out and tokens in, you will use `queryJoin` in [`BalancerHelpers`](../references/contracts/apis/balancerhelpers.md#queryjoin). This functionality is important for calculating `maxAmountsIn` and/or `minBptOut` on joins
 
 ```
 queryJoin(
@@ -56,7 +56,7 @@ returns (uint256 bptOut, uint256[] amountsIn)
 
 ### `queryExit`
 
-To calculate amounts of BPT in and tokens out, you will use `queryExit` in [`BalancerHelpers`](../references/valuing-balancer-lp-tokens/balancerhelpers.md#queryexit). This functionality is important for calculating `minAmountsOut` and/or `maxBptIn` on exits.
+To calculate amounts of BPT in and tokens out, you will use `queryExit` in [`BalancerHelpers`](../references/contracts/apis/balancerhelpers.md#queryexit). This functionality is important for calculating `minAmountsOut` and/or `maxBptIn` on exits.
 
 ```
 queryExit(

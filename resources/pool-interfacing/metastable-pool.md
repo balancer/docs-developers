@@ -4,7 +4,7 @@
 
 For advantages and use cases of MetaStable Pools, please refer to [the standard documentation](https://docs.balancer.fi/products/balancer-pools/metastable-pools).
 
-For more interfaces, such as updating the `amplificationParameter` or querying price data from the pool oracle interface, see the [MetaStablePool API](../../references/valuing-balancer-lp-tokens/pools/metastablepools.md).
+For more interfaces, such as updating the `amplificationParameter` or querying price data from the pool oracle interface, see the [MetaStablePool API](../../references/contracts/apis/pools/metastablepools.md).
 
 ## Interfacing
 
