@@ -89,7 +89,7 @@ Applies to:
 * **Exact Tokens Join** (`EXACT_TOKENS_IN_FOR_BPT_OUT`)
   * User sends precise quantities of tokens, and receives an estimated but unknown (computed at run time) quantity of BPT.
 * **Single Token Join** (`TOKEN_IN_FOR_EXACT_BPT_OUT`)
-  * User sends a precise quantity of a single token, and receives an estimated but unknown (computed at run time) quantity of BPT.
+  * User sends an estimated but unknown (computed at run time) quantity of a single token, and receives a precise quantity of BPT.
 * **Proportional Join** (`ALL_TOKENS_IN_FOR_EXACT_BPT_OUT`)
   * User sends estimated but unknown (computed at run time) quantities of tokens, and receives precise quantity of BPT.
 
