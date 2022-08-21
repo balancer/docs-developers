@@ -29,65 +29,65 @@ title: Subgraph Entities
 
 # Balancer
 
-Description: Unsure?
+Description: 
 
-| Field           | Type                                   | Description |
-| --------------- | -------------------------------------- | ----------- |
-| id              | ID!                                    |             |
-| poolCount       | Int!                                   |             |
-| pools           | [Pool!] @derivedFrom(field: "vaultID") |             |
-| totalLiquidity  | BigDecimal!                            |             |
-| totalSwapCount  | BigInt!                                |             |
-| totalSwapVolume | BigDecimal!                            |             |
-| totalSwapFee    | BigDecimal!                            |             |
+| Field           | Type             | Description |
+| --------------- | ---------------- | ----------- |
+| id              | ID!              |             |
+| poolCount       | Int!             |             |
+| pools           | [`Pool!`](#pool) |             |
+| totalLiquidity  | BigDecimal!      |             |
+| totalSwapCount  | BigInt!          |             |
+| totalSwapVolume | BigDecimal!      |             |
+| totalSwapFee    | BigDecimal!      |             |
 
 # Pool
 
-Description: Unsure?
+Description: 
 
-| Field                   | Type                                                     | Description |
-| ----------------------- | -------------------------------------------------------- | ----------- |
-| id                      | ID!                                                      |             |
-| address                 | Bytes!                                                   |             |
-| poolType                | String                                                   |             |
-| factory                 | Bytes                                                    |             |
-| strategyType            | Int!                                                     |             |
-| oracleEnabled           | Boolean!                                                 |             |
-| symbol                  | String                                                   |             |
-| name                    | String                                                   |             |
-| swapEnabled             | Boolean!                                                 |             |
-| swapFee                 | BigDecimal!                                              |             |
-| owner                   | Bytes                                                    |             |
-| totalWeight             | BigDecimal                                               |             |
-| totalSwapVolume         | BigDecimal!                                              |             |
-| totalSwapFee            | BigDecimal!                                              |             |
-| totalLiquidity          | BigDecimal!                                              |             |
-| totalShares             | BigDecimal!                                              |             |
-| createTime              | Int!                                                     |             |
-| swapCount               | BigInt!                                                  |             |
-| holdersCount            | BigInt!                                                  |             |
-| vaultID                 | Balancer!                                                |             |
-| tx                      | Bytes                                                    |             |
-| tokensList              | [Bytes!]!                                                |             |
-| tokens                  | [`PoolToken!`](#pooltoken) @derivedFrom(field: "poolId")               |             |
-| swaps                   | [`Swap!`](#swap)@derivedFrom(field: "poolId")                    |             |
-| shares                  | [`PoolShare!`](#poolshare)(#poolshare) @derivedFrom(field: "poolId")               |             |
-| historicalValues        |  [`PoolHistoricalLiquidity!`](#poolhistoricalliquidity)(#poolhistoricalliquidity) @derivedFrom(field: "poolId") |             |
-| weightUpdates [^1]      | [`GradualWeightUpdate!`](#gradualweightupdate) @derivedFrom(field: "poolId")     |             |
-| amp [^2]                | BigInt                                                   |
-| priceRateProviders [^3] | [`PriceRateProvider!`](#pricerateprovider)(#pricerateprovider) @derivedFrom(field: "poolId")       |             |
-| principalToken [^4]     | Bytes                                                    |             |
-| baseToken [^4]          | Bytes                                                    |             |
-| expirtyTime [^4]        | BigInt                                                   |             |
-| unitSeconds [^4]        | BigInt                                                   |             |
-| managementFee [^5]      | BigDecimal                                               |             |
-| mainIndex [^6]          | Int                                                      |             |
-| wrappedIndex [^6]       | Int                                                      |             |
-| lowerTarget [^6]        | BigDecimal                                               |             |
-| upperTarget [^6]        | BigDecimal                                               |             |
-| sqrtAlpha [^7]          | BigDecimal                                               |             |
-| sqrtBeta [^7]           | BigDecimal                                               |             |
-| root3Alpha [^8]         | BigDecimal                                               |             |
+| Field                   | Type                                                                             | Description |
+| ----------------------- | -------------------------------------------------------------------------------- | ----------- |
+| id                      | ID!                                                                              |             |
+| address                 | Bytes!                                                                           |             |
+| poolType                | String                                                                           |             |
+| factory                 | Bytes                                                                            |             |
+| strategyType            | Int!                                                                             |             |
+| oracleEnabled           | Boolean!                                                                         |             |
+| symbol                  | String                                                                           |             |
+| name                    | String                                                                           |             |
+| swapEnabled             | Boolean!                                                                         |             |
+| swapFee                 | BigDecimal!                                                                      |             |
+| owner                   | Bytes                                                                            |             |
+| totalWeight             | BigDecimal                                                                       |             |
+| totalSwapVolume         | BigDecimal!                                                                      |             |
+| totalSwapFee            | BigDecimal!                                                                      |             |
+| totalLiquidity          | BigDecimal!                                                                      |             |
+| totalShares             | BigDecimal!                                                                      |             |
+| createTime              | Int!                                                                             |             |
+| swapCount               | BigInt!                                                                          |             |
+| holdersCount            | BigInt!                                                                          |             |
+| vaultID                 | Balancer!                                                                        |             |
+| tx                      | Bytes                                                                            |             |
+| tokensList              | [Bytes!]!                                                                        |             |
+| tokens                  | [`PoolToken!`](#pooltoken)                                                       |             |
+| swaps                   | [`Swap!`](#swap)                                                                 |             |
+| shares                  | [`PoolShare!`](#poolshare)                                                       |             |
+| historicalValues        | [`PoolHistoricalLiquidity!`](#poolhistoricalliquidity)(#poolhistoricalliquidity) |             |
+| weightUpdates [^1]      | [`GradualWeightUpdate!`](#gradualweightupdate)                                   |             |
+| amp [^2]                | BigInt                                                                           |
+| priceRateProviders [^3] | [`PriceRateProvider!`](#pricerateprovider)(#pricerateprovider)                   |             |
+| principalToken [^4]     | Bytes                                                                            |             |
+| baseToken [^4]          | Bytes                                                                            |             |
+| expirtyTime [^4]        | BigInt                                                                           |             |
+| unitSeconds [^4]        | BigInt                                                                           |             |
+| managementFee [^5]      | BigDecimal                                                                       |             |
+| mainIndex [^6]          | Int                                                                              |             |
+| wrappedIndex [^6]       | Int                                                                              |             |
+| lowerTarget [^6]        | BigDecimal                                                                       |             |
+| upperTarget [^6]        | BigDecimal                                                                       |             |
+| sqrtAlpha [^7]          | BigDecimal                                                                       |             |
+| sqrtBeta [^7]           | BigDecimal                                                                       |             |
+| root3Alpha [^8]         | BigDecimal                                                                       |             |
 
 [^1]: Liquiditybootstrappingpoolonly
 [^2]: Stablepoolonly
@@ -100,29 +100,29 @@ Description: Unsure?
 
 # PoolToken
 
-Description: Unsure?
+Description:
 
-| Field         | Type                                                      | Description |
-| ------------- | --------------------------------------------------------- | ----------- |
-| id            | ID!                                                       |             |
-| poolId        | Pool                                                      |             |
-| token         | Token!                                                    |             |
-| assetManager  | Bytes                                                     |             |
-| symbol        | String!                                                   |             |
-| decimals      | Int!                                                      |             |
-| address       | String!                                                   |             |
-| priceRate     | BigDecimal!                                               |             |
-| balance       | BigDecimal!                                               |             |
-| cashBalance   | BigDecimal!                                               |             |
-| manageBalance | BigDecimal!                                               |             |
-| management    | [ManagementOperation!] @derivedFrom(field: "poolTokenId") |             |
-| weight [^9]   | BigDecimal                                                |             |
+| Field         | Type                   | Description |
+| ------------- | ---------------------- | ----------- |
+| id            | ID!                    |             |
+| poolId        | Pool                   |             |
+| token         | Token!                 |             |
+| assetManager  | Bytes                  |             |
+| symbol        | String!                |             |
+| decimals      | Int!                   |             |
+| address       | String!                |             |
+| priceRate     | BigDecimal!            |             |
+| balance       | BigDecimal!            |             |
+| cashBalance   | BigDecimal!            |             |
+| manageBalance | BigDecimal!            |             |
+| management    | [ManagementOperation!] |             |
+| weight [^9]   | BigDecimal             |             |
 
 [^9]: weightedpoolonly
 
 # PriceRateProvider
 
-Description: Unsure?
+Description: 
 
 | Field          | Type        | Description |
 | -------------- | ----------- | ----------- |
@@ -137,7 +137,7 @@ Description: Unsure?
 
 # PoolShare
 
-Description: Unsure?
+Description:
 
 | Field       | Type        | Description |
 | ----------- | ----------- | ----------- |
@@ -148,113 +148,134 @@ Description: Unsure?
 
 # User
 
-Description: Unsure?
+Description: 
 
-| Field                | Type                                                     | Description |
-| -------------------- | -------------------------------------------------------- | ----------- |
-| id                   | ID!                                                      |             |
-| sharesOwned          | [`PoolShare!`](#poolshare) @derivedFrom(field: "userAddress")          |             |
-| swaps                | [`Swap!`](#swap) @derivedFrom(field: "userAddress")               |             |
-| userInternalBalances | [`UserInternalBalance!`](#userinternalbalance)@derivedFrom(field: "userAddress") |             |
+| Field                | Type                                           | Description |
+| -------------------- | ---------------------------------------------- | ----------- |
+| id                   | ID!                                            |             |
+| sharesOwned          | [`PoolShare!`](#poolshare)                     |             |
+| swaps                | [`Swap!`](#swap)                               |             |
+| userInternalBalances | [`UserInternalBalance!`](#userinternalbalance) |             |
 
-type UserInternalBalance @entity {
-id: ID!
-userAddress: User
-token: Bytes!
-balance: BigDecimal!
-}
+# UserInternalBalance
 
-type GradualWeightUpdate @entity {
-id: ID!
-poolId: Pool!
-scheduledTimestamp: Int!
-startTimestamp: BigInt!
-endTimestamp: BigInt!
-startWeights: [BigInt!]!
-endWeights: [BigInt!]!
-}
+Description: 
 
-type AmpUpdate @entity {
-id: ID!
-poolId: Pool!
-scheduledTimestamp: Int!
-startTimestamp: BigInt!
-endTimestamp: BigInt!
-startAmp: BigInt!
-endAmp: BigInt!
-}
+| Field       | Type        | Description |
+| ----------- | ----------- | ----------- |
+| id          | ID!         |             |
+| userAddress | User        |             |
+| token       | Bytes!      |             |
+| balance     | BigDecimal! |             |
 
-type Swap @entity {
-id: ID!
-caller: Bytes!
-tokenIn: Bytes!
-tokenInSym: String!
-tokenOut: Bytes!
-tokenOutSym: String!
-tokenAmountIn: BigDecimal!
-tokenAmountOut: BigDecimal!
-valueUSD: BigDecimal!
-poolId: Pool!
-userAddress: User!
-timestamp: Int!
-tx: Bytes!
-}
+# GradualWeightUpdate
 
-enum InvestType {
-Join
-Exit
-}
+Description: 
 
-type JoinExit @entity {
-id: ID!
-type: InvestType!
-sender: Bytes!
-amounts: [BigDecimal!]!
-pool: Pool!
-user: User!
-timestamp: Int!
-tx: Bytes!
-}
+| Field              | Type    | Description |
+| ------------------ | ------- | ----------- |
+| id                 | ID!     |             |
+| poolId             | Pool!   |             |
+| scheduledTimestamp | Int!    |             |
+| startTimestamp     | BigInt! |             |
+| endTimestamp       | BigInt! |             |
+| startWeights       | BigInt! |             |
+| endWeights         | BigInt! |             |
 
-type LatestPrice @entity {
-id: ID!
-asset: Bytes!
-pricingAsset: Bytes! # address of stable asset
-poolId: Pool! # last pool which set price
-price: BigDecimal! # all the latest prices
-block: BigInt! # last block that prices were updated
-}
+# AmpUpdate
 
-type PoolHistoricalLiquidity @entity {
-id: ID!
-poolId: Pool!
-poolTotalShares: BigDecimal!
-poolLiquidity: BigDecimal! # total value, priced in the stable asset - ie USD
-poolShareValue: BigDecimal!
-pricingAsset: Bytes! # address of stable asset
-block: BigInt!
-}
+Description: 
 
-type TokenPrice @entity {
-id: ID! # address of token + address of stablecoin-poolId
-poolId: Pool!
-asset: Bytes!
-amount: BigDecimal!
-pricingAsset: Bytes! # address of stable asset
-price: BigDecimal!
-block: BigInt!
-timestamp: Int!
-}
+| Field              | Type    | Description |
+| ------------------ | ------- | ----------- |
+| id                 | ID!     |             |
+| poolId             | Pool!   |             |
+| scheduledTimestamp | Int!    |             |
+| startTimestamp     | BigInt! |             |
+| endTimestamp       | BigInt! |             |
+| endAmp             | BigInt! |             |
 
-enum OperationType {
-Deposit
-Withdraw
-Update
-}
+# Swap
+
+Description: 
+
+| Field          | Type        | Description |
+| -------------- | ----------- | ----------- |
+| id             | ID!         |             |
+| caller         | Bytes!      |             |
+| tokenIn        | Bytes!      |             |
+| tokenIn        | Bytes!      |             |
+| tokenInSym     | String!     |             |
+| tokenOut       | Bytes!      |             |
+| tokenOutSym    | String!     |             |
+| tokenAmountIn  | BigDecimal! |             |
+| tokenAmountOut | BigDecimal! |             |
+| valueUSD       | BigDecimal! |             |
+| poolId         | Pool!       |             |
+| UserAddress    | User!       |             |
+| timestamp      | Int!        |             |
+| tx             | Bytes!      |             |
+
+# JoinExit
+
+Description:
+
+| Field     | Type           | Description |
+| --------- | -------------- | ----------- |
+| id        | ID!            |             |
+| type      | InvestType!    |             |
+| sender    | Bytes!         |             |
+| amounts   | [BigDecimal!]! |             |
+| pool      | Pool!          |             |
+| user      | User!          |             |
+| timestamp | Int!           |             |
+| tx        | Bytes!         |             |
+
+# LatestPrice
+
+Description: 
+
+| Field        | Type        | Description                         |
+| ------------ | ----------- | ----------------------------------- |
+| id           | ID!         |                                     |
+| asset        | Bytes!      |                                     |
+| pricingAsset | Bytes!      | address of stable asset             |
+| poolID       | Pool!       | last pool which set price           |
+| price        | BigDecimal! | all the latest prices               |
+| block        | BigInt!     | last block that prices were updated |
+
+# PoolHistoricalLiquidity
+
+Description: 
+
+| Field           | Type        | Description                                      |
+| --------------- | ----------- | ------------------------------------------------ |
+| id              | ID!         |                                                  |
+| poolId          | Pool!       |                                                  |
+| poolTotalShares | BigDecimal! |                                                  |
+| poolLiquidity   | BigDecimal! | total value, priced in the stable asset - ie USD |
+| poolShareValue  | BigDecimal! |                                                  |
+| pricingAsset    | Bytes!      | address of stable asset                          |
+| block           | BigInt!     |                                                  |
+
+# TokenPrice
+
+Description: 
+
+| Field        | Type        | Description                                     |
+| ------------ | ----------- | ----------------------------------------------- |
+| id           | ID!         | address of token + address of stablecoin-poolId |
+| poolId       | Pool!       |                                                 |
+| assets       | Bytes!      |                                                 |
+| amount       | BigDecimal! |                                                 |
+| pricingAsset | Bytes!      | address of stable asset                         |
+| price        | BigDecimal! |                                                 |
+| block        | BigInt!     |                                                 |
+| timestamp    | Int!        |                                                 |
 
 # ManagementOperation
 
-Description: Unsure?
+Description: 
 
 | Field       | Type           | Description |
 | ----------- | -------------- | ----------- |
@@ -267,7 +288,7 @@ Description: Unsure?
 
 # PoolSnapshot
 
-Description: Unsure?
+Description: 
 
 | Field       | Type           | Description |
 | ----------- | -------------- | ----------- |
@@ -282,7 +303,7 @@ Description: Unsure?
 
 # Token
 
-Description: Unsure?
+Description: 
 
 | Field                | Type        | Description                                                       |
 | -------------------- | ----------- | ----------------------------------------------------------------- |
@@ -302,7 +323,7 @@ Description: Unsure?
 
 # TokenSnapshot
 
-Description: Unsure?
+Description: 
 
 | Field                | Type        | Description                                      |
 | -------------------- | ----------- | ------------------------------------------------ |
@@ -316,7 +337,7 @@ Description: Unsure?
 
 # TradePair
 
-Description: Unsure?
+Description: 
 
 | Field           | Type        | Description                   |
 | --------------- | ----------- | ----------------------------- |
@@ -328,7 +349,7 @@ Description: Unsure?
 
 # TradePairSnapshot
 
-Description: Unsure?
+Description:
 
 | Field           | Type        | Description |
 | --------------- | ----------- | ----------- |
@@ -340,7 +361,7 @@ Description: Unsure?
 
 # BalancerSnapshot
 
-Description: Unsure?
+Description: 
 
 | Field           | Type        | Description |
 | --------------- | ----------- | ----------- |
