@@ -69,13 +69,13 @@ Description: Unsure?
 | vaultID                 | Balancer!                                                |             |
 | tx                      | Bytes                                                    |             |
 | tokensList              | [Bytes!]!                                                |             |
-| tokens                  | [PoolToken!] @derivedFrom(field: "poolId")               |             |
-| swaps                   | [Swap!] @derivedFrom(field: "poolId")                    |             |
-| shares                  | [PoolShare!] @derivedFrom(field: "poolId")               |             |
-| historicalValues        | [PoolHistoricalLiquidity!] @derivedFrom(field: "poolId") |             |
-| weightUpdates [^1]      | [GradualWeightUpdate!] @derivedFrom(field: "poolId")     |             |
+| tokens                  | [`PoolToken!`](#pooltoken) @derivedFrom(field: "poolId")               |             |
+| swaps                   | [`Swap!`](#swap)@derivedFrom(field: "poolId")                    |             |
+| shares                  | [`PoolShare!`](#poolshare)(#poolshare) @derivedFrom(field: "poolId")               |             |
+| historicalValues        |  [`PoolHistoricalLiquidity!`](#poolhistoricalliquidity)(#poolhistoricalliquidity) @derivedFrom(field: "poolId") |             |
+| weightUpdates [^1]      | [`GradualWeightUpdate!`](#gradualweightupdate) @derivedFrom(field: "poolId")     |             |
 | amp [^2]                | BigInt                                                   |
-| priceRateProviders [^3] | [PriceRateProvider!] @derivedFrom(field: "poolId")       |             |
+| priceRateProviders [^3] | [`PriceRateProvider!`](#pricerateprovider)(#pricerateprovider) @derivedFrom(field: "poolId")       |             |
 | principalToken [^4]     | Bytes                                                    |             |
 | baseToken [^4]          | Bytes                                                    |             |
 | expirtyTime [^4]        | BigInt                                                   |             |
@@ -153,9 +153,9 @@ Description: Unsure?
 | Field                | Type                                                     | Description |
 | -------------------- | -------------------------------------------------------- | ----------- |
 | id                   | ID!                                                      |             |
-| sharesOwned          | [PoolShare!] @derivedFrom(field: "userAddress")          |             |
-| swaps                | [Swap!] @derivedFrom(field: "userAddress")               |             |
-| userInternalBalances | [UserInternalBalance!]@derivedFrom(field: "userAddress") |             |
+| sharesOwned          | [`PoolShare!`](#poolshare) @derivedFrom(field: "userAddress")          |             |
+| swaps                | [`Swap!`](#swap) @derivedFrom(field: "userAddress")               |             |
+| userInternalBalances | [`UserInternalBalance!`](#userinternalbalance)@derivedFrom(field: "userAddress") |             |
 
 type UserInternalBalance @entity {
 id: ID!
