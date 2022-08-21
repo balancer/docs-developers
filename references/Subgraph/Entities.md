@@ -72,10 +72,10 @@ Description:
 | tokens                  | [`PoolToken!`](#pooltoken)                                                       |             |
 | swaps                   | [`Swap!`](#swap)                                                                 |             |
 | shares                  | [`PoolShare!`](#poolshare)                                                       |             |
-| historicalValues        | [`PoolHistoricalLiquidity!`](#poolhistoricalliquidity)(#poolhistoricalliquidity) |             |
+| historicalValues        | [`PoolHistoricalLiquidity!`](#poolhistoricalliquidity) |             |
 | weightUpdates [^1]      | [`GradualWeightUpdate!`](#gradualweightupdate)                                   |             |
 | amp [^2]                | BigInt                                                                           |
-| priceRateProviders [^3] | [`PriceRateProvider!`](#pricerateprovider)(#pricerateprovider)                   |             |
+| priceRateProviders [^3] | [`PriceRateProvider!`](#pricerateprovider)                  |             |
 | principalToken [^4]     | Bytes                                                                            |             |
 | baseToken [^4]          | Bytes                                                                            |             |
 | expirtyTime [^4]        | BigInt                                                                           |             |
