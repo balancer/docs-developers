@@ -12,6 +12,4 @@ The Balancer Subgraph indexes data on the Balancer smart contracts with a GraphQ
 | Ethereum Mainnet | [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-v2)                   |
 | Polygon          | [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-polygon-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-polygon-v2)   |
 | Arbitrum         | [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-arbitrum-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-arbitrum-v2) |
-| Kovan            | [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-kovan-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-kovan-v2)       |
-| Rinkeby          | [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-rinkeby-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-rinkeby-v2)   |
 | Goerli           | [https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-goerli-v2](https://thegraph.com/legacy-explorer/subgraph/balancer-labs/balancer-goerli-v2)     |
