@@ -78,8 +78,12 @@
 * [LP Tokens](references/lp-tokens/README.md)
   * [Valuing](references/valuing-balancer-lp-tokens/README.md)
   * [Underlying](references/lp-tokens/underlying.md)
+* [Subgraphs](references/Subgraph/SubgraphData.md)
+  * [Endpoints](references/Subgraph/Endpoints.md)
+  * [Entities](references/Subgraph/Entities.md)
+  * [Queries](references/Subgraph/Queries.md)
 * [Error Codes](references/error-codes.md)
-* [Subgraphs](references/subgraphs.md)
+
 * [Github](https://github.com/balancer-labs/)
 
 ## Deep Dive
