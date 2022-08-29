@@ -19,7 +19,7 @@ title: Subgraph Entities
 - [`LatestPrice`](#latestprice)
 - [`PoolHistoricalLiquidity`](#poolhistoricalliquidity)
 - [`TokenPrice`](#tokenprice)
-- [`Investment`](#investment)
+- [`ManagementOperation`](#managementoperation)
 - [`PoolSnapShot`](#poolsnapshot)
 - [`Token`](#token)
 - [`TokenSnapShot`](#tokensnapshot)
@@ -72,6 +72,7 @@ Description: various information about balancer pools
 | tokens                  | [`PoolToken!`](#pooltoken)                            |                             |
 | swaps                   | [`Swap!`](#swap)                                      |                             |
 | shares                  | [`PoolShare!`](#poolshare)                            |                             |
+| snapshots               | [`PoolSnapShot!`](#poolsnapshot)                      |                             |
 | historicalValues        | [`PoolHistoricalLiquidity!`](#poolhistoricaliquidity) |                             |
 | weightUpdates [^1]      | [`GradualWeightUpdate!`](#gradualweightupdate)        |                             |
 | amp [^2]                | BigInt                                                |
@@ -193,6 +194,7 @@ Description: Unsure?
 | scheduledTimestamp | Int!    |                                   |
 | startTimestamp     | BigInt! | Start time                        |
 | endTimestamp       | BigInt! | end time                          |
+| startAmp           | BigInt! |                                   |
 | endAmp             | BigInt! |                                   |
 
 # Swap
@@ -211,7 +213,7 @@ Description: information about users swaps
 | tokenAmountOut | BigDecimal! | amount of tokens received         |
 | valueUSD       | BigDecimal! | value in USD                      |
 | poolId         | Pool!       | a unigue identifier for each pool |
-| UserAddress    | User!       | user wallet address               |
+| userAddress    | User!       | user wallet address               |
 | timestamp      | Int!        | time stamp of when swap occured   |
 | tx             | Bytes!      | fee for swap                      |
 
@@ -265,7 +267,7 @@ Description: checking price of tokens
 | ------------ | ----------- | ----------------------------------------------- |
 | id           | ID!         | address of token + address of stablecoin-poolId |
 | poolId       | Pool!       | a unigue identifier for each pool               |
-| assets       | Bytes!      | list of assets                                  |
+| asset        | Bytes!      | list of assets                                  |
 | amount       | BigDecimal! | amount of token                                 |
 | pricingAsset | Bytes!      | address of stable asset                         |
 | price        | BigDecimal! | price of token                                  |
@@ -314,7 +316,7 @@ Description: information of tokens within balancer
 | totalBalanceUSD      | BigDecimal! | total balance of tokens across balancer                           |
 | totalBalanceNotional | BigDecimal! | total unrealized balance                                          |
 | totalVolumeUSD       | BigDecimal! | total volume in fiat (usd)                                        |
-| totalVlumeNotional   | BigDecimal! | total unrealized volume                                           |
+| totalVolumeNotional  | BigDecimal! | total unrealized volume                                           |
 | totalSwapCount       | BigInt!     | total swap count for token                                        |
 | latestPrice          | LatestPrice | latest price of token, updated when pool liquidity changes        |
 | latestUSDPrice       | BigDecimal! | latest price of token in USD, updated when pool liquidity changes |
