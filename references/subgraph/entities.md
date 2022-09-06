@@ -47,10 +47,10 @@ Description: various information about balancer pools
 
 | Field                   | Type                                                  | Description                 |
 | ----------------------- | ----------------------------------------------------- | --------------------------- |
-| id                      | ID!                                                   |                             |
+| id                      | ID!                                                   | smart contract id of pool   |
 | address                 | Bytes!                                                | address of user             |
 | poolType                | String                                                | which type of balancer pool |
-| factory                 | Bytes                                                 |                             |
+| factory                 | Bytes                                                 | time-based pause configuration|
 | strategyType            | Int!                                                  |                             |
 | oracleEnabled           | Boolean!                                              |                             |
 | symbol                  | String                                                |                             |
@@ -65,7 +65,7 @@ Description: various information about balancer pools
 | totalShares             | BigDecimal!                                           |                             |
 | createTime              | Int!                                                  |                             |
 | swapCount               | BigInt!                                               |                             |
-| holdersCount            | BigInt!                                               |                             |
+| holdersCount            | BigInt!                                               |  total number of LP in that pool|
 | vaultID                 | Balancer!                                             |                             |
 | tx                      | Bytes                                                 |                             |
 | tokensList              | [Bytes!]!                                             |                             |
@@ -107,34 +107,34 @@ Description: list of tokens wihtin balancer pools
 | ------------- | ---------------------- | --------------------------------- |
 | id            | ID!                    |                                   |
 | poolId        | Pool                   | a unigue identifier for each pool |
-| token         | Token!                 |                                   |
+| token         | Token!                 |  token id                         |
 | assetManager  | Bytes                  |                                   |
 | symbol        | String!                | pool token symbol                 |
-| decimals      | Int!                   |                                   |
+| decimals      | Int!                   |   the number of decimals for your token |
 | address       | String!                |                                   |
 | priceRate     | BigDecimal!            | conversion of token swapped       |
 | balance       | BigDecimal!            | token balance of pool token       |
 | cashBalance   | BigDecimal!            | cash balance of pool token        |
 | manageBalance | BigDecimal!            |                                   |
 | management    | [ManagementOperation!] |                                   |
-| weight [^9]   | BigDecimal             |                                   |
+| weight [^9]   | BigDecimal             |   percentage of token of weighted pool|
 
 [^9]: weightedpoolonly
 
 # PriceRateProvider
 
-Description: provides information of swaps
+Description: get the current exchange rates between the tokens in the pool.
 
 | Field          | Type        | Description                       |
 | -------------- | ----------- | --------------------------------- |
-| id             | ID!         |                                   |
+| id             | ID!         |  Id of contract                   |
 | poolID         | Pool!       | a unigue identifier for each pool |
-| token          | PoolToken!  |                                   |
-| address        | Bytes!      |                                   |
-| rate           | BigDecimal! |                                   |
-| lastCached     | Int!        |                                   |
+| token          | PoolToken!  |   token of the pool               |
+| address        | Bytes!      |  address of each token            |
+| rate           | BigDecimal! |  rate of quoted swap              |
+| lastCached     | Int!        |   timestamp of last quoted price  |
 | cachedDuration | Int!        | how long estimate rate will last  |
-| cashExpiry     | Int!        |                                   |
+| cashExpiry     | Int!        |  timestamp of price expiration    |
 
 # PoolShare
 
@@ -160,7 +160,7 @@ Description: information of balancer users
 
 # UserInternalBalance
 
-Description: check balance of each token
+Description: Similar to how the Vault keeps track of what tokens are in a pool, the Vault can also maintain balances for users or any other smart contract
 
 | Field       | Type        | Description               |
 | ----------- | ----------- | ------------------------- |
@@ -177,25 +177,25 @@ Description: information of when pools change token percentage
 | ------------------ | ------- | --------------------------------- |
 | id                 | ID!     |                                   |
 | poolId             | Pool!   | a unigue identifier for each pool |
-| scheduledTimestamp | Int!    |                                   |
-| startTimestamp     | BigInt! |                                   |
-| endTimestamp       | BigInt! |                                   |
-| startWeights       | BigInt! |                                   |
-| endWeights         | BigInt! |                                   |
+| scheduledTimestamp | Int!    |  scheduled time LP token weight change|
+| startTimestamp     | BigInt! | start time of update              |
+| endTimestamp       | BigInt! |   end time of update              |
+| startWeights       | BigInt! | weight of tokens in each LP pair before update|
+| endWeights         | BigInt! | weight of tokens in each LP pair ater update|
 
 # AmpUpdate
 
-Description: Unsure?
+Description: getting information on the amplification parameters
 
 | Field              | Type    | Description                       |
 | ------------------ | ------- | --------------------------------- |
 | id                 | ID!     |                                   |
 | poolId             | Pool!   | a unigue identifier for each pool |
-| scheduledTimestamp | Int!    |                                   |
-| startTimestamp     | BigInt! | Start time                        |
-| endTimestamp       | BigInt! | end time                          |
-| startAmp           | BigInt! |                                   |
-| endAmp             | BigInt! |                                   |
+| scheduledTimestamp | Int!    |  scheduled time of amp update     |
+| startTimestamp     | BigInt! | Start time of update              |
+| endTimestamp       | BigInt! | end time of update                |
+| startAmp           | BigInt! |  amount of amp prior to update    |
+| endAmp             | BigInt! |  amount of amp after update       |
 
 # Swap
 
@@ -203,18 +203,18 @@ Description: information about users swaps
 
 | Field          | Type        | Description                       |
 | -------------- | ----------- | --------------------------------- |
-| id             | ID!         |                                   |
-| caller         | Bytes!      |                                   |
-| tokenIn        | Bytes!      | which token swapped in            |
+| id             | ID!         | swap-{ Transaction hash }-{ Log index } |
+| caller         | Bytes!      | pool controller|
+| tokenIn        | Bytes!      | Token deposited into pool           |
 | tokenInSym     | String!     | symbol of token swapped in        |
-| tokenOut       | Bytes!      | which token swapped out           |
+| tokenOut       | Bytes!      | token withdrawn from pool           |
 | tokenOutSym    | String!     | symbol of token swapped out       |
-| tokenAmountIn  | BigDecimal! | amount of token swapped           |
-| tokenAmountOut | BigDecimal! | amount of tokens received         |
+| tokenAmountIn  | BigDecimal! | total native token deposited       |
+| tokenAmountOut | BigDecimal! | total native token withdrawn        |
 | valueUSD       | BigDecimal! | value in USD                      |
 | poolId         | Pool!       | a unigue identifier for each pool |
 | userAddress    | User!       | user wallet address               |
-| timestamp      | Int!        | time stamp of when swap occured   |
+| timestamp      | Int!        | timestamp of this even   |
 | tx             | Bytes!      | fee for swap                      |
 
 # JoinExit
@@ -223,12 +223,12 @@ Description: info when user joins or exits pool
 
 | Field     | Type           | Description                |
 | --------- | -------------- | -------------------------- |
-| id        | ID!            |                            |
-| type      | InvestType!    |                            |
-| sender    | Bytes!         |                            |
+| id        | ID!            | ID of the pool you're interacting with |
+| type      | InvestType!    | JoinKind or ExitKind |
+| sender    | Bytes!         |     address of sender     |
 | amounts   | [BigDecimal!]! |                            |
-| pool      | Pool!          |                            |
-| user      | User!          |                            |
+| pool      | Pool!          | pool ID                    |
+| user      | User!          | Joins encodes JoinKind, Exits encode ExitKind|
 | timestamp | Int!           | time stamp of join or exit |
 | tx        | Bytes!         | fee paid                   |
 
@@ -281,9 +281,9 @@ Description: Unsure?
 | Field       | Type           | Description                       |
 | ----------- | -------------- | --------------------------------- |
 | id          | ID!            |                                   |
-| type        | OperationType! |                                   |
-| cashDelta   | BigDecimal!    |                                   |
-| manageDelta | BigDecimal!    |                                   |
+| type        | OperationType! |  operation type                   |
+| cashDelta   | BigDecimal!    |change in cash since last cash delta point |
+| manageDelta | BigDecimal!    | change in managed amount since last delta point|
 | poolTokenID | PoolToken!     | a unigue identifier for each pool |
 | timestamp   | Int!           | timestamp operation occurs        |
 
@@ -308,10 +308,10 @@ Description: information of tokens within balancer
 
 | Field                | Type        | Description                                                       |
 | -------------------- | ----------- | ----------------------------------------------------------------- |
-| id                   | ID!         | eth address of user                                               |
+| id                   | ID!         | Smart contract address of the token                               |
 | symbol               | String      | symbol of token                                                   |
 | name                 | String      | name of token                                                     |
-| decimals             | Int!        |                                                                   |
+| decimals             | Int!        | the number of decimals for your token                             |
 | address              | String!     | token address                                                     |
 | totalBalanceUSD      | BigDecimal! | total balance of tokens across balancer                           |
 | totalBalanceNotional | BigDecimal! | total unrealized balance                                          |
