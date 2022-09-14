@@ -32,7 +32,6 @@
 | BalancerMinter                                 | [0x239e55F427D44C3cc793f49bFB507ebe76638a2b](https://etherscan.io/address/0x239e55F427D44C3cc793f49bFB507ebe76638a2b) |
 | LiquidityGaugeFactory                          | [0x4E7bBd911cf1EFa442BC1b2e9Ea01ffE785412EC](https://etherscan.io/address/0x4E7bBd911cf1EFa442BC1b2e9Ea01ffE785412EC) |
 | SingleRecipientGaugeFactory                    | [0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227](https://etherscan.io/address/0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227) |
-| VotingEscrowDelegation                         | [0x2E96068b3D5B5BAE3D7515da4A1D2E52d08A2647](https://etherscan.io/address/0x2E96068b3D5B5BAE3D7515da4A1D2E52d08A2647) |
 | VotingEscrowDelegationProxy                    | [0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0](https://etherscan.io/address/0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0) |
 | veBALDeploymentCoordinator                     | [0xeb151668006CD04DAdD098AFd0a82e78F77076c3](https://etherscan.io/address/0xeb151668006CD04DAdD098AFd0a82e78F77076c3) |
 | ArbitrumRootGaugeFactory                       | [0xad901309d9e9DbC5Df19c84f729f429F0189a633](https://etherscan.io/address/0xad901309d9e9DbC5Df19c84f729f429F0189a633) |
@@ -137,7 +136,6 @@
 | BalancerMinter                                 | [0xdf0399539A72E2689B8B2DD53C3C2A0883879fDd](https://goerli.etherscan.io/address/0xdf0399539a72e2689b8b2dd53c3c2a0883879fdd) |
 | LiquidityGaugeFactory                          | [0x224E808FBD9e491Be8988B8A0451FBF777C81B8A](https://goerli.etherscan.io/address/0x224e808fbd9e491be8988b8a0451fbf777c81b8a) |
 | SingleRecipientGaugeFactory                    | [0xd14FFA46C211eac64338c27549c3312380f850Fa](https://goerli.etherscan.io/address/0xd14FFA46C211eac64338c27549c3312380f850Fa) |
-| VotingEscrowDelegation                         | [0xcfF73979321788d59a6170fF012730dB2087f31c](https://goerli.etherscan.io/address/0xcfF73979321788d59a6170fF012730dB2087f31c) |
 | VotingEscrowDelegationProxy                    | [0xA1F107D1cD709514AE8A914eCB757E95f9cedB31](https://goerli.etherscan.io/address/0xa1f107d1cd709514ae8a914ecb757e95f9cedb31) |
 | FeeDistributor                                 | [0x7F91dcdE02F72b478Dc73cB21730cAcA907c8c44](https://goerli.etherscan.io/address/0x7f91dcde02f72b478dc73cb21730caca907c8c44) |
 {% endtab %}
