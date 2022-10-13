@@ -77,7 +77,6 @@
   * [UML Diagrams](references/valuing-balancer-lp-tokens/uml-diagrams.md)
 * [LP Tokens](references/lp-tokens/README.md)
   * [How Many BPT in veBAL?](references/lp-tokens/how-many-bpt-in-vebal.md)
-  * [Valuing](references/valuing-balancer-lp-tokens/README.md)
   * [Underlying](references/lp-tokens/underlying.md)
 * [Error Codes](references/error-codes.md)
 * [Subgraphs](references/subgraphs.md)
