@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Subgraph Entities
 ---
 
-# Entities
+## Entities
 
 - [`Balancer`](#balancer)
 - [`Pool`](#pool)
@@ -27,13 +27,13 @@ title: Subgraph Entities
 - [`TradePairSnapshot`](#tradepairsnapshot)
 - [`BalancerSnapshot`](#balancersnapshot)
 
-# Balancer
+## Balancer
 
 Description: General information about Balancer Pools
 
 | Field           | Type             | Description                    |
 | --------------- | ---------------- | ------------------------------ |
-| id              | ID!              |                                |
+| id              | ID!              | balancer ID                    |
 | poolCount       | Int!             | how many pools                 |
 | pools           | [`Pool!`](#pool) | choose which pool              |
 | totalLiquidity  | BigDecimal!      | how much liquidity pool has    |
@@ -41,54 +41,54 @@ Description: General information about Balancer Pools
 | totalSwapVolume | BigDecimal!      | how much value has been swaped |
 | totalSwapFee    | BigDecimal!      | how much fees collected        |
 
-# Pool
+## Pool
 
 Description: various information about balancer pools
 
-| Field                   | Type                                                  | Description                 |
-| ----------------------- | ----------------------------------------------------- | --------------------------- |
-| id                      | ID!                                                   | smart contract id of pool   |
-| address                 | Bytes!                                                | address of user             |
-| poolType                | String                                                | which type of balancer pool |
-| factory                 | Bytes                                                 | time-based pause configuration|
-| strategyType            | Int!                                                  |                             |
-| oracleEnabled           | Boolean!                                              |                             |
-| symbol                  | String                                                |                             |
-| name                    | String                                                |                             |
-| swapEnabled             | Boolean!                                              |                             |
-| swapFee                 | BigDecimal!                                           |                             |
-| owner                   | Bytes                                                 |                             |
-| totalWeight             | BigDecimal                                            |                             |
-| totalSwapVolume         | BigDecimal!                                           |                             |
-| totalSwapFee            | BigDecimal!                                           |                             |
-| totalLiquidity          | BigDecimal!                                           |                             |
-| totalShares             | BigDecimal!                                           |                             |
-| createTime              | Int!                                                  |                             |
-| swapCount               | BigInt!                                               |                             |
-| holdersCount            | BigInt!                                               |  total number of LP in that pool|
-| vaultID                 | Balancer!                                             |                             |
-| tx                      | Bytes                                                 |                             |
-| tokensList              | [Bytes!]!                                             |                             |
-| tokens                  | [`PoolToken!`](#pooltoken)                            |                             |
-| swaps                   | [`Swap!`](#swap)                                      |                             |
-| shares                  | [`PoolShare!`](#poolshare)                            |                             |
-| snapshots               | [`PoolSnapShot!`](#poolsnapshot)                      |                             |
-| historicalValues        | [`PoolHistoricalLiquidity!`](#poolhistoricaliquidity) |                             |
-| weightUpdates [^1]      | [`GradualWeightUpdate!`](#gradualweightupdate)        |                             |
-| amp [^2]                | BigInt                                                |
-| priceRateProviders [^3] | [`PriceRateProvider`](#pricerateprovider)             |                             |
-| principalToken [^4]     | Bytes                                                 |                             |
-| baseToken [^4]          | Bytes                                                 |                             |
-| expirtyTime [^4]        | BigInt                                                |                             |
-| unitSeconds [^4]        | BigInt                                                |                             |
-| managementFee [^5]      | BigDecimal                                            |                             |
-| mainIndex [^6]          | Int                                                   |                             |
-| wrappedIndex [^6]       | Int                                                   |                             |
-| lowerTarget [^6]        | BigDecimal                                            |                             |
-| upperTarget [^6]        | BigDecimal                                            |                             |
-| sqrtAlpha [^7]          | BigDecimal                                            |                             |
-| sqrtBeta [^7]           | BigDecimal                                            |                             |
-| root3Alpha [^8]         | BigDecimal                                            |                             |
+| Field                   | Type                                                   | Description                          |
+| ----------------------- | ------------------------------------------------------ | ------------------------------------ |
+| id                      | ID!                                                    | smart contract id of pool            |
+| address                 | Bytes!                                                 | address of user                      |
+| poolType                | String                                                 | which type of balancer pool          |
+| factory                 | Bytes                                                  | time-based pause configuration       |
+| strategyType            | Int!                                                   | strategy type (1 or 2)               |
+| oracleEnabled           | Boolean!                                               | check wether oracle is enabled       |
+| symbol                  | String                                                 | pool token symbol                    |
+| name                    | String                                                 | pool token name                      |
+| swapEnabled             | Boolean!                                               | check wether oracle is enabled       |
+| swapFee                 | BigDecimal!                                            | pool swap fee                        |
+| owner                   | Bytes                                                  | pool owner address                   |
+| totalWeight             | BigDecimal                                             | total weight                         |
+| totalSwapVolume         | BigDecimal!                                            | Total swap volume in USD             |
+| totalSwapFee            | BigDecimal!                                            | total swap fee in USD                |
+| totalLiquidity          | BigDecimal!                                            | total liqidity in pool               |
+| totalShares             | BigDecimal!                                            | total pool token shares              |
+| createTime              | Int!                                                   | block time pool was created          |
+| swapCount               | BigInt!                                                | pool swaps count                     |
+| holdersCount            | BigInt!                                                | total number of LP in that pool      |
+| vaultID                 | Balancer!                                              | vault ID                             |
+| tx                      | Bytes                                                  | Pool creation transaction id         |
+| tokensList              | [Bytes!]!                                              | array of token address in pool       |
+| tokens                  | [`PoolToken!`](#pooltoken)                             | tokens in pool                       |
+| swaps                   | [`Swap!`](#swap)                                       | swaps in pool                        |
+| shares                  | [`PoolShare!`](#poolshare)                             | shares in pool                       |
+| snapshots               | [`PoolSnapShot!`](#poolsnapshot)                       | snapshot of pool                     |
+| historicalValues        | [`PoolHistoricalLiquidity!`](#poolhistoricalliquidity) | pool historical values and liquidity |
+| weightUpdates [^1]      | [`GradualWeightUpdate!`](#gradualweightupdate)         | weight update values                 |
+| amp [^2]                | BigInt                                                 | amplification paramenters            |
+| priceRateProviders [^3] | [`PriceRateProvider`](#pricerateprovider)              | price rate providers                 |
+| principalToken [^4]     | Bytes                                                  | principal token                      |
+| baseToken [^4]          | Bytes                                                  | base token                           |
+| expiryTime [^4]         | BigInt                                                 | pool expiry time                     |
+| unitSeconds [^4]        | BigInt                                                 | unit seconds                         |
+| managementFee [^5]      | BigDecimal                                             | pool management fee                  |
+| mainIndex [^6]          | Int                                                    | pool main index                      |
+| wrappedIndex [^6]       | Int                                                    | pool wrapped index                   |
+| lowerTarget [^6]        | BigDecimal                                             | lower target                         |
+| upperTarget [^6]        | BigDecimal                                             | upper target                         |
+| sqrtAlpha [^7]          | BigDecimal                                             | square root of alpha                 |
+| sqrtBeta [^7]           | BigDecimal                                             | square root of beta                  |
+| root3Alpha [^8]         | BigDecimal                                             | cube root of alpha                   |
 
 [^1]: Liquiditybootstrappingpoolonly
 [^2]: Stablepoolonly
@@ -99,159 +99,159 @@ Description: various information about balancer pools
 [^7]: Gyro2PoolOnly
 [^8]: Gyro3PoolOnly
 
-# PoolToken
+## PoolToken
 
 Description: list of tokens wihtin balancer pools
 
-| Field         | Type                   | Description                       |
-| ------------- | ---------------------- | --------------------------------- |
-| id            | ID!                    |                                   |
-| poolId        | Pool                   | a unigue identifier for each pool |
-| token         | Token!                 |  token id                         |
-| assetManager  | Bytes                  |                                   |
-| symbol        | String!                | pool token symbol                 |
-| decimals      | Int!                   |   the number of decimals for your token |
-| address       | String!                |                                   |
-| priceRate     | BigDecimal!            | conversion of token swapped       |
-| balance       | BigDecimal!            | token balance of pool token       |
-| cashBalance   | BigDecimal!            | cash balance of pool token        |
-| manageBalance | BigDecimal!            |                                   |
-| management    | [ManagementOperation!] |                                   |
-| weight [^9]   | BigDecimal             |   percentage of token of weighted pool|
+| Field          | Type                   | Description                           |
+| -------------- | ---------------------- | ------------------------------------- |
+| id             | ID!                    | pool token ID                         |
+| poolId         | Pool                   | a unigue identifier for each pool     |
+| token          | Token!                 | token id                              |
+| assetManager   | Bytes                  | mint / burn address                   |
+| symbol         | String!                | pool token symbol                     |
+| decimals       | Int!                   | the number of decimals for your token |
+| address        | String!                | pool token address                    |
+| priceRate      | BigDecimal!            | conversion of token swapped           |
+| balance        | BigDecimal!            | token balance of pool token           |
+| cashBalance    | BigDecimal!            | cash balance of pool token            |
+| managedBalance | BigDecimal!            | managed balance                       |
+| management     | [ManagementOperation!] | management values                     |
+| weight [^9]    | BigDecimal             | percentage of token of weighted pool  |
 
 [^9]: weightedpoolonly
 
-# PriceRateProvider
+## PriceRateProvider
 
 Description: get the current exchange rates between the tokens in the pool.
 
 | Field          | Type        | Description                       |
 | -------------- | ----------- | --------------------------------- |
-| id             | ID!         |  Id of contract                   |
+| id             | ID!         | Id of contract                    |
 | poolID         | Pool!       | a unigue identifier for each pool |
-| token          | PoolToken!  |   token of the pool               |
-| address        | Bytes!      |  address of each token            |
-| rate           | BigDecimal! |  rate of quoted swap              |
-| lastCached     | Int!        |   timestamp of last quoted price  |
+| token          | PoolToken!  | token of the pool                 |
+| address        | Bytes!      | address of each token             |
+| rate           | BigDecimal! | rate of quoted swap               |
+| lastCached     | Int!        | timestamp of last quoted price    |
 | cachedDuration | Int!        | how long estimate rate will last  |
-| cashExpiry     | Int!        |  timestamp of price expiration    |
+| cashExpiry     | Int!        | timestamp of price expiration     |
 
-# PoolShare
+## PoolShare
 
 Description: information of shares users have
 
 | Field       | Type        | Description                       |
 | ----------- | ----------- | --------------------------------- |
-| id          | ID!         |                                   |
+| id          | ID!         | pool share ID                     |
 | userAddress | User!       | user wallet address               |
 | poolId      | Pool!       | a unigue identifier for each pool |
 | balance     | BigDecimal! | balance of pool                   |
 
-# User
+## User
 
 Description: information of balancer users
 
-| Field                | Type                                           | Description               |
-| -------------------- | ---------------------------------------------- | ------------------------- |
-| id                   | ID!                                            |                           |
-| sharesOwned          | [`PoolShare!`](#poolshare)                     | how many shares user owns |
-| swaps                | [`Swap!`](#swap)                               |                           |
-| userInternalBalances | [`UserInternalBalance!`](#userinternalbalance) |                           |
+| Field                | Type                                           | Description                  |
+| -------------------- | ---------------------------------------------- | ---------------------------- |
+| id                   | ID!                                            | user ID                      |
+| sharesOwned          | [`PoolShare!`](#poolshare)                     | how many shares user owns    |
+| swaps                | [`Swap!`](#swap)                               | how many swaps user has made |
+| userInternalBalances | [`UserInternalBalance!`](#userinternalbalance) | balance for user             |
 
-# UserInternalBalance
+## UserInternalBalance
 
 Description: Similar to how the Vault keeps track of what tokens are in a pool, the Vault can also maintain balances for users or any other smart contract
 
 | Field       | Type        | Description               |
 | ----------- | ----------- | ------------------------- |
-| id          | ID!         |                           |
+| id          | ID!         | user internal balance ID  |
 | userAddress | User        | wallet address            |
 | token       | Bytes!      | token checking balance on |
 | balance     | BigDecimal! | balance of token          |
 
-# GradualWeightUpdate
+## GradualWeightUpdate
 
 Description: information of when pools change token percentage
 
-| Field              | Type    | Description                       |
-| ------------------ | ------- | --------------------------------- |
-| id                 | ID!     |                                   |
-| poolId             | Pool!   | a unigue identifier for each pool |
-| scheduledTimestamp | Int!    |  scheduled time LP token weight change|
-| startTimestamp     | BigInt! | start time of update              |
-| endTimestamp       | BigInt! |   end time of update              |
-| startWeights       | BigInt! | weight of tokens in each LP pair before update|
-| endWeights         | BigInt! | weight of tokens in each LP pair ater update|
+| Field              | Type    | Description                                    |
+| ------------------ | ------- | ---------------------------------------------- |
+| id                 | ID!     | ID                                             |
+| poolId             | Pool!   | a unigue identifier for each pool              |
+| scheduledTimestamp | Int!    | scheduled time LP token weight change          |
+| startTimestamp     | BigInt! | start time of update                           |
+| endTimestamp       | BigInt! | end time of update                             |
+| startWeights       | BigInt! | weight of tokens in each LP pair before update |
+| endWeights         | BigInt! | weight of tokens in each LP pair ater update   |
 
-# AmpUpdate
+## AmpUpdate
 
 Description: getting information on the amplification parameters
 
 | Field              | Type    | Description                       |
 | ------------------ | ------- | --------------------------------- |
-| id                 | ID!     |                                   |
+| id                 | ID!     | amp update                        |
 | poolId             | Pool!   | a unigue identifier for each pool |
-| scheduledTimestamp | Int!    |  scheduled time of amp update     |
+| scheduledTimestamp | Int!    | scheduled time of amp update      |
 | startTimestamp     | BigInt! | Start time of update              |
 | endTimestamp       | BigInt! | end time of update                |
-| startAmp           | BigInt! |  amount of amp prior to update    |
-| endAmp             | BigInt! |  amount of amp after update       |
+| startAmp           | BigInt! | amount of amp prior to update     |
+| endAmp             | BigInt! | amount of amp after update        |
 
-# Swap
+## Swap
 
 Description: information about users swaps
 
-| Field          | Type        | Description                       |
-| -------------- | ----------- | --------------------------------- |
+| Field          | Type        | Description                             |
+| -------------- | ----------- | --------------------------------------- |
 | id             | ID!         | swap-{ Transaction hash }-{ Log index } |
-| caller         | Bytes!      | pool controller|
-| tokenIn        | Bytes!      | Token deposited into pool           |
-| tokenInSym     | String!     | symbol of token swapped in        |
-| tokenOut       | Bytes!      | token withdrawn from pool           |
-| tokenOutSym    | String!     | symbol of token swapped out       |
-| tokenAmountIn  | BigDecimal! | total native token deposited       |
-| tokenAmountOut | BigDecimal! | total native token withdrawn        |
-| valueUSD       | BigDecimal! | value in USD                      |
-| poolId         | Pool!       | a unigue identifier for each pool |
-| userAddress    | User!       | user wallet address               |
-| timestamp      | Int!        | timestamp of this even   |
-| tx             | Bytes!      | fee for swap                      |
+| caller         | Bytes!      | pool controller                         |
+| tokenIn        | Bytes!      | Token deposited into pool               |
+| tokenInSym     | String!     | symbol of token swapped in              |
+| tokenOut       | Bytes!      | token withdrawn from pool               |
+| tokenOutSym    | String!     | symbol of token swapped out             |
+| tokenAmountIn  | BigDecimal! | total native token deposited            |
+| tokenAmountOut | BigDecimal! | total native token withdrawn            |
+| valueUSD       | BigDecimal! | value in USD                            |
+| poolId         | Pool!       | a unigue identifier for each pool       |
+| userAddress    | User!       | user wallet address                     |
+| timestamp      | Int!        | timestamp of this even                  |
+| tx             | Bytes!      | fee for swap                            |
 
-# JoinExit
+## JoinExit
 
 Description: info when user joins or exits pool
 
-| Field     | Type           | Description                |
-| --------- | -------------- | -------------------------- |
-| id        | ID!            | ID of the pool you're interacting with |
-| type      | InvestType!    | JoinKind or ExitKind |
-| sender    | Bytes!         |     address of sender     |
-| amounts   | [BigDecimal!]! |                            |
-| pool      | Pool!          | pool ID                    |
-| user      | User!          | Joins encodes JoinKind, Exits encode ExitKind|
-| timestamp | Int!           | time stamp of join or exit |
-| tx        | Bytes!         | fee paid                   |
+| Field     | Type           | Description                                   |
+| --------- | -------------- | --------------------------------------------- |
+| id        | ID!            | ID of the pool you're interacting with        |
+| type      | InvestType!    | JoinKind or ExitKind                          |
+| sender    | Bytes!         | address of sender                             |
+| amounts   | [BigDecimal!]! | amounts during entry and exit                 |
+| pool      | Pool!          | pool ID                                       |
+| user      | User!          | Joins encodes JoinKind, Exits encode ExitKind |
+| timestamp | Int!           | time stamp of join or exit                    |
+| tx        | Bytes!         | fee paid                                      |
 
-# LatestPrice
+## LatestPrice
 
-Description: check lates token price
+Description: check latest token price
 
 | Field        | Type        | Description                         |
 | ------------ | ----------- | ----------------------------------- |
-| id           | ID!         |                                     |
-| asset        | Bytes!      |                                     |
+| id           | ID!         | ID                                  |
+| asset        | Bytes!      | token address                       |
 | pricingAsset | Bytes!      | address of stable asset             |
 | poolID       | Pool!       | last pool which set price           |
 | price        | BigDecimal! | all the latest prices               |
 | block        | BigInt!     | last block that prices were updated |
 
-# PoolHistoricalLiquidity
+## PoolHistoricalLiquidity
 
 Description: Historical liquidity of pools
 
 | Field           | Type        | Description                                      |
 | --------------- | ----------- | ------------------------------------------------ |
-| id              | ID!         |                                                  |
+| id              | ID!         | ID                                               |
 | poolId          | Pool!       | a unigue identifier for each pool                |
 | poolTotalShares | BigDecimal! | total pool shares                                |
 | poolLiquidity   | BigDecimal! | total value, priced in the stable asset - ie USD |
@@ -259,7 +259,7 @@ Description: Historical liquidity of pools
 | pricingAsset    | Bytes!      | address of stable asset                          |
 | block           | BigInt!     | last block that prices were updated              |
 
-# TokenPrice
+## TokenPrice
 
 Description: checking price of tokens
 
@@ -274,26 +274,24 @@ Description: checking price of tokens
 | block        | BigInt!     | last block that prices were updated             |
 | timestamp    | Int!        | time price is checked                           |
 
-# ManagementOperation
+## ManagementOperation
 
-Description: Unsure?
+| Field       | Type           | Description                                     |
+| ----------- | -------------- | ----------------------------------------------- |
+| id          | ID!            | ID                                              |
+| type        | OperationType! | operation type                                  |
+| cashDelta   | BigDecimal!    | change in cash since last cash delta point      |
+| manageDelta | BigDecimal!    | change in managed amount since last delta point |
+| poolTokenID | PoolToken!     | a unigue identifier for each pool               |
+| timestamp   | Int!           | timestamp operation occurs                      |
 
-| Field       | Type           | Description                       |
-| ----------- | -------------- | --------------------------------- |
-| id          | ID!            |                                   |
-| type        | OperationType! |  operation type                   |
-| cashDelta   | BigDecimal!    |change in cash since last cash delta point |
-| manageDelta | BigDecimal!    | change in managed amount since last delta point|
-| poolTokenID | PoolToken!     | a unigue identifier for each pool |
-| timestamp   | Int!           | timestamp operation occurs        |
-
-# PoolSnapshot
+## PoolSnapshot
 
 Description: a "snapshot" of the Ethereum blockchain for each pool at a certain block number before voting opens.
 
 | Field       | Type           | Description                         |
 | ----------- | -------------- | ----------------------------------- |
-| id          | ID!            |                                     |
+| id          | ID!            | pool snapshot ID                    |
 | pool        | Pool!          | name of pools included              |
 | amounts     | [BigDecimal!]! | amount of pools included            |
 | totalShares | BigDecimal!    | total shares of pool before vote    |
@@ -302,7 +300,7 @@ Description: a "snapshot" of the Ethereum blockchain for each pool at a certain 
 | liquidity   | BigDecimal!    | total liquidity of pool before vote |
 | timestamp   | Int!           | time snapshot occurs                |
 
-# Token
+## Token
 
 Description: information of tokens within balancer
 
@@ -322,7 +320,7 @@ Description: information of tokens within balancer
 | latestUSDPrice       | BigDecimal! | latest price of token in USD, updated when pool liquidity changes |
 | pool                 | Pool        | pool entity associated with the token, if it is a Balancer pool   |
 
-# TokenSnapshot
+## TokenSnapshot
 
 Description: a "snapshot" of the Ethereum blockchain for each token at a certain block number before voting opens.
 
@@ -336,7 +334,7 @@ Description: a "snapshot" of the Ethereum blockchain for each token at a certain
 | totalVolumeNotional  | BigDecimal! | underyling asset volume                          |
 | totalSwapCount       | BigInt!     | total swap count accross balancer                |
 
-# TradePair
+## TradePair
 
 Description: information of trading pairs in balancer
 
@@ -348,7 +346,7 @@ Description: information of trading pairs in balancer
 | totalSwapVolume | BigDecimal! | Total swap volume of pair     |
 | totalSwapFee    | BigDecimal! | Total swap fees of pair       |
 
-# TradePairSnapshot
+## TradePairSnapshot
 
 Description: a "snapshot" of the Ethereum blockchain of the trading pair at a certain block number before voting opens.
 
@@ -360,7 +358,7 @@ Description: a "snapshot" of the Ethereum blockchain of the trading pair at a ce
 | totalSwapVolume | BigDecimal! | total volume at time of snapshot    |
 | totalSwapFee    | BigDecimal! | total swap fees at time of snapshot |
 
-# BalancerSnapshot
+## BalancerSnapshot
 
 Description: a "snapshot" of the Ethereum blockchain at a certain block number before voting opens.
 
