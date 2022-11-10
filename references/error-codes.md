@@ -12,16 +12,16 @@ All error codes for the Balancer V2 core contracts are defined in the [`Balancer
 
 | Code | Error                    | Comment                                                         |
 | ---- | ------------------------ | --------------------------------------------------------------- |
-| 0    | ADD\_OVERFLOW            |                                                                 |
-| 1    | SUB\_OVERFLOW            |                                                                 |
-| 2    | SUB\_UNDERFLOW           |                                                                 |
-| 3    | MUL\_OVERFLOW            |                                                                 |
-| 4    | ZERO\_DIVISION           |                                                                 |
-| 5    | DIV\_INTERNAL            | Multiplication overflow during FixedPoint Division              |
-| 6    | X\_OUT\_OF\_BOUNDS       | Invalid x in ExpMath.pow(x, y)                                  |
-| 7    | Y\_OUT\_OF\_BOUNDS       | Invalid y in ExpMath.pow(x, y)                                  |
-| 8    | PRODUCT\_OUT\_OF\_BOUNDS | In LogExpMath.pow(x, y), error computing x^y as exp(y \* ln(x)) |
-| 9    | INVALID\_EXPONENT        | In LogExpMath.exp(x) = e^x; x out of bounds                     |
+| 000  | ADD\_OVERFLOW            |                                                                 |
+| 001  | SUB\_OVERFLOW            |                                                                 |
+| 002  | SUB\_UNDERFLOW           |                                                                 |
+| 003  | MUL\_OVERFLOW            |                                                                 |
+| 004  | ZERO\_DIVISION           |                                                                 |
+| 005  | DIV\_INTERNAL            | Multiplication overflow during FixedPoint Division              |
+| 006  | X\_OUT\_OF\_BOUNDS       | Invalid x in ExpMath.pow(x, y)                                  |
+| 007  | Y\_OUT\_OF\_BOUNDS       | Invalid y in ExpMath.pow(x, y)                                  |
+| 008  | PRODUCT\_OUT\_OF\_BOUNDS | In LogExpMath.pow(x, y), error computing x^y as exp(y \* ln(x)) |
+| 009  | INVALID\_EXPONENT        | In LogExpMath.exp(x) = e^x; x out of bounds                     |
 
 ## Input
 
