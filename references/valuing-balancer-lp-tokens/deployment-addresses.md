@@ -14,7 +14,6 @@
 | Composable Stable Pool                         | [0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F](https://etherscan.io/address/0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F#code) |
 | WstETHRateProvider                             | [0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768](https://etherscan.io/address/0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768)      |
 | InvestmentPoolFactory                          | [0x48767F9F868a4A7b86A90736632F6E44C2df7fa9](https://etherscan.io/address/0x48767F9F868a4A7b86A90736632F6E44C2df7fa9)      |
-| StablePhantomPoolFactory                       | [0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2](https://etherscan.io/address/0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2)      |
 | AaveLinearPoolFactory                          | [0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8](https://etherscan.io/address/0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8)      |
 | ERC4626LinearPoolFactory                       | [0xE061bF85648e9FA7b59394668CfEef980aEc4c66](https://etherscan.io/address/0xE061bF85648e9FA7b59394668CfEef980aEc4c66)      |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://etherscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e)      |
