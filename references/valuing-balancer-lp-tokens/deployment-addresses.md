@@ -92,17 +92,17 @@
 {% endtab %}
 
 {% tab title="Optimism" %}
-| Contracts                                      | Addresses                                                                                                                        |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://optimistic.etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8) |
-| BalancerHelpers                                | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://optimistic.etherscan.io/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9) |
-| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://optimistic.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
-| WeightedPoolFactory                            | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://optimistic.etherscan.io/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca) |
-| WeightedPool2TokensFactory                     | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://optimistic.etherscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e) |
-| StablePoolFactory                              | [0xeb151668006CD04DAdD098AFd0a82e78F77076c3](https://optimistic.etherscan.io/address/0xeb151668006CD04DAdD098AFd0a82e78F77076c3) |
-| MetaStablePoolFactory                          | [0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2](https://optimistic.etherscan.io/address/0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2) |
-| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://optimistic.etherscan.io/address/0xf302f9F50958c5593770FDf4d4812309fF77414f) |
-| AuthorizerAdaptor                              | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://optimistic.etherscan.io/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75) |
+| Contracts                                      | Addresses                                                                                                                             |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://optimistic.etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)      |
+| BalancerHelpers                                | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://optimistic.etherscan.io/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9)      |
+| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://optimistic.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
+| WeightedPoolFactory                            | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://optimistic.etherscan.io/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca)      |
+| WeightedPool2TokensFactory                     | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://optimistic.etherscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e)      |
+| StablePoolFactory                              | [0xeb151668006CD04DAdD098AFd0a82e78F77076c3](https://optimistic.etherscan.io/address/0xeb151668006CD04DAdD098AFd0a82e78F77076c3)      |
+| Composable Stable Pool                         | [0xf145caFB67081895EE80eB7c04A30Cf87f07b745](https://optimistic.etherscan.io/address/0xf145caFB67081895EE80eB7c04A30Cf87f07b745#code) |
+| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://optimistic.etherscan.io/address/0xf302f9F50958c5593770FDf4d4812309fF77414f)      |
+| AuthorizerAdaptor                              | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://optimistic.etherscan.io/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75)      |
 {% endtab %}
 
 {% tab title="Goerli" %}
