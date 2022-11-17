@@ -55,7 +55,6 @@
 | LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://polygonscan.com/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
 | Composable Stable Pool                         | [0x136FD06Fa01eCF624C7F2B3CB15742c1339dC2c4](https://polygonscan.com/address/0x136FD06Fa01eCF624C7F2B3CB15742c1339dC2c4#code) |
 | InvestmentPoolFactory                          | [0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193](https://polygonscan.com/address/0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193)      |
-| StablePhantomPoolFactory                       | [0xC128a9954e6c874eA3d62ce62B468bA073093F25](https://polygonscan.com/address/0xC128a9954e6c874eA3d62ce62B468bA073093F25)      |
 | AaveLinearPoolFactory                          | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://polygonscan.com/address/0xf302f9F50958c5593770FDf4d4812309fF77414f)      |
 | ERC4626LinearPoolFactory                       | [0xC6bD2497332d24094eC16a7261eec5C412B5a2C1](https://polygonscan.com/address/0xC6bD2497332d24094eC16a7261eec5C412B5a2C1)      |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x41B953164995c11C81DA73D212ED8Af25741b7Ac](https://polygonscan.com/address/0x41B953164995c11C81DA73D212ED8Af25741b7Ac)      |
