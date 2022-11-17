@@ -69,26 +69,26 @@
 {% endtab %}
 
 {% tab title="Arbitrum" %}
-| Contracts                                      | Addresses                                                                                                            |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://arbiscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8) |
-| BalancerHelpers                                | [0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab](https://arbiscan.io/address/0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab) |
-| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://arbiscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
-| WeightedPoolFactory                            | [0x7dFdEF5f355096603419239CE743BfaF1120312B](https://arbiscan.io/address/0x7dFdEF5f355096603419239CE743BfaF1120312B) |
-| WeightedPool2TokensFactory                     | [0xCF0a32Bbef8F064969F21f7e02328FB577382018](https://arbiscan.io/address/0xCF0a32Bbef8F064969F21f7e02328FB577382018) |
-| StablePoolFactory                              | [0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6](https://arbiscan.io/address/0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6) |
-| LiquidityBootstrappingPoolFactory              | [0x142B9666a0a3A30477b052962ddA81547E7029ab](https://arbiscan.io/address/0x142B9666a0a3A30477b052962ddA81547E7029ab) |
-| MetaStablePoolFactory                          | [0xEBFD5681977E38Af65A7487DC70B8221D089cCAD](https://arbiscan.io/address/0xEBFD5681977E38Af65A7487DC70B8221D089cCAD) |
-| InvestmentPoolFactory                          | [0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c](https://arbiscan.io/address/0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c) |
-| StablePhantomPoolFactory                       | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://arbiscan.io/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca) |
-| AaveLinearPoolFactory                          | [0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965](https://arbiscan.io/address/0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965) |
-| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x1802953277FD955f9a254B80Aa0582f193cF1d77](https://arbiscan.io/address/0x1802953277FD955f9a254B80Aa0582f193cF1d77) |
-| BalancerRelayer                                | [0x466262c2a275aB106E54D95B5B04603e12b58cA1](https://arbiscan.io/address/0x466262c2a275aB106E54D95B5B04603e12b58cA1) |
-| BatchRelayerLibrary                            | [0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768](https://arbiscan.io/address/0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768) |
-| MerkleOrchard                                  | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://arbiscan.io/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE) |
-| AuthorizerAdaptor                              | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://arbiscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e) |
-| ChildChainStreamer                             | [0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8](https://arbiscan.io/address/0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8) |
-| ChildChainLiquidityGaugeFactory                | [0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2](https://arbiscan.io/address/0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2) |
+| Contracts                                      | Addresses                                                                                                                 |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://arbiscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)      |
+| BalancerHelpers                                | [0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab](https://arbiscan.io/address/0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab)      |
+| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://arbiscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
+| WeightedPoolFactory                            | [0x7dFdEF5f355096603419239CE743BfaF1120312B](https://arbiscan.io/address/0x7dFdEF5f355096603419239CE743BfaF1120312B)      |
+| WeightedPool2TokensFactory                     | [0xCF0a32Bbef8F064969F21f7e02328FB577382018](https://arbiscan.io/address/0xCF0a32Bbef8F064969F21f7e02328FB577382018)      |
+| StablePoolFactory                              | [0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6](https://arbiscan.io/address/0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6)      |
+| LiquidityBootstrappingPoolFactory              | [0x142B9666a0a3A30477b052962ddA81547E7029ab](https://arbiscan.io/address/0x142B9666a0a3A30477b052962ddA81547E7029ab)      |
+| Composable Stable Pool                         | [0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33](https://arbiscan.io/address/0xaeb406b0e430bf5ea2dc0b9fe62e4e53f74b3a33#code) |
+| InvestmentPoolFactory                          | [0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c](https://arbiscan.io/address/0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c)      |
+| StablePhantomPoolFactory                       | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://arbiscan.io/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca)      |
+| AaveLinearPoolFactory                          | [0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965](https://arbiscan.io/address/0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965)      |
+| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x1802953277FD955f9a254B80Aa0582f193cF1d77](https://arbiscan.io/address/0x1802953277FD955f9a254B80Aa0582f193cF1d77)      |
+| BalancerRelayer                                | [0x466262c2a275aB106E54D95B5B04603e12b58cA1](https://arbiscan.io/address/0x466262c2a275aB106E54D95B5B04603e12b58cA1)      |
+| BatchRelayerLibrary                            | [0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768](https://arbiscan.io/address/0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768)      |
+| MerkleOrchard                                  | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://arbiscan.io/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
+| AuthorizerAdaptor                              | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://arbiscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e)      |
+| ChildChainStreamer                             | [0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8](https://arbiscan.io/address/0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8)      |
+| ChildChainLiquidityGaugeFactory                | [0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2](https://arbiscan.io/address/0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2)      |
 {% endtab %}
 
 {% tab title="Optimism" %}
