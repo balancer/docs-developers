@@ -45,27 +45,27 @@
 {% endtab %}
 
 {% tab title="Polygon" %}
-| Contracts                                      | Addresses                                                                                                                |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://polygonscan.com/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8) |
-| BalancerHelpers                                | [0x239e55F427D44C3cc793f49bFB507ebe76638a2b](https://polygonscan.com/address/0x239e55F427D44C3cc793f49bFB507ebe76638a2b) |
-| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://polygonscan.com/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6) |
-| WeightedPoolFactory                            | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://polygonscan.com/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9) |
-| WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://polygonscan.com/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0) |
-| StablePoolFactory                              | [0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1](https://polygonscan.com/address/0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1) |
-| LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://polygonscan.com/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE) |
-| MetaStablePoolFactory                          | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://polygonscan.com/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca) |
-| InvestmentPoolFactory                          | [0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193](https://polygonscan.com/address/0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193) |
-| StablePhantomPoolFactory                       | [0xC128a9954e6c874eA3d62ce62B468bA073093F25](https://polygonscan.com/address/0xC128a9954e6c874eA3d62ce62B468bA073093F25) |
-| AaveLinearPoolFactory                          | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://polygonscan.com/address/0xf302f9F50958c5593770FDf4d4812309fF77414f) |
-| ERC4626LinearPoolFactory                       | [0xC6bD2497332d24094eC16a7261eec5C412B5a2C1](https://polygonscan.com/address/0xC6bD2497332d24094eC16a7261eec5C412B5a2C1) |
-| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x41B953164995c11C81DA73D212ED8Af25741b7Ac](https://polygonscan.com/address/0x41B953164995c11C81DA73D212ED8Af25741b7Ac) |
-| BalancerRelayer                                | [0x4574ccBcC09A00C9eE55fB92Fe353699A4fA800e](https://polygonscan.com/address/0x4574ccBcC09A00C9eE55fB92Fe353699A4fA800e) |
-| BatchRelayerLibrary                            | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://polygonscan.com/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75) |
-| MerkleOrchard                                  | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://polygonscan.com/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e) |
-| AuthorizerAdaptor                              | [0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD](https://polygonscan.com/address/0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD) |
-| ChildChainStreamer                             | [0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0](https://polygonscan.com/address/0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0) |
-| ChildChainLiquidityGaugeFactory                | [0x3b8cA519122CdD8efb272b0D3085453404B25bD0](https://polygonscan.com/address/0x3b8cA519122CdD8efb272b0D3085453404B25bD0) |
+| Contracts                                      | Addresses                                                                                                                     |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://polygonscan.com/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)      |
+| BalancerHelpers                                | [0x239e55F427D44C3cc793f49bFB507ebe76638a2b](https://polygonscan.com/address/0x239e55F427D44C3cc793f49bFB507ebe76638a2b)      |
+| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://polygonscan.com/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
+| WeightedPoolFactory                            | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://polygonscan.com/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9)      |
+| WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://polygonscan.com/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0)      |
+| StablePoolFactory                              | [0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1](https://polygonscan.com/address/0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1)      |
+| LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://polygonscan.com/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
+| Composable Stable Pool                         | [0x136FD06Fa01eCF624C7F2B3CB15742c1339dC2c4](https://polygonscan.com/address/0x136FD06Fa01eCF624C7F2B3CB15742c1339dC2c4#code) |
+| InvestmentPoolFactory                          | [0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193](https://polygonscan.com/address/0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193)      |
+| StablePhantomPoolFactory                       | [0xC128a9954e6c874eA3d62ce62B468bA073093F25](https://polygonscan.com/address/0xC128a9954e6c874eA3d62ce62B468bA073093F25)      |
+| AaveLinearPoolFactory                          | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://polygonscan.com/address/0xf302f9F50958c5593770FDf4d4812309fF77414f)      |
+| ERC4626LinearPoolFactory                       | [0xC6bD2497332d24094eC16a7261eec5C412B5a2C1](https://polygonscan.com/address/0xC6bD2497332d24094eC16a7261eec5C412B5a2C1)      |
+| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x41B953164995c11C81DA73D212ED8Af25741b7Ac](https://polygonscan.com/address/0x41B953164995c11C81DA73D212ED8Af25741b7Ac)      |
+| BalancerRelayer                                | [0x4574ccBcC09A00C9eE55fB92Fe353699A4fA800e](https://polygonscan.com/address/0x4574ccBcC09A00C9eE55fB92Fe353699A4fA800e)      |
+| BatchRelayerLibrary                            | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://polygonscan.com/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75)      |
+| MerkleOrchard                                  | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://polygonscan.com/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e)      |
+| AuthorizerAdaptor                              | [0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD](https://polygonscan.com/address/0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD)      |
+| ChildChainStreamer                             | [0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0](https://polygonscan.com/address/0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0)      |
+| ChildChainLiquidityGaugeFactory                | [0x3b8cA519122CdD8efb272b0D3085453404B25bD0](https://polygonscan.com/address/0x3b8cA519122CdD8efb272b0D3085453404B25bD0)      |
 {% endtab %}
 
 {% tab title="Arbitrum" %}
