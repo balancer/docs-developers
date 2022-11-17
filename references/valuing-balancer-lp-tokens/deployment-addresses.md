@@ -11,7 +11,7 @@
 | WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://etherscan.io/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0)      |
 | Composable Stable Pool                         | [0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F](https://etherscan.io/address/0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F#code) |
 | LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://etherscan.io/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
-| MetaStablePoolFactory                          | [0x67d27634E44793fE63c467035E31ea8635117cd4](https://etherscan.io/address/0x67d27634E44793fE63c467035E31ea8635117cd4)      |
+| Composable Stable Pool                         | [0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33](https://arbiscan.io/address/0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33#code)  |
 | WstETHRateProvider                             | [0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768](https://etherscan.io/address/0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768)      |
 | InvestmentPoolFactory                          | [0x48767F9F868a4A7b86A90736632F6E44C2df7fa9](https://etherscan.io/address/0x48767F9F868a4A7b86A90736632F6E44C2df7fa9)      |
 | StablePhantomPoolFactory                       | [0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2](https://etherscan.io/address/0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2)      |
