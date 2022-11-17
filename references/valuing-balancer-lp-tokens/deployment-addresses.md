@@ -78,7 +78,6 @@
 | LiquidityBootstrappingPoolFactory              | [0x142B9666a0a3A30477b052962ddA81547E7029ab](https://arbiscan.io/address/0x142B9666a0a3A30477b052962ddA81547E7029ab)      |
 | Composable Stable Pool                         | [0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33](https://arbiscan.io/address/0xaeb406b0e430bf5ea2dc0b9fe62e4e53f74b3a33#code) |
 | InvestmentPoolFactory                          | [0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c](https://arbiscan.io/address/0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c)      |
-| StablePhantomPoolFactory                       | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://arbiscan.io/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca)      |
 | AaveLinearPoolFactory                          | [0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965](https://arbiscan.io/address/0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965)      |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x1802953277FD955f9a254B80Aa0582f193cF1d77](https://arbiscan.io/address/0x1802953277FD955f9a254B80Aa0582f193cF1d77)      |
 | BalancerRelayer                                | [0x466262c2a275aB106E54D95B5B04603e12b58cA1](https://arbiscan.io/address/0x466262c2a275aB106E54D95B5B04603e12b58cA1)      |
