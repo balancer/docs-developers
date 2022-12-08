@@ -71,7 +71,7 @@
 | Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://arbiscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)      |
 | BalancerHelpers                                | [0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab](https://arbiscan.io/address/0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://arbiscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
-| WeightedPoolFactory                            | [0x7dFdEF5f355096603419239CE743BfaF1120312B](https://arbiscan.io/address/0x7dFdEF5f355096603419239CE743BfaF1120312B)      |
+| WeightedPoolFactory v2                         | [0x8df6EfEc5547e31B0eb7d1291B511FF8a2bf987c](https://arbiscan.io/address/0x8df6efec5547e31b0eb7d1291b511ff8a2bf987c#code) |
 | WeightedPool2TokensFactory                     | [0xCF0a32Bbef8F064969F21f7e02328FB577382018](https://arbiscan.io/address/0xCF0a32Bbef8F064969F21f7e02328FB577382018)      |
 | StablePoolFactory                              | [0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6](https://arbiscan.io/address/0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6)      |
 | LiquidityBootstrappingPoolFactory              | [0x142B9666a0a3A30477b052962ddA81547E7029ab](https://arbiscan.io/address/0x142B9666a0a3A30477b052962ddA81547E7029ab)      |
