@@ -48,7 +48,7 @@
 | Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://polygonscan.com/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)      |
 | BalancerHelpers                                | [0x239e55F427D44C3cc793f49bFB507ebe76638a2b](https://polygonscan.com/address/0x239e55F427D44C3cc793f49bFB507ebe76638a2b)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://polygonscan.com/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
-| WeightedPoolFactory                            | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://polygonscan.com/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9)      |
+| WeightedPoolFactory v2                         | [0x0e39C3D9b2ec765eFd9c5c70BB290B1fCD8536E3](https://polygonscan.com/address/0x0e39c3d9b2ec765efd9c5c70bb290b1fcd8536e3#code) |
 | WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://polygonscan.com/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0)      |
 | StablePoolFactory                              | [0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1](https://polygonscan.com/address/0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1)      |
 | LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://polygonscan.com/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
