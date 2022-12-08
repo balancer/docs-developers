@@ -7,7 +7,7 @@
 | Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)      |
 | BalancerHelpers                                | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://etherscan.io/address/0x5aDDCCa35b7A0D07C74063c48700C8590E87864E)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
-| WeightedPoolFactory                            | [0xcC508a455F5b0073973107Db6a878DdBDab957bC](https://etherscan.io/address/0xcC508a455F5b0073973107Db6a878DdBDab957bC#code) |
+| WeightedPoolFactory v2                         | [0xcC508a455F5b0073973107Db6a878DdBDab957bC](https://etherscan.io/address/0xcC508a455F5b0073973107Db6a878DdBDab957bC#code) |
 | WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://etherscan.io/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0)      |
 | Composable Stable Pool                         | [0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F](https://etherscan.io/address/0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F#code) |
 | LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://etherscan.io/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
