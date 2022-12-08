@@ -93,7 +93,7 @@
 | Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://optimistic.etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)      |
 | BalancerHelpers                                | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://optimistic.etherscan.io/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://optimistic.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
-| WeightedPoolFactory                            | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://optimistic.etherscan.io/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca)      |
+| WeightedPoolFactory v2                         | [0xad901309d9e9DbC5Df19c84f729f429F0189a633](https://optimistic.etherscan.io/address/0xad901309d9e9DbC5Df19c84f729f429F0189a633#code) |
 | WeightedPool2TokensFactory                     | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://optimistic.etherscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e)      |
 | StablePoolFactory                              | [0xeb151668006CD04DAdD098AFd0a82e78F77076c3](https://optimistic.etherscan.io/address/0xeb151668006CD04DAdD098AFd0a82e78F77076c3)      |
 | Composable Stable Pool                         | [0xf145caFB67081895EE80eB7c04A30Cf87f07b745](https://optimistic.etherscan.io/address/0xf145caFB67081895EE80eB7c04A30Cf87f07b745#code) |
@@ -104,36 +104,36 @@
 {% tab title="Goerli" %}
 
 
-| Contracts                                      | Addresses                                                                                                                    |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://goerli.etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8) |
-| BalancerHelpers                                | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://goerli.etherscan.io/address/0x5addcca35b7a0d07c74063c48700c8590e87864e) |
-| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://goerli.etherscan.io/address/0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6) |
-| WeightedPoolFactory                            | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://goerli.etherscan.io/address/0x8e9aa87e45e92bad84d5f8dd1bff34fb92637de9) |
-| WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://goerli.etherscan.io/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0) |
-| StablePoolFactory                              | [0x44afeb87c871D8fEA9398a026DeA2BD3A13F5769](https://goerli.etherscan.io/address/0x44afeb87c871D8fEA9398a026DeA2BD3A13F5769) |
-| LiquidityBootstrappingPoolFactory              | [0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830](https://goerli.etherscan.io/address/0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830) |
-| MetaStablePoolFactory                          | [0xA55F73E2281c60206ba43A3590dB07B8955832Be](https://goerli.etherscan.io/address/0xA55F73E2281c60206ba43A3590dB07B8955832Be) |
-| WstETHRateProvider                             | [0x80a94F458491CA88F09767E58a92FD23Cbf1196F](https://goerli.etherscan.io/address/0x80a94F458491CA88F09767E58a92FD23Cbf1196F) |
-| InvestmentPoolFactory                          | [0x3C9F788131A26329A689Bd951b5aCb4454669487](https://goerli.etherscan.io/address/0x3C9F788131A26329A689Bd951b5aCb4454669487) |
-| StablePhantomPoolFactory                       | [0x41E9036AE350baEDCC7107760A020Dca3c0731ec](https://goerli.etherscan.io/address/0x41E9036AE350baEDCC7107760A020Dca3c0731ec) |
-| AaveLinearPoolFactory                          | [0x94470C12fc192e071F12Fec1152861608CE01562](https://goerli.etherscan.io/address/0x94470c12fc192e071f12fec1152861608ce01562) |
-| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0xB0C726778C3AE4B3454D85557A48e8fa502bDD6A](https://goerli.etherscan.io/address/0xB0C726778C3AE4B3454D85557A48e8fa502bDD6A) |
-| BalancerRelayer                                | [0x8002d3e5875b38C5B03da83aeB430dC63E047F62](https://goerli.etherscan.io/address/0x8002d3e5875b38C5B03da83aeB430dC63E047F62) |
-| BatchRelayerLibrary                            | [0xFB2f4CE9843E1069CC1F9d76e0236d6dFF2b1eeA](https://goerli.etherscan.io/address/0xFB2f4CE9843E1069CC1F9d76e0236d6dFF2b1eeA) |
-| LidoRelayer                                    | [0xdc10e8f47B6858E32218E01db224795235872B19](https://goerli.etherscan.io/address/0xdc10e8f47b6858e32218e01db224795235872b19) |
-| MerkleOrchard                                  | [0x35b50C7955e7D0E8298e043C9F4dCDef737b9f5a](https://goerli.etherscan.io/address/0x35b50C7955e7D0E8298e043C9F4dCDef737b9f5a) |
-| AuthorizerAdaptor                              | [0x5D90225De345eE24d1d2B6F45DE90B056F5265A1](https://goerli.etherscan.io/address/0x5D90225De345eE24d1d2B6F45DE90B056F5265A1) |
-| BALTokenHolderFactory                          | [0x45E617B07021B97407367624648d1A0A358a751A](https://goerli.etherscan.io/address/0x45E617B07021B97407367624648d1A0A358a751A) |
-| BalancerTokenAdmin                             | [0x0F32D7D830E20809Bcb9071581A696135dD472B7](https://goerli.etherscan.io/address/0x0f32d7d830e20809bcb9071581a696135dd472b7) |
-| GaugeAdder                                     | [0x0Df18b22fB1DD4c1D4bfBF783A8acF0758979328](https://goerli.etherscan.io/address/0x0df18b22fb1dd4c1d4bfbf783a8acf0758979328) |
-| VotingEscrow                                   | [0x33A99Dcc4C85C014cf12626959111D5898bbCAbF](https://goerli.etherscan.io/address/0x33a99dcc4c85c014cf12626959111d5898bbcabf) |
-| GaugeController                                | [0xBB1CE49b16d55A1f2c6e88102f32144C7334B116](https://goerli.etherscan.io/address/0xbb1ce49b16d55a1f2c6e88102f32144c7334b116) |
-| BalancerMinter                                 | [0xdf0399539A72E2689B8B2DD53C3C2A0883879fDd](https://goerli.etherscan.io/address/0xdf0399539a72e2689b8b2dd53c3c2a0883879fdd) |
-| LiquidityGaugeFactory                          | [0x224E808FBD9e491Be8988B8A0451FBF777C81B8A](https://goerli.etherscan.io/address/0x224e808fbd9e491be8988b8a0451fbf777c81b8a) |
-| SingleRecipientGaugeFactory                    | [0xd14FFA46C211eac64338c27549c3312380f850Fa](https://goerli.etherscan.io/address/0xd14FFA46C211eac64338c27549c3312380f850Fa) |
-| VotingEscrowDelegationProxy                    | [0xA1F107D1cD709514AE8A914eCB757E95f9cedB31](https://goerli.etherscan.io/address/0xa1f107d1cd709514ae8a914ecb757e95f9cedb31) |
-| FeeDistributor                                 | [0x7F91dcdE02F72b478Dc73cB21730cAcA907c8c44](https://goerli.etherscan.io/address/0x7f91dcde02f72b478dc73cb21730caca907c8c44) |
+| Contracts                                      | Addresses                                                                                                                         |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://goerli.etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)      |
+| BalancerHelpers                                | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://goerli.etherscan.io/address/0x5addcca35b7a0d07c74063c48700c8590e87864e)      |
+| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://goerli.etherscan.io/address/0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6)      |
+| WeightedPoolFactory v2                         | [0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227](https://goerli.etherscan.io/address/0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227#code) |
+| WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://goerli.etherscan.io/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0)      |
+| StablePoolFactory                              | [0x44afeb87c871D8fEA9398a026DeA2BD3A13F5769](https://goerli.etherscan.io/address/0x44afeb87c871D8fEA9398a026DeA2BD3A13F5769)      |
+| LiquidityBootstrappingPoolFactory              | [0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830](https://goerli.etherscan.io/address/0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830)      |
+| MetaStablePoolFactory                          | [0xA55F73E2281c60206ba43A3590dB07B8955832Be](https://goerli.etherscan.io/address/0xA55F73E2281c60206ba43A3590dB07B8955832Be)      |
+| WstETHRateProvider                             | [0x80a94F458491CA88F09767E58a92FD23Cbf1196F](https://goerli.etherscan.io/address/0x80a94F458491CA88F09767E58a92FD23Cbf1196F)      |
+| InvestmentPoolFactory                          | [0x3C9F788131A26329A689Bd951b5aCb4454669487](https://goerli.etherscan.io/address/0x3C9F788131A26329A689Bd951b5aCb4454669487)      |
+| StablePhantomPoolFactory                       | [0x41E9036AE350baEDCC7107760A020Dca3c0731ec](https://goerli.etherscan.io/address/0x41E9036AE350baEDCC7107760A020Dca3c0731ec)      |
+| AaveLinearPoolFactory                          | [0x94470C12fc192e071F12Fec1152861608CE01562](https://goerli.etherscan.io/address/0x94470c12fc192e071f12fec1152861608ce01562)      |
+| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0xB0C726778C3AE4B3454D85557A48e8fa502bDD6A](https://goerli.etherscan.io/address/0xB0C726778C3AE4B3454D85557A48e8fa502bDD6A)      |
+| BalancerRelayer                                | [0x8002d3e5875b38C5B03da83aeB430dC63E047F62](https://goerli.etherscan.io/address/0x8002d3e5875b38C5B03da83aeB430dC63E047F62)      |
+| BatchRelayerLibrary                            | [0xFB2f4CE9843E1069CC1F9d76e0236d6dFF2b1eeA](https://goerli.etherscan.io/address/0xFB2f4CE9843E1069CC1F9d76e0236d6dFF2b1eeA)      |
+| LidoRelayer                                    | [0xdc10e8f47B6858E32218E01db224795235872B19](https://goerli.etherscan.io/address/0xdc10e8f47b6858e32218e01db224795235872b19)      |
+| MerkleOrchard                                  | [0x35b50C7955e7D0E8298e043C9F4dCDef737b9f5a](https://goerli.etherscan.io/address/0x35b50C7955e7D0E8298e043C9F4dCDef737b9f5a)      |
+| AuthorizerAdaptor                              | [0x5D90225De345eE24d1d2B6F45DE90B056F5265A1](https://goerli.etherscan.io/address/0x5D90225De345eE24d1d2B6F45DE90B056F5265A1)      |
+| BALTokenHolderFactory                          | [0x45E617B07021B97407367624648d1A0A358a751A](https://goerli.etherscan.io/address/0x45E617B07021B97407367624648d1A0A358a751A)      |
+| BalancerTokenAdmin                             | [0x0F32D7D830E20809Bcb9071581A696135dD472B7](https://goerli.etherscan.io/address/0x0f32d7d830e20809bcb9071581a696135dd472b7)      |
+| GaugeAdder                                     | [0x0Df18b22fB1DD4c1D4bfBF783A8acF0758979328](https://goerli.etherscan.io/address/0x0df18b22fb1dd4c1d4bfbf783a8acf0758979328)      |
+| VotingEscrow                                   | [0x33A99Dcc4C85C014cf12626959111D5898bbCAbF](https://goerli.etherscan.io/address/0x33a99dcc4c85c014cf12626959111d5898bbcabf)      |
+| GaugeController                                | [0xBB1CE49b16d55A1f2c6e88102f32144C7334B116](https://goerli.etherscan.io/address/0xbb1ce49b16d55a1f2c6e88102f32144c7334b116)      |
+| BalancerMinter                                 | [0xdf0399539A72E2689B8B2DD53C3C2A0883879fDd](https://goerli.etherscan.io/address/0xdf0399539a72e2689b8b2dd53c3c2a0883879fdd)      |
+| LiquidityGaugeFactory                          | [0x224E808FBD9e491Be8988B8A0451FBF777C81B8A](https://goerli.etherscan.io/address/0x224e808fbd9e491be8988b8a0451fbf777c81b8a)      |
+| SingleRecipientGaugeFactory                    | [0xd14FFA46C211eac64338c27549c3312380f850Fa](https://goerli.etherscan.io/address/0xd14FFA46C211eac64338c27549c3312380f850Fa)      |
+| VotingEscrowDelegationProxy                    | [0xA1F107D1cD709514AE8A914eCB757E95f9cedB31](https://goerli.etherscan.io/address/0xa1f107d1cd709514ae8a914ecb757e95f9cedb31)      |
+| FeeDistributor                                 | [0x7F91dcdE02F72b478Dc73cB21730cAcA907c8c44](https://goerli.etherscan.io/address/0x7f91dcde02f72b478dc73cb21730caca907c8c44)      |
 {% endtab %}
 
 {% tab title="Kovan" %}
