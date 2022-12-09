@@ -8,7 +8,6 @@
 | BalancerHelpers                                | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://etherscan.io/address/0x5aDDCCa35b7A0D07C74063c48700C8590E87864E)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
 | WeightedPoolFactory v2                         | [0xcC508a455F5b0073973107Db6a878DdBDab957bC](https://etherscan.io/address/0xcC508a455F5b0073973107Db6a878DdBDab957bC#code) |
-| WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://etherscan.io/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0)      |
 | Composable Stable Pool                         | [0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F](https://etherscan.io/address/0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F#code) |
 | LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://etherscan.io/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
 | WstETHRateProvider                             | [0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768](https://etherscan.io/address/0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768)      |
@@ -49,7 +48,6 @@
 | BalancerHelpers                                | [0x239e55F427D44C3cc793f49bFB507ebe76638a2b](https://polygonscan.com/address/0x239e55F427D44C3cc793f49bFB507ebe76638a2b)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://polygonscan.com/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
 | WeightedPoolFactory v2                         | [0x0e39C3D9b2ec765eFd9c5c70BB290B1fCD8536E3](https://polygonscan.com/address/0x0e39c3d9b2ec765efd9c5c70bb290b1fcd8536e3#code) |
-| WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://polygonscan.com/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0)      |
 | StablePoolFactory                              | [0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1](https://polygonscan.com/address/0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1)      |
 | LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://polygonscan.com/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
 | Composable Stable Pool                         | [0x136FD06Fa01eCF624C7F2B3CB15742c1339dC2c4](https://polygonscan.com/address/0x136FD06Fa01eCF624C7F2B3CB15742c1339dC2c4#code) |
@@ -72,7 +70,6 @@
 | BalancerHelpers                                | [0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab](https://arbiscan.io/address/0x77d46184d22CA6a3726a2F500c776767b6A3d6Ab)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://arbiscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
 | WeightedPoolFactory v2                         | [0x8df6EfEc5547e31B0eb7d1291B511FF8a2bf987c](https://arbiscan.io/address/0x8df6efec5547e31b0eb7d1291b511ff8a2bf987c#code) |
-| WeightedPool2TokensFactory                     | [0xCF0a32Bbef8F064969F21f7e02328FB577382018](https://arbiscan.io/address/0xCF0a32Bbef8F064969F21f7e02328FB577382018)      |
 | StablePoolFactory                              | [0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6](https://arbiscan.io/address/0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6)      |
 | LiquidityBootstrappingPoolFactory              | [0x142B9666a0a3A30477b052962ddA81547E7029ab](https://arbiscan.io/address/0x142B9666a0a3A30477b052962ddA81547E7029ab)      |
 | Composable Stable Pool                         | [0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33](https://arbiscan.io/address/0xaeb406b0e430bf5ea2dc0b9fe62e4e53f74b3a33#code) |
@@ -94,7 +91,6 @@
 | BalancerHelpers                                | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://optimistic.etherscan.io/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://optimistic.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
 | WeightedPoolFactory v2                         | [0xad901309d9e9DbC5Df19c84f729f429F0189a633](https://optimistic.etherscan.io/address/0xad901309d9e9DbC5Df19c84f729f429F0189a633#code) |
-| WeightedPool2TokensFactory                     | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://optimistic.etherscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e)      |
 | StablePoolFactory                              | [0xeb151668006CD04DAdD098AFd0a82e78F77076c3](https://optimistic.etherscan.io/address/0xeb151668006CD04DAdD098AFd0a82e78F77076c3)      |
 | Composable Stable Pool                         | [0xf145caFB67081895EE80eB7c04A30Cf87f07b745](https://optimistic.etherscan.io/address/0xf145caFB67081895EE80eB7c04A30Cf87f07b745#code) |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://optimistic.etherscan.io/address/0xf302f9F50958c5593770FDf4d4812309fF77414f)      |
@@ -110,7 +106,6 @@
 | BalancerHelpers                                | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://goerli.etherscan.io/address/0x5addcca35b7a0d07c74063c48700c8590e87864e)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://goerli.etherscan.io/address/0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6)      |
 | WeightedPoolFactory v2                         | [0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227](https://goerli.etherscan.io/address/0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227#code) |
-| WeightedPool2TokensFactory                     | [0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0](https://goerli.etherscan.io/address/0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0)      |
 | StablePoolFactory                              | [0x44afeb87c871D8fEA9398a026DeA2BD3A13F5769](https://goerli.etherscan.io/address/0x44afeb87c871D8fEA9398a026DeA2BD3A13F5769)      |
 | LiquidityBootstrappingPoolFactory              | [0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830](https://goerli.etherscan.io/address/0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830)      |
 | MetaStablePoolFactory                          | [0xA55F73E2281c60206ba43A3590dB07B8955832Be](https://goerli.etherscan.io/address/0xA55F73E2281c60206ba43A3590dB07B8955832Be)      |
