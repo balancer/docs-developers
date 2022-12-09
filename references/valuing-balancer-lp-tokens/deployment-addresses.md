@@ -55,8 +55,8 @@
 | AaveLinearPoolFactory                          | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://polygonscan.com/address/0xf302f9F50958c5593770FDf4d4812309fF77414f)      |
 | ERC4626LinearPoolFactory                       | [0xC6bD2497332d24094eC16a7261eec5C412B5a2C1](https://polygonscan.com/address/0xC6bD2497332d24094eC16a7261eec5C412B5a2C1)      |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x41B953164995c11C81DA73D212ED8Af25741b7Ac](https://polygonscan.com/address/0x41B953164995c11C81DA73D212ED8Af25741b7Ac)      |
-| BalancerRelayer                                | [0x4574ccBcC09A00C9eE55fB92Fe353699A4fA800e](https://polygonscan.com/address/0x4574ccBcC09A00C9eE55fB92Fe353699A4fA800e)      |
-| BatchRelayerLibrary                            | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://polygonscan.com/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75)      |
+| BalancerRelayer v4                             | [0x28A224d9d398a1eBB7BA69BCA515898966Bb1B6b](https://polygonscan.com/address/0x28a224d9d398a1ebb7ba69bca515898966bb1b6b#code) |
+| BatchRelayerLibrary v4                         | [0x156C628135327F41748D8c8802fC043870714E9a](https://polygonscan.com/address/0x156c628135327f41748d8c8802fc043870714e9a)      |
 | MerkleOrchard                                  | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://polygonscan.com/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e)      |
 | AuthorizerAdaptor                              | [0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD](https://polygonscan.com/address/0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD)      |
 | ChildChainStreamer                             | [0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0](https://polygonscan.com/address/0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0)      |
