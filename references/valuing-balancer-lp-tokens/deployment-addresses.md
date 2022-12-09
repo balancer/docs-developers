@@ -112,7 +112,7 @@
 | LiquidityBootstrappingPoolFactory              | [0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830](https://goerli.etherscan.io/address/0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830)      |
 | WstETHRateProvider                             | [0x80a94F458491CA88F09767E58a92FD23Cbf1196F](https://goerli.etherscan.io/address/0x80a94F458491CA88F09767E58a92FD23Cbf1196F)      |
 | InvestmentPoolFactory                          | [0x3C9F788131A26329A689Bd951b5aCb4454669487](https://goerli.etherscan.io/address/0x3C9F788131A26329A689Bd951b5aCb4454669487)      |
-| StablePhantomPoolFactory                       | [0x41E9036AE350baEDCC7107760A020Dca3c0731ec](https://goerli.etherscan.io/address/0x41E9036AE350baEDCC7107760A020Dca3c0731ec)      |
+| ComposableStable Pool Factory                  | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://goerli.etherscan.io/address/0x85a80afee867aDf27B50BdB7b76DA70f1E853062#code) |
 | AaveLinearPoolFactory                          | [0x94470C12fc192e071F12Fec1152861608CE01562](https://goerli.etherscan.io/address/0x94470c12fc192e071f12fec1152861608ce01562)      |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0xB0C726778C3AE4B3454D85557A48e8fa502bDD6A](https://goerli.etherscan.io/address/0xB0C726778C3AE4B3454D85557A48e8fa502bDD6A)      |
 | BalancerRelayer v4                             | [0x00e695aA8000df01B8DC8401B4C34Fba5D56BBb2](https://goerli.etherscan.io/address/0x00e695aA8000df01B8DC8401B4C34Fba5D56BBb2#code) |
