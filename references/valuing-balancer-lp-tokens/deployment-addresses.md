@@ -35,7 +35,7 @@
 | PolygonRootGaugeFactory                        | [0x4C4287b07d293E361281bCeEe8715c8CDeB64E34](https://etherscan.io/address/0x4C4287b07d293E361281bCeEe8715c8CDeB64E34)      |
 | veBALL2GaugeSetupCoordinator                   | [0xd13AFc362F619b840C8f4AaC1D957cE219eF37Ca](https://etherscan.io/address/0xd13AFc362F619b840C8f4AaC1D957cE219eF37Ca)      |
 | veBALGaugeFixCoordinator                       | [0xee47ef369CDa5a65639D7794b70a4d247826DdF3](https://etherscan.io/address/0xee47ef369CDa5a65639D7794b70a4d247826DdF3)      |
-| FeeDistributor                                 | [0x26743984e3357eFC59f2fd6C1aFDC310335a61c9](https://etherscan.io/address/0x26743984e3357eFC59f2fd6C1aFDC310335a61c9)      |
+| FeeDistributor v2                              | [0xD3cf852898b21fc233251427c2DC93d3d604F3BB](https://etherscan.io/address/0xd3cf852898b21fc233251427c2dc93d3d604f3bb#code) |
 | SmartWalletChecker                             | [0x7869296Efd0a76872fEE62A058C8fBca5c1c826C](https://etherscan.io/address/0x7869296Efd0a76872fEE62A058C8fBca5c1c826C)      |
 | SmartWalletCheckerCoordinator                  | [0x26575A44755E0aaa969FDda1E4291Df22C5624Ea](https://etherscan.io/address/0x26575A44755E0aaa969FDda1E4291Df22C5624Ea)      |
 | DistributionScheduler                          | [0xbfD9769b061E57e478690299011A028194D66e3C](https://etherscan.io/address/0xbfD9769b061E57e478690299011A028194D66e3C)      |
@@ -127,7 +127,7 @@
 | LiquidityGaugeFactory                          | [0x224E808FBD9e491Be8988B8A0451FBF777C81B8A](https://goerli.etherscan.io/address/0x224e808fbd9e491be8988b8a0451fbf777c81b8a)      |
 | SingleRecipientGaugeFactory                    | [0xd14FFA46C211eac64338c27549c3312380f850Fa](https://goerli.etherscan.io/address/0xd14FFA46C211eac64338c27549c3312380f850Fa)      |
 | VotingEscrowDelegationProxy                    | [0xA1F107D1cD709514AE8A914eCB757E95f9cedB31](https://goerli.etherscan.io/address/0xa1f107d1cd709514ae8a914ecb757e95f9cedb31)      |
-| FeeDistributor                                 | [0x7F91dcdE02F72b478Dc73cB21730cAcA907c8c44](https://goerli.etherscan.io/address/0x7f91dcde02f72b478dc73cb21730caca907c8c44)      |
+| FeeDistributor v2                              | [0x42B67611B208E2e9b4CC975F6D74c87b865aE066](https://goerli.etherscan.io/address/0x42B67611B208E2e9b4CC975F6D74c87b865aE066#code) |
 {% endtab %}
 
 {% tab title="Kovan" %}
