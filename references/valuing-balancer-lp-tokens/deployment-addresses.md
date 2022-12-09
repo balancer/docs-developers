@@ -1,5 +1,11 @@
 # Deployment Addresses
 
+{% hint style="info" %}
+The deployment addresses listed will change as new products are added or old versions become deprecated. Always check for the latest addresses!\
+\
+You can see an overview of all the deployments [here](https://github.com/balancer-labs/balancer-v2-monorepo/tree/master/pkg/deployments/tasks). You can find the **contract** **addresses** for different networks in the**`output`**directory **under each deployment task**.
+{% endhint %}
+
 {% tabs %}
 {% tab title="Ethereum Mainnet" %}
 | Contracts                                      | Addresses                                                                                                                  |
