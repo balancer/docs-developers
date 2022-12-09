@@ -108,7 +108,6 @@
 | WeightedPoolFactory v2                         | [0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227](https://goerli.etherscan.io/address/0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227#code) |
 | StablePoolFactory                              | [0x44afeb87c871D8fEA9398a026DeA2BD3A13F5769](https://goerli.etherscan.io/address/0x44afeb87c871D8fEA9398a026DeA2BD3A13F5769)      |
 | LiquidityBootstrappingPoolFactory              | [0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830](https://goerli.etherscan.io/address/0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830)      |
-| MetaStablePoolFactory                          | [0xA55F73E2281c60206ba43A3590dB07B8955832Be](https://goerli.etherscan.io/address/0xA55F73E2281c60206ba43A3590dB07B8955832Be)      |
 | WstETHRateProvider                             | [0x80a94F458491CA88F09767E58a92FD23Cbf1196F](https://goerli.etherscan.io/address/0x80a94F458491CA88F09767E58a92FD23Cbf1196F)      |
 | InvestmentPoolFactory                          | [0x3C9F788131A26329A689Bd951b5aCb4454669487](https://goerli.etherscan.io/address/0x3C9F788131A26329A689Bd951b5aCb4454669487)      |
 | StablePhantomPoolFactory                       | [0x41E9036AE350baEDCC7107760A020Dca3c0731ec](https://goerli.etherscan.io/address/0x41E9036AE350baEDCC7107760A020Dca3c0731ec)      |
