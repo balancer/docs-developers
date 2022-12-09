@@ -95,6 +95,8 @@
 | Composable Stable Pool                         | [0xf145caFB67081895EE80eB7c04A30Cf87f07b745](https://optimistic.etherscan.io/address/0xf145caFB67081895EE80eB7c04A30Cf87f07b745#code) |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://optimistic.etherscan.io/address/0xf302f9F50958c5593770FDf4d4812309fF77414f)      |
 | AuthorizerAdaptor                              | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://optimistic.etherscan.io/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75)      |
+| Balancer Relayer v4                            | [0x1a58897Ab366082028ced3740900ecBD765Af738](https://optimistic.etherscan.io/address/0x1a58897Ab366082028ced3740900ecBD765Af738#code) |
+| BatchRelayer Library v4                        | [0x8E5698dC4897DC12243c8642e77B4f21349Db97C](https://optimistic.etherscan.io/address/0x8e5698dc4897dc12243c8642e77b4f21349db97c)      |
 {% endtab %}
 
 {% tab title="Goerli" %}
