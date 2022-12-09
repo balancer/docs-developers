@@ -115,8 +115,8 @@
 | StablePhantomPoolFactory                       | [0x41E9036AE350baEDCC7107760A020Dca3c0731ec](https://goerli.etherscan.io/address/0x41E9036AE350baEDCC7107760A020Dca3c0731ec)      |
 | AaveLinearPoolFactory                          | [0x94470C12fc192e071F12Fec1152861608CE01562](https://goerli.etherscan.io/address/0x94470c12fc192e071f12fec1152861608ce01562)      |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0xB0C726778C3AE4B3454D85557A48e8fa502bDD6A](https://goerli.etherscan.io/address/0xB0C726778C3AE4B3454D85557A48e8fa502bDD6A)      |
-| BalancerRelayer                                | [0x8002d3e5875b38C5B03da83aeB430dC63E047F62](https://goerli.etherscan.io/address/0x8002d3e5875b38C5B03da83aeB430dC63E047F62)      |
-| BatchRelayerLibrary                            | [0xFB2f4CE9843E1069CC1F9d76e0236d6dFF2b1eeA](https://goerli.etherscan.io/address/0xFB2f4CE9843E1069CC1F9d76e0236d6dFF2b1eeA)      |
+| BalancerRelayer v4                             | [0x00e695aA8000df01B8DC8401B4C34Fba5D56BBb2](https://goerli.etherscan.io/address/0x00e695aA8000df01B8DC8401B4C34Fba5D56BBb2#code) |
+| BatchRelayerLibrary v4                         | [0xeb151668006CD04DAdD098AFd0a82e78F77076c3](https://goerli.etherscan.io/address/0xeb151668006CD04DAdD098AFd0a82e78F77076c3#code) |
 | LidoRelayer                                    | [0xdc10e8f47B6858E32218E01db224795235872B19](https://goerli.etherscan.io/address/0xdc10e8f47b6858e32218e01db224795235872b19)      |
 | MerkleOrchard                                  | [0x35b50C7955e7D0E8298e043C9F4dCDef737b9f5a](https://goerli.etherscan.io/address/0x35b50C7955e7D0E8298e043C9F4dCDef737b9f5a)      |
 | AuthorizerAdaptor                              | [0x5D90225De345eE24d1d2B6F45DE90B056F5265A1](https://goerli.etherscan.io/address/0x5D90225De345eE24d1d2B6F45DE90B056F5265A1)      |
