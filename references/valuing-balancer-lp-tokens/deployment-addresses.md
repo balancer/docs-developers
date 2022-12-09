@@ -15,8 +15,8 @@
 | AaveLinearPoolFactory                          | [0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8](https://etherscan.io/address/0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8)      |
 | ERC4626LinearPoolFactory                       | [0xE061bF85648e9FA7b59394668CfEef980aEc4c66](https://etherscan.io/address/0xE061bF85648e9FA7b59394668CfEef980aEc4c66)      |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://etherscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e)      |
-| BalancerRelayer                                | [0xAc9f49eF3ab0BbC929f7b1bb0A17E1Fca5786251](https://etherscan.io/address/0xAc9f49eF3ab0BbC929f7b1bb0A17E1Fca5786251)      |
-| BatchRelayerLibrary                            | [0x41B953164995c11C81DA73D212ED8Af25741b7Ac](https://etherscan.io/address/0x41B953164995c11C81DA73D212ED8Af25741b7Ac)      |
+| BalancerRelayer v4                             | [0x2536dfeeCB7A0397CF98eDaDA8486254533b1aFA](https://etherscan.io/address/0x2536dfeecb7a0397cf98edada8486254533b1afa)      |
+| BatchRelayerLibrary v4                         | [0xd02992266BB6a6324A3aB8B62FeCBc9a3C58d1F9](https://etherscan.io/address/0xd02992266bb6a6324a3ab8b62fecbc9a3c58d1f9)      |
 | LidoRelayer                                    | [0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965](https://etherscan.io/address/0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965)      |
 | MerkleRedeem                                   | [0x884226c9f7b7205f607922E0431419276a64CF8f](https://etherscan.io/address/0x884226c9f7b7205f607922E0431419276a64CF8f)      |
 | MerkleOrchard                                  | [0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca](https://etherscan.io/address/0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca)      |
