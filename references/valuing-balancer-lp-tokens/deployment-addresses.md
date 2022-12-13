@@ -150,7 +150,14 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | ERC4626LinearPoolFactory                       | [0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8](https://gnosisscan.io/address/0x4132f7acc9db7a6cf7be2dd3a9dc8b30c7e6e6c8)      |
 | StablePoolFactory v2                           | [0xf23b4DB826DbA14c0e857029dfF076b1c0264843](https://gnosisscan.io/address/0xf23b4DB826DbA14c0e857029dfF076b1c0264843#code) |
 | BalancerQueries                                | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://gnosisscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e#code) |
-|                                                |                                                                                                                             |
+| ProtocolFeePercentagesProvider                 | [0x41b953164995c11c81da73d212ed8af25741b7ac](https://gnosisscan.io/address/0x41b953164995c11c81da73d212ed8af25741b7ac#code) |
+| WeightedPoolFactory                            | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://gnosisscan.io/address/0xf302f9F50958c5593770FDf4d4812309fF77414f#code) |
+| BatchRelayer Library                           | [0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8](https://gnosisscan.io/address/0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8#code) |
+| Balancer Relayer                               | [0xeF606F58A4FD0fCcb066c6203d0994694d3eB2D3](https://gnosisscan.io/address/0xeF606F58A4FD0fCcb066c6203d0994694d3eB2D3#code) |
+| ComposableStablePoolFactory                    | [0x76578ecf9a141296Ec657847fb45B0585bCDa3a6](https://gnosisscan.io/address/0x76578ecf9a141296Ec657847fb45B0585bCDa3a6#code) |
+| PoolRecoveryHelper                             | [0xc3ccacE87f6d3A81724075ADcb5ddd85a8A1bB68](https://gnosisscan.io/address/0xc3ccace87f6d3a81724075adcb5ddd85a8a1bb68#code) |
+| AuthorizerAdaptorEntrypoint                    | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://gnosisscan.io/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75#code) |
+| AaveLinearPoolFactory                          | [0x9dd5Db2d38b50bEF682cE532bCca5DfD203915E1](https://gnosisscan.io/address/0x9dd5Db2d38b50bEF682cE532bCca5DfD203915E1#code) |
 {% endtab %}
 
 {% tab title="Kovan" %}
