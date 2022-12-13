@@ -146,10 +146,10 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://gnosisscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code) |
 | Balancer Helpers                               | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://gnosisscan.io/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9#code) |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://gnosisscan.io/address/0x85a80afee867adf27b50bdb7b76da70f1e853062#code) |
-|                                                |                                                                                                                             |
-|                                                |                                                                                                                             |
-|                                                |                                                                                                                             |
-|                                                |                                                                                                                             |
+| AuthorizerAdaptor                              | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://gnosisscan.io/address/0x5addcca35b7a0d07c74063c48700c8590e87864e)      |
+| ERC4626LinearPoolFactory                       | [0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8](https://gnosisscan.io/address/0x4132f7acc9db7a6cf7be2dd3a9dc8b30c7e6e6c8)      |
+| StablePoolFactory v2                           | [0xf23b4DB826DbA14c0e857029dfF076b1c0264843](https://gnosisscan.io/address/0xf23b4DB826DbA14c0e857029dfF076b1c0264843#code) |
+| BalancerQueries                                | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://gnosisscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e#code) |
 |                                                |                                                                                                                             |
 {% endtab %}
 
