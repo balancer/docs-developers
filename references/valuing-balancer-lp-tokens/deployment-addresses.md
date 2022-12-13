@@ -139,11 +139,18 @@ You can see an overview of all the deployments [here](https://github.com/balance
 {% endtab %}
 
 {% tab title="Gnosis" %}
-| Contract                     | Addresses                                                                                                                   |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Composable Stable Factory V2 | [0x76578ecf9a141296Ec657847fb45B0585bCDa3a6](https://gnosisscan.io/address/0x76578ecf9a141296ec657847fb45b0585bcda3a6#code) |
-| Authorizer                   | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://gnosisscan.io/address/0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6#code) |
-| Vault                        | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://gnosisscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code) |
+| Contract                                       | Addresses                                                                                                                   |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Composable Stable Factory V2                   | [0x76578ecf9a141296Ec657847fb45B0585bCDa3a6](https://gnosisscan.io/address/0x76578ecf9a141296ec657847fb45b0585bcda3a6#code) |
+| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://gnosisscan.io/address/0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6#code) |
+| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://gnosisscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code) |
+| Balancer Helpers                               | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://gnosisscan.io/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9#code) |
+| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://gnosisscan.io/address/0x85a80afee867adf27b50bdb7b76da70f1e853062#code) |
+|                                                |                                                                                                                             |
+|                                                |                                                                                                                             |
+|                                                |                                                                                                                             |
+|                                                |                                                                                                                             |
+|                                                |                                                                                                                             |
 {% endtab %}
 
 {% tab title="Kovan" %}
