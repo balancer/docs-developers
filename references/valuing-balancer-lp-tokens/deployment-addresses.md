@@ -158,6 +158,8 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | PoolRecoveryHelper                             | [0xc3ccacE87f6d3A81724075ADcb5ddd85a8A1bB68](https://gnosisscan.io/address/0xc3ccace87f6d3a81724075adcb5ddd85a8a1bb68#code) |
 | AuthorizerAdaptorEntrypoint                    | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://gnosisscan.io/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75#code) |
 | AaveLinearPoolFactory                          | [0x9dd5Db2d38b50bEF682cE532bCca5DfD203915E1](https://gnosisscan.io/address/0x9dd5Db2d38b50bEF682cE532bCca5DfD203915E1#code) |
+| ProtocolFeesCollector                          | [0xce88686553686DA562CE7Cea497CE749DA109f9F](https://gnosisscan.io/address/0xce88686553686da562ce7cea497ce749da109f9f)      |
+|                                                |                                                                                                                             |
 {% endtab %}
 
 {% tab title="Kovan" %}
