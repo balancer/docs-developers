@@ -138,6 +138,14 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | FeeDistributor v2                              | [0x42B67611B208E2e9b4CC975F6D74c87b865aE066](https://goerli.etherscan.io/address/0x42B67611B208E2e9b4CC975F6D74c87b865aE066#code) |
 {% endtab %}
 
+{% tab title="Gnosis" %}
+| Contract                     | Addresses                                                                                                                   |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Composable Stable Factory V2 | [0x76578ecf9a141296Ec657847fb45B0585bCDa3a6](https://gnosisscan.io/address/0x76578ecf9a141296ec657847fb45b0585bcda3a6#code) |
+| Authorizer                   | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://gnosisscan.io/address/0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6#code) |
+| Vault                        | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://gnosisscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code) |
+{% endtab %}
+
 {% tab title="Kovan" %}
 {% hint style="warning" %}
 Kovan is no longer being supported. We recommend using the Goerli testnet deployment going forward
