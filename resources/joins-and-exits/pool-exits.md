@@ -84,6 +84,16 @@ Applies to:
 * StablePool
 * MetaStablePool
 
+**Composable Stable V2 ExitKinds**
+
+```javascript
+enum ExitKind {
+    EXACT_BPT_IN_FOR_ONE_TOKEN_OUT, 
+    BPT_IN_FOR_EXACT_TOKENS_OUT,
+    EXACT_BPT_IN_FOR_ALL_TOKENS_OUT
+}
+```
+
 #### Exit Types Explained
 
 * **Single Asset Exit** (`EXACT_BPT_IN_FOR_ONE_TOKEN_OUT`)
