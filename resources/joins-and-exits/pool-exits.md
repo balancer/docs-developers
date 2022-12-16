@@ -69,20 +69,7 @@ The **first three** types of`ExitKind` apply to the following pools:
 
 As noted in the comment, only the InvestmentPool has a fourth:`MANAGEMENT_FEE_TOKENS_OUT`. This is used as an `internal` function only, so it is out of the scope of this page.
 
-#### [StablePool](https://github.com/balancer-labs/balancer-v2-monorepo/blob/master/pkg/pool-stable/contracts/StablePool.sol#L79) ExitKinds&#x20;
 
-```cpp
-enum ExitKind { 
-    EXACT_BPT_IN_FOR_ONE_TOKEN_OUT, 
-    EXACT_BPT_IN_FOR_TOKENS_OUT, 
-    BPT_IN_FOR_EXACT_TOKENS_OUT 
-}
-```
-
-Applies to:
-
-* StablePool
-* MetaStablePool
 
 **Composable Stable V2 ExitKinds**
 
@@ -93,6 +80,10 @@ enum ExitKind {
     EXACT_BPT_IN_FOR_ALL_TOKENS_OUT
 }
 ```
+
+Applies to:
+
+* Composable StablePool
 
 #### Exit Types Explained
 
