@@ -66,3 +66,7 @@ queryExit(
     ExitPoolRequest request)
 returns (uint256 bptIn, uint256[] amountsOut)
 ```
+
+### `sender` and `recipient` params
+
+The query function perform no checks on the `sender` and `recipient` field in the fund structs. This makes it suitable to be called by off-chain applications via `eth_call` without needing to hold tokens, approve them for the Vault, or even know a user's address. Similarly for `joins` and `exits`, these go directly to the pool and bypass the vault (which does the checks)
