@@ -12,14 +12,20 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://etherscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8)      |
 | BalancerHelpers                                | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://etherscan.io/address/0x5aDDCCa35b7A0D07C74063c48700C8590E87864E)      |
+| ProtocolFeesCollector                          | [0xce88686553686DA562CE7Cea497CE749DA109f9F](https://etherscan.io/address/0xce88686553686DA562CE7Cea497CE749DA109f9F#code) |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
 | WeightedPoolFactory v2                         | [0xcC508a455F5b0073973107Db6a878DdBDab957bC](https://etherscan.io/address/0xcC508a455F5b0073973107Db6a878DdBDab957bC#code) |
 | Composable Stable Pool Factory                 | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://etherscan.io/address/0x85a80afee867aDf27B50BdB7b76DA70f1E853062#code) |
+| StablePoolFactory                              | [0x8df6EfEc5547e31B0eb7d1291B511FF8a2bf987c](https://etherscan.io/address/0x8df6EfEc5547e31B0eb7d1291B511FF8a2bf987c#code) |
+| GaugeAdder                                     | [0x2fFB7B215Ae7F088eC2530C7aa8E1B24E398f26a](https://etherscan.io/address/0x2fFB7B215Ae7F088eC2530C7aa8E1B24E398f26a#code) |
+| DistributionScheduler                          | [0xBd35248F8325DD1cB2bBf9D01E80A6bb99a792Dd](https://etherscan.io/address/0xbd35248f8325dd1cb2bbf9d01e80a6bb99a792dd#code) |
 | LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://etherscan.io/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
 | WstETHRateProvider                             | [0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768](https://etherscan.io/address/0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768)      |
 | InvestmentPoolFactory                          | [0x48767F9F868a4A7b86A90736632F6E44C2df7fa9](https://etherscan.io/address/0x48767F9F868a4A7b86A90736632F6E44C2df7fa9)      |
 | AaveLinearPoolFactory                          | [0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8](https://etherscan.io/address/0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8)      |
 | ERC4626LinearPoolFactory                       | [0xE061bF85648e9FA7b59394668CfEef980aEc4c66](https://etherscan.io/address/0xE061bF85648e9FA7b59394668CfEef980aEc4c66)      |
+| ProtocolFeesWithdrawer                         | [0x5ef4c5352882b10893b70DbcaA0C000965bd23c5](https://etherscan.io/address/0x5ef4c5352882b10893b70DbcaA0C000965bd23c5#code) |
+| PreseededVotingEscrowDelegation                | [0xB496FF44746A8693A060FafD984Da41B253f6790](https://etherscan.io/address/0xB496FF44746A8693A060FafD984Da41B253f6790#code) |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://etherscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e)      |
 | BalancerRelayer v4                             | [0x2536dfeeCB7A0397CF98eDaDA8486254533b1aFA](https://etherscan.io/address/0x2536dfeecb7a0397cf98edada8486254533b1afa)      |
 | BatchRelayerLibrary v4                         | [0xd02992266BB6a6324A3aB8B62FeCBc9a3C58d1F9](https://etherscan.io/address/0xd02992266bb6a6324a3ab8b62fecbc9a3c58d1f9)      |
@@ -35,6 +41,8 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | BalancerMinter                                 | [0x239e55F427D44C3cc793f49bFB507ebe76638a2b](https://etherscan.io/address/0x239e55F427D44C3cc793f49bFB507ebe76638a2b)      |
 | LiquidityGaugeFactory                          | [0x4E7bBd911cf1EFa442BC1b2e9Ea01ffE785412EC](https://etherscan.io/address/0x4E7bBd911cf1EFa442BC1b2e9Ea01ffE785412EC)      |
 | SingleRecipientGaugeFactory                    | [0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227](https://etherscan.io/address/0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227)      |
+| SingleRecipientGauge                           | [0x5D3d2D18148baAcE45D09254513BcF2C548C4480](https://etherscan.io/address/0x5D3d2D18148baAcE45D09254513BcF2C548C4480#code) |
+| VotingEscrowDelegation                         | [0x2E96068b3D5B5BAE3D7515da4A1D2E52d08A2647](https://etherscan.io/address/0x2E96068b3D5B5BAE3D7515da4A1D2E52d08A2647#code) |
 | VotingEscrowDelegationProxy                    | [0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0](https://etherscan.io/address/0x6f5a2eE11E7a772AeB5114A20d0D7c0ff61EB8A0)      |
 | veBALDeploymentCoordinator                     | [0xeb151668006CD04DAdD098AFd0a82e78F77076c3](https://etherscan.io/address/0xeb151668006CD04DAdD098AFd0a82e78F77076c3)      |
 | ArbitrumRootGaugeFactory                       | [0xad901309d9e9DbC5Df19c84f729f429F0189a633](https://etherscan.io/address/0xad901309d9e9DbC5Df19c84f729f429F0189a633)      |
@@ -42,6 +50,21 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | veBALL2GaugeSetupCoordinator                   | [0xd13AFc362F619b840C8f4AaC1D957cE219eF37Ca](https://etherscan.io/address/0xd13AFc362F619b840C8f4AaC1D957cE219eF37Ca)      |
 | veBALGaugeFixCoordinator                       | [0xee47ef369CDa5a65639D7794b70a4d247826DdF3](https://etherscan.io/address/0xee47ef369CDa5a65639D7794b70a4d247826DdF3)      |
 | FeeDistributor v2                              | [0xD3cf852898b21fc233251427c2DC93d3d604F3BB](https://etherscan.io/address/0xd3cf852898b21fc233251427c2dc93d3d604f3bb#code) |
+| BalancerQueries                                | [0xE39B5e3B6D74016b2F6A9673D7d7493B6DF549d5](https://etherscan.io/address/0xE39B5e3B6D74016b2F6A9673D7d7493B6DF549d5#code) |
+| LiquidityGaugeV5                               | [0xe5F96070CA00cd54795416B1a4b4c2403231c548](https://etherscan.io/address/0xe5F96070CA00cd54795416B1a4b4c2403231c548#code) |
+| ArbitrumRootGaugeFactory                       | [0x1c99324EDC771c82A0DCCB780CC7DDA0045E50e7](https://etherscan.io/address/0x1c99324EDC771c82A0DCCB780CC7DDA0045E50e7#code) |
+| ArbitrumRootGauge                              | [0x6337949cbC4825Bbd09242c811770F6F6fee9FfC](https://etherscan.io/address/0x6337949cbC4825Bbd09242c811770F6F6fee9FfC#code) |
+| OptimismRootGaugeFactory                       | [0x866D4B65694c66fbFD15Dd6fa933D0A6b3940A36](https://etherscan.io/address/0x866D4B65694c66fbFD15Dd6fa933D0A6b3940A36#code) |
+| OptimismRootGauge                              | [0xBC230b1a66A138cD9cFC7b352390025978dFAdde](https://etherscan.io/address/0xBC230b1a66A138cD9cFC7b352390025978dFAdde)      |
+| PolygonRootGaugeFactory                        | [0xa98Bce70c92aD2ef3288dbcd659bC0d6b62f8F13](https://etherscan.io/address/0xa98Bce70c92aD2ef3288dbcd659bC0d6b62f8F13#code) |
+| PolygonRootGauge                               | [0xfeb1A24C2752E53576133cdb718F25bC64eBDD52](https://etherscan.io/address/0xfeb1A24C2752E53576133cdb718F25bC64eBDD52#code) |
+| PoolRecoveryHelper                             | [0x1b300C86980a5195bCF49bD419A068D98dC133Db](https://etherscan.io/address/0x1b300C86980a5195bCF49bD419A068D98dC133Db#code) |
+| AuthorizerAdaptorEntrypoint                    | [0xf5dECDB1f3d1ee384908Fbe16D2F0348AE43a9eA](https://etherscan.io/address/0xf5dECDB1f3d1ee384908Fbe16D2F0348AE43a9eA#code) |
+| TimelockAuthorizerMigrator                     | [0xf8ee6f1F9B54F9b2C192D703ea2d22112cBC062b](https://etherscan.io/address/0xf8ee6f1F9B54F9b2C192D703ea2d22112cBC062b#code) |
+| TimelockAuthorizer                             | [0x9E3cD0606Db55ac68845bB60121847823712ae05](https://etherscan.io/address/0x9E3cD0606Db55ac68845bB60121847823712ae05#code) |
+|                                                | [0xf23b4DB826DbA14c0e857029dfF076b1c0264843](https://etherscan.io/address/0xf23b4DB826DbA14c0e857029dfF076b1c0264843#code) |
+| LiquidityGaugeFactory                          | [0xf1665E19bc105BE4EDD3739F88315cC699cc5b65](https://etherscan.io/address/0xf1665E19bc105BE4EDD3739F88315cC699cc5b65#code) |
+| ProtocolFeePercentagesProvider                 | [0x97207B095e4D5C9a6e4cfbfcd2C3358E03B90c4A](https://etherscan.io/address/0x97207B095e4D5C9a6e4cfbfcd2C3358E03B90c4A#code) |
 | SmartWalletChecker                             | [0x7869296Efd0a76872fEE62A058C8fBca5c1c826C](https://etherscan.io/address/0x7869296Efd0a76872fEE62A058C8fBca5c1c826C)      |
 | SmartWalletCheckerCoordinator                  | [0x26575A44755E0aaa969FDda1E4291Df22C5624Ea](https://etherscan.io/address/0x26575A44755E0aaa969FDda1E4291Df22C5624Ea)      |
 | DistributionScheduler                          | [0xbfD9769b061E57e478690299011A028194D66e3C](https://etherscan.io/address/0xbfD9769b061E57e478690299011A028194D66e3C)      |
