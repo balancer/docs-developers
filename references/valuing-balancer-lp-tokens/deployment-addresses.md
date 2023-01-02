@@ -14,7 +14,7 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | BalancerHelpers                                | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://etherscan.io/address/0x5aDDCCa35b7A0D07C74063c48700C8590E87864E)      |
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
 | WeightedPoolFactory v2                         | [0xcC508a455F5b0073973107Db6a878DdBDab957bC](https://etherscan.io/address/0xcC508a455F5b0073973107Db6a878DdBDab957bC#code) |
-| Composable Stable Pool                         | [0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F](https://etherscan.io/address/0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F#code) |
+| Composable Stable Pool Factory                 | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://etherscan.io/address/0x85a80afee867aDf27B50BdB7b76DA70f1E853062#code) |
 | LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://etherscan.io/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
 | WstETHRateProvider                             | [0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768](https://etherscan.io/address/0x72D07D7DcA67b8A406aD1Ec34ce969c90bFEE768)      |
 | InvestmentPoolFactory                          | [0x48767F9F868a4A7b86A90736632F6E44C2df7fa9](https://etherscan.io/address/0x48767F9F868a4A7b86A90736632F6E44C2df7fa9)      |
@@ -56,7 +56,7 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | WeightedPoolFactory v2                         | [0x0e39C3D9b2ec765eFd9c5c70BB290B1fCD8536E3](https://polygonscan.com/address/0x0e39c3d9b2ec765efd9c5c70bb290b1fcd8536e3#code) |
 | StablePoolFactory                              | [0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1](https://polygonscan.com/address/0xcA96C4f198d343E251b1a01F3EBA061ef3DA73C1)      |
 | LiquidityBootstrappingPoolFactory              | [0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE](https://polygonscan.com/address/0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE)      |
-| Composable Stable Pool                         | [0x136FD06Fa01eCF624C7F2B3CB15742c1339dC2c4](https://polygonscan.com/address/0x136FD06Fa01eCF624C7F2B3CB15742c1339dC2c4#code) |
+| Composable Stable Pool Factory                 | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://polygonscan.com/address/0x85a80afee867aDf27B50BdB7b76DA70f1E853062#code) |
 | InvestmentPoolFactory                          | [0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193](https://polygonscan.com/address/0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193)      |
 | AaveLinearPoolFactory                          | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://polygonscan.com/address/0xf302f9F50958c5593770FDf4d4812309fF77414f)      |
 | ERC4626LinearPoolFactory                       | [0xC6bD2497332d24094eC16a7261eec5C412B5a2C1](https://polygonscan.com/address/0xC6bD2497332d24094eC16a7261eec5C412B5a2C1)      |
@@ -78,7 +78,7 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | WeightedPoolFactory v2                         | [0x8df6EfEc5547e31B0eb7d1291B511FF8a2bf987c](https://arbiscan.io/address/0x8df6efec5547e31b0eb7d1291b511ff8a2bf987c#code) |
 | StablePoolFactory                              | [0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6](https://arbiscan.io/address/0xEF44D6786b2b4d544b7850Fe67CE6381626Bf2D6)      |
 | LiquidityBootstrappingPoolFactory              | [0x142B9666a0a3A30477b052962ddA81547E7029ab](https://arbiscan.io/address/0x142B9666a0a3A30477b052962ddA81547E7029ab)      |
-| Composable Stable Pool                         | [0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33](https://arbiscan.io/address/0xaeb406b0e430bf5ea2dc0b9fe62e4e53f74b3a33#code) |
+| Composable Stable Pool Factory                 | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://arbiscan.io/address/0x85a80afee867adf27b50bdb7b76da70f1e853062#code) |
 | InvestmentPoolFactory                          | [0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c](https://arbiscan.io/address/0xaCd615B3705B9c880E4E7293f1030B34e57B4c1c)      |
 | AaveLinearPoolFactory                          | [0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965](https://arbiscan.io/address/0xdcdbf71A870cc60C6F9B621E28a7D3Ffd6Dd4965)      |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x1802953277FD955f9a254B80Aa0582f193cF1d77](https://arbiscan.io/address/0x1802953277FD955f9a254B80Aa0582f193cF1d77)      |
@@ -98,7 +98,7 @@ You can see an overview of all the deployments [here](https://github.com/balance
 | Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://optimistic.etherscan.io/address/0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6)      |
 | WeightedPoolFactory v2                         | [0xad901309d9e9DbC5Df19c84f729f429F0189a633](https://optimistic.etherscan.io/address/0xad901309d9e9DbC5Df19c84f729f429F0189a633#code) |
 | StablePoolFactory                              | [0xeb151668006CD04DAdD098AFd0a82e78F77076c3](https://optimistic.etherscan.io/address/0xeb151668006CD04DAdD098AFd0a82e78F77076c3)      |
-| Composable Stable Pool                         | [0xf145caFB67081895EE80eB7c04A30Cf87f07b745](https://optimistic.etherscan.io/address/0xf145caFB67081895EE80eB7c04A30Cf87f07b745#code) |
+| Composable Stable Pool                         | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://optimistic.etherscan.io/address/0x85a80afee867adf27b50bdb7b76da70f1e853062#code) |
 | NoProtocolFeeLiquidityBootstrappingPoolFactory | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://optimistic.etherscan.io/address/0xf302f9F50958c5593770FDf4d4812309fF77414f)      |
 | AuthorizerAdaptor                              | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://optimistic.etherscan.io/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75)      |
 | Balancer Relayer v4                            | [0x1a58897Ab366082028ced3740900ecBD765Af738](https://optimistic.etherscan.io/address/0x1a58897Ab366082028ced3740900ecBD765Af738#code) |
@@ -139,27 +139,28 @@ You can see an overview of all the deployments [here](https://github.com/balance
 {% endtab %}
 
 {% tab title="Gnosis" %}
-| Contract                                       | Addresses                                                                                                                   |
-| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Composable Stable Factory V2                   | [0x76578ecf9a141296Ec657847fb45B0585bCDa3a6](https://gnosisscan.io/address/0x76578ecf9a141296ec657847fb45b0585bcda3a6#code) |
-| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://gnosisscan.io/address/0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6#code) |
-| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://gnosisscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code) |
-| Balancer Helpers                               | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://gnosisscan.io/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9#code) |
-| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://gnosisscan.io/address/0x85a80afee867adf27b50bdb7b76da70f1e853062#code) |
-| AuthorizerAdaptor                              | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://gnosisscan.io/address/0x5addcca35b7a0d07c74063c48700c8590e87864e)      |
-| ERC4626LinearPoolFactory                       | [0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8](https://gnosisscan.io/address/0x4132f7acc9db7a6cf7be2dd3a9dc8b30c7e6e6c8)      |
-| StablePoolFactory v2                           | [0xf23b4DB826DbA14c0e857029dfF076b1c0264843](https://gnosisscan.io/address/0xf23b4DB826DbA14c0e857029dfF076b1c0264843#code) |
-| BalancerQueries                                | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://gnosisscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e#code) |
-| ProtocolFeePercentagesProvider                 | [0x41b953164995c11c81da73d212ed8af25741b7ac](https://gnosisscan.io/address/0x41b953164995c11c81da73d212ed8af25741b7ac#code) |
-| WeightedPoolFactory                            | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://gnosisscan.io/address/0xf302f9F50958c5593770FDf4d4812309fF77414f#code) |
-| BatchRelayer Library                           | [0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8](https://gnosisscan.io/address/0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8#code) |
-| Balancer Relayer                               | [0xeF606F58A4FD0fCcb066c6203d0994694d3eB2D3](https://gnosisscan.io/address/0xeF606F58A4FD0fCcb066c6203d0994694d3eB2D3#code) |
-| ComposableStablePoolFactory                    | [0x76578ecf9a141296Ec657847fb45B0585bCDa3a6](https://gnosisscan.io/address/0x76578ecf9a141296Ec657847fb45B0585bCDa3a6#code) |
-| PoolRecoveryHelper                             | [0xc3ccacE87f6d3A81724075ADcb5ddd85a8A1bB68](https://gnosisscan.io/address/0xc3ccace87f6d3a81724075adcb5ddd85a8a1bb68#code) |
-| AuthorizerAdaptorEntrypoint                    | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://gnosisscan.io/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75#code) |
-| AaveLinearPoolFactory                          | [0x9dd5Db2d38b50bEF682cE532bCca5DfD203915E1](https://gnosisscan.io/address/0x9dd5Db2d38b50bEF682cE532bCca5DfD203915E1#code) |
-| ProtocolFeesCollector                          | [0xce88686553686DA562CE7Cea497CE749DA109f9F](https://gnosisscan.io/address/0xce88686553686da562ce7cea497ce749da109f9f)      |
-|                                                |                                                                                                                             |
+| Contract                                       | Addresses                                                                                                                                         |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Composable Stable Factory V2                   | <p><a href="https://gnosisscan.io/address/0x76578ecf9a141296ec657847fb45b0585bcda3a6#code">0x76578ecf9a141296Ec657847fb45B0585bCDa3a6</a><br></p> |
+|                                                |                                                                                                                                                   |
+| Authorizer                                     | [0xA331D84eC860Bf466b4CdCcFb4aC09a1B43F3aE6](https://gnosisscan.io/address/0xa331d84ec860bf466b4cdccfb4ac09a1b43f3ae6#code)                       |
+| Vault                                          | [0xBA12222222228d8Ba445958a75a0704d566BF2C8](https://gnosisscan.io/address/0xBA12222222228d8Ba445958a75a0704d566BF2C8#code)                       |
+| Balancer Helpers                               | [0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9](https://gnosisscan.io/address/0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9#code)                       |
+| NoProtocolFeeLiquidityBootstrappingPoolFactory | [0x85a80afee867aDf27B50BdB7b76DA70f1E853062](https://gnosisscan.io/address/0x85a80afee867adf27b50bdb7b76da70f1e853062#code)                       |
+| AuthorizerAdaptor                              | [0x5aDDCCa35b7A0D07C74063c48700C8590E87864E](https://gnosisscan.io/address/0x5addcca35b7a0d07c74063c48700c8590e87864e)                            |
+| ERC4626LinearPoolFactory                       | [0x4132f7AcC9dB7A6cF7BE2Dd3A9DC8b30C7E6E6c8](https://gnosisscan.io/address/0x4132f7acc9db7a6cf7be2dd3a9dc8b30c7e6e6c8)                            |
+| StablePoolFactory v2                           | [0xf23b4DB826DbA14c0e857029dfF076b1c0264843](https://gnosisscan.io/address/0xf23b4DB826DbA14c0e857029dfF076b1c0264843#code)                       |
+| BalancerQueries                                | [0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e](https://gnosisscan.io/address/0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e#code)                       |
+| ProtocolFeePercentagesProvider                 | [0x41b953164995c11c81da73d212ed8af25741b7ac](https://gnosisscan.io/address/0x41b953164995c11c81da73d212ed8af25741b7ac#code)                       |
+| WeightedPoolFactory                            | [0xf302f9F50958c5593770FDf4d4812309fF77414f](https://gnosisscan.io/address/0xf302f9F50958c5593770FDf4d4812309fF77414f#code)                       |
+| BatchRelayer Library                           | [0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8](https://gnosisscan.io/address/0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8#code)                       |
+| Balancer Relayer                               | [0xeF606F58A4FD0fCcb066c6203d0994694d3eB2D3](https://gnosisscan.io/address/0xeF606F58A4FD0fCcb066c6203d0994694d3eB2D3#code)                       |
+| ComposableStablePoolFactory                    | [0x76578ecf9a141296Ec657847fb45B0585bCDa3a6](https://gnosisscan.io/address/0x76578ecf9a141296Ec657847fb45B0585bCDa3a6#code)                       |
+| PoolRecoveryHelper                             | [0xc3ccacE87f6d3A81724075ADcb5ddd85a8A1bB68](https://gnosisscan.io/address/0xc3ccace87f6d3a81724075adcb5ddd85a8a1bb68#code)                       |
+| AuthorizerAdaptorEntrypoint                    | [0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75](https://gnosisscan.io/address/0x8F42aDBbA1B16EaAE3BB5754915E0D06059aDd75#code)                       |
+| AaveLinearPoolFactory                          | [0x9dd5Db2d38b50bEF682cE532bCca5DfD203915E1](https://gnosisscan.io/address/0x9dd5Db2d38b50bEF682cE532bCca5DfD203915E1#code)                       |
+| ProtocolFeesCollector                          | [0xce88686553686DA562CE7Cea497CE749DA109f9F](https://gnosisscan.io/address/0xce88686553686da562ce7cea497ce749da109f9f)                            |
+|                                                |                                                                                                                                                   |
 {% endtab %}
 
 {% tab title="Kovan" %}
