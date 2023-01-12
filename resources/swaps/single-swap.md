@@ -14,8 +14,8 @@ swap(SingleSwap singleSwap,
 * `singleSwap`: A definition of the swap to be executed, defined below
 * `funds`: A definition of where funds are going to/from, defined below
 * `limit`: The meaning of `limit` depends on the value of `singleSwap.kind`
-  * `GIVEN_IN`: The minimum amount of tokens we would accept to receive from the swap.
-  * `GIVEN_OUT`: The maximum amount of tokens we would accept having to send for the swap.
+  * `GIVEN_IN`: The minimum amount of tokens you would accept to receive from the swap.
+  * `GIVEN_OUT`: The maximum amount of tokens you would accept having to send for the swap.
 * `deadline`: The UNIX timestamp at which our trade must be completed by - if the transaction is confirmed after this time then the transaction will fail.
 
 ### SingleSwap struct
