@@ -82,6 +82,9 @@
   * [Endpoints](references/Subgraph/Endpoints.md)
   * [Entities](references/Subgraph/Entities.md)
   * [Queries](references/Subgraph/Queries.md)
+    * [Gauges-Subgraph](references/gauges-subgraph/subgraphdata-gauges.md)
+    * [Entities-Gauges](references/gauges-subgraph/entities-gauges.md)
+    * [Queries-Gauges](references/gauges-subgraph/queries-gauges.md)
 * [Error Codes](references/error-codes.md)
 
 * [Github](https://github.com/balancer-labs/)
